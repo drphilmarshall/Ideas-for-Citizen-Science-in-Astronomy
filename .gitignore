@@ -2,6 +2,9 @@
 *.aux
 *.dvi
 *.pdf
+*.bbl
+*.blg
+*.toc
 ARAA
 litter
 pearltrees
