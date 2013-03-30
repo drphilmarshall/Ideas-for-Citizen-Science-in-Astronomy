@@ -1,0 +1,40 @@
+%%
+%% This is file `ARAstroBib.sty',
+%% Created by Latha Swaminathan, TechBooks 
+%% For Astronomy and Astrophysics of Annual Reviews
+%%
+%% 
+\NeedsTeXFormat{LaTeX2e}[1997/12/01]
+\ProvidesPackage{ARAstroBib}[2005/04/21]
+%
+\usepackage[sort]{natbib}  % Activates author/year citations
+%
+% Use comma to separate multile references.
+\bibpunct{(}{)}{,}{a}{}{,}% 
+%
+%
+% Unless one citation has three authors, in which case semicolon
+% is used between references.
+%
+\let\save@NAT@citex\NAT@citex
+%
+\def\SemicolonForThree@citex[#1][#2]#3{%
+   \def\NAT@sep{,}%
+   {\let\protect=\@unexpandable@protect\let~\relax\let\active@prefix=\@gobble
+    \process@cite#3,\@nil}%
+    \save@NAT@citex[#1][#2]{#3}}
+%
+\let\NAT@citex\SemicolonForThree@citex
+%
+\def\process@cite#1,#2\@nil{%
+   \@ifundefined{b@#1}{}{\protected@edef\@Ttemp{\csname b@#1\endcsname}%
+                         \expandafter\NAT@split\@Ttemp
+                         \expandafter\check@threeauthors\NAT@name}%
+   \edef\@Tttemp{#2}\ifx\@Tttemp\@empty\else\process@cite#2\@nil\fi}
+%   
+\def\check@threeauthors#1{\@check@threeauthors#1,\@nil}
+\def\@check@threeauthors#1,#2\@nil{%
+   \edef\@Tttemp{#2}\ifx\@Tttemp\@empty\else\gdef\NAT@sep{;}\fi}
+%% 
+%%
+%% End of file `ARAstroBib.sty'.
