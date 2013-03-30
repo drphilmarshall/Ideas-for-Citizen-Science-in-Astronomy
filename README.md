@@ -5,8 +5,5 @@ far have we got so far? What might the limits be?
 
 Annual Review of Astronomy and Astrophysics (2014), in preparation.
 
-Authors:
-* Phil Marshall
-* Chris Lintott
-* Leigh Fletcher 
+Phil Marshall, Chris Lintott, & Leigh Fletcher 
 (Department of Physics, University of Oxford)
