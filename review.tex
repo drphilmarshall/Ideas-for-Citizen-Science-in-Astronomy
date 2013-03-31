@@ -101,11 +101,11 @@ potential of citizen science be realised, in astronomy? What are the particular
 niches that citizen science can fill, in our field? How might it contribute to
 the solutions of the Big Data problem in astronomy?
 
-{\it In the spirit of citizen science, we plan to crowd-source these questions via a
-blog set up to accompany this article.  Each case study that we cover will be
-opened up for discussion in the comments section, and we will encourage the
-leading proponents to join in that discussion. Likewise, we will encourage
-involvement from the citizens already working in astronomy, and the 
+{\it Somewhat in the spirit of citizen science, we plan to crowd-source these
+questions via a blog set up to accompany this article.  Each case study that we
+cover will be opened up for discussion in the comments section, and we will
+encourage the leading proponents to join in that discussion. Likewise, we will
+encourage involvement from the citizens already working in astronomy, and the 
 community of astronomers collaborating with them. The result will be an open
 conversation which we will distill, with appropriate acknowledgment, into these
 pages.}
@@ -113,10 +113,10 @@ pages.}
 This review is organised as follows. We survey the contributions to science that
 citizens have made to date, organized according to the stage of the scientific
 enquiry that those contributions fell into. Astronomy research typically starts
-with observations: so do we, in \Sref{sec:observers}. We then proceed through a
+with observations: so do we, in \Sref{sec:obs}. We then proceed through a
 discussion of citizen instrumentation, data processing, data modeling and
 finally citizen-led enquiry in 
-Sections~\ref{sec:builders}--\ref{sec:explorers}. With this overview in place,
+Sections~\ref{sec:instr}--\ref{sec:explore}. With this overview in place,
 we review in \Sref{sec:crowd} the literature on, and the collected experience
 of, the population of citizens who have taken part, or are currently taking
 part, in science research, before summarizing progress in citizen science to
@@ -132,27 +132,33 @@ accessibility. Finally, we give some concluding remarks in
 
 % ------------------------------------------------------------------------------
 
-\section{Data Acquisition: Citizen Observers}
-\label{sec:observers}
+\section{Data Acquisition: Citizen obs}
+\label{sec:obs}
 
 Preamble.
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Active Observing}
-\label{sec:observers:active}
+\label{sec:obs:active}
 
 Case studies:
 \begin{itemize}
-\item Planetary observations.
+\item International Meteoroid Association, world coverage.
+\item Planetary observations: JUPOS observers, nightly monitoring. Martian meteorology?
+\item Cometary monitoring.
+\item Asteroid and TNO searching.
 \item Variable nebulae.
 \item Supernova detection.
 \end{itemize}
 
+Niches in long term monitoring, but also short response times.
+Large fields of view and bright objects.
+
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Passive Observing}
-\label{sec:observers:passive}
+\label{sec:obs:passive}
 
 Case studies:
 \begin{itemize}
@@ -163,7 +169,7 @@ Case studies:
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Data Aquisition in Other Fields}
-\label{sec:observers:non-astro}
+\label{sec:obs:non-astro}
 
 Case studies:
 \begin{itemize}
@@ -175,7 +181,7 @@ Case studies:
 % ------------------------------------------------------------------------------
 
 \section{Citizen Instrumentation}
-\label{sec:builders}
+\label{sec:instr}
 
 Observations typically made with citizens own equipment. In some cases this is
 quite advanced, as a result of their own work. 
@@ -183,27 +189,33 @@ quite advanced, as a result of their own work.
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Hardware development by citizens}
-\label{sec:builders:hardware}
+\label{sec:instr:hardware}
 
-History: Grote Reber. Recent examples. Rosing at LCOGT.
+History: Grote Reber. Recent examples. Rosing at LCOGT. Spectroscopy.
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Software development by citizens}
-\label{sec:builders:software}
+\label{sec:instr:software}
 
-Software development: Stumm at astrometry.net.  Collaborative development
-projects with citizens. PlanetHunters, Galaxy Zoo analysis.
+JUPOS measurers: wind measurement. 
+Impact detection.
+
+PlanetHunters, Galaxy Zoo analysis.
+
+Stumm at astrometry.net.  
+
+Collaborative development projects with citizens. 
 
 
 % ------------------------------------------------------------------------------
 
-\section{Data Processing: Citizen Classifiers}
-\label{sec:classifiers}
+\section{Data Processing: Citizen class}
+\label{sec:class}
 
 Preamble. Definition of ``data processing:'' reduction or compression, producing
-summary statistics or descriptors, classifications. Data to knowledge
-(although not necessarily understanding).
+summary statistics or descriptors, classifications. Relationship to data mining.
+Data to knowledge (although not necessarily understanding).
 
 Visual classification in astronomy. Historical tradition. Now largely web-based.
 Concept of ``Zoo.'' 
@@ -214,22 +226,25 @@ grounds that citizens add no information themselves.
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Visual Classification in Astronomy}
-\label{sec:classifiers:astro}
+\label{sec:class:astro}
 
 Astronomy has led the way here.
 
 Case studies:
 \begin{itemize}
 \item Galaxy morphology with Galaxy Zoo
-\item Surfaces of solar system bodies: Moon Zoo, Moonwatch
-\item Transient events: Supernova Zoo, PlanetHunters
+\item Surfaces of solar system bodies: Moon Zoo, Moonwatch. Saturn storms. JUPOS
+measurers.
+\item Time domain astronomy: Supernova Zoo, PlanetHunters
+\item Rapid-reaction events (jovian/lunar impacts, storm/plume eruptions)
+\item Data mining for asteroids and TNOs.
 \end{itemize}
 
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Visual Classification in Other Fields}
-\label{sec:classifiers:non-astro}
+\label{sec:class:non-astro}
 
 What else can we learn, from projects outside astronomy?
 
@@ -237,17 +252,20 @@ What else can we learn, from projects outside astronomy?
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Other Examples of Citizen Data Processing}
-\label{sec:classifiers:non-sensory}
+\label{sec:class:non-sensory}
 
 What else have people been up to, turning raw data in to knowledge?
 
-Image processing, Jupiter. Mars rovers.
-
+Case studies:
+\begin{itemize}
+\item Jupiter: lucky imaging
+\item Mars rover images.
+\end{itemize}
 
 % ------------------------------------------------------------------------------
 
 \section{Data Modeling: Citizen Analysts}
-\label{sec:modelers}
+\label{sec:model}
 
 Preamble: interpreting reduced data, in the context of a model, leads to
 understanding. The modeling part often has technical difficulties that computers
@@ -258,7 +276,7 @@ expensive, likelihood functions.
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Data Modeling in Astronomy}
-\label{sec:modelers:astro}
+\label{sec:model:astro}
 
 Case studies:
 \begin{itemize}
@@ -272,7 +290,7 @@ Case studies:
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Data Modeling in Other Fields}
-\label{sec:modelers:astro}
+\label{sec:model:astro}
 
 Case studies:
 \begin{itemize}
@@ -284,7 +302,7 @@ Case studies:
 % ------------------------------------------------------------------------------
 
 \section{Data Exploration: Citizen Enquiry}
-\label{sec:explorers}
+\label{sec:explore}
 
 Preamble. Free-form investigation led by citizens. Small fraction of citizen
 science activity, but highly instructive to study them. This is the area of
@@ -294,7 +312,7 @@ greatest potential.
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Individuals in action}
-\label{sec:explorers:individuals}
+\label{sec:explore:individuals}
 
 Case studies:
 \begin{itemize}
@@ -306,13 +324,13 @@ Case studies:
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Facilitated research groups}
-\label{sec:explorers:groups}
+\label{sec:explore:groups}
 
 Case studies:
 \begin{itemize}
 \item Galaxy Zoo forum. Voorwerp, Green Peas. Lens thread: search and model.
 \item Planet Hunters' investigations
-\item Deep sky observers (variable nebulae etc). Amateur asteroids.
+\item Deep sky obs (variable nebulae etc). Amateur asteroids.
 \end{itemize}
 
 % ------------------------------------------------------------------------------
@@ -320,7 +338,7 @@ Case studies:
 \section{Understanding the Citizens}
 \label{sec:crowd}
 
-Community first.
+Preamble. Who and why.
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -340,14 +358,24 @@ associated with citizen science.
 
 What motivates citizen scientists?
 
-Raddick et al paper for online classifiers. Motivations of other users. 
+Raddick et al paper for online classification: contributing to science as number
+one motivation. Secondary motives: discovery/legacy.
 
-Benefits to citizens. 
+Benefits to citizens.  Hobby becomes a useful tool. Satisfaction comes from
+working towards improving our understanding of the Universe.
+
+Similarities with professionals. 
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Ethics}
 \label{sec:crowd:ethics}
+
+Relationships between citizens and professionals. Mostly one-way? Examples of
+two-way interactions: zoo forum. Solar system monitoring, spacecraft support.
+
+Breaking down of boundaries. Professionals are citizens when outside their own
+field. Citizens turning professional.
 
 People as ends in themselves. The need to understand black box systems --
 especially if the box is full of people. 
@@ -382,19 +410,33 @@ Who is motivated? Who self-selected?
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-\subsection{Observations in the future}
+\subsection{Observations and Instrumentation in the future}
 \label{sec:future:obs}
 
-Harnessing Telescopes - robotic remote systems for amateurs
+Robotic or automated telescopes to feed data to amateur processors/users for
+immediate analysis.  Long term baselines with the same 
+instrument/calibration.
 
-Eyes on the Sky - low cost photography
+Global telescope networks for continuous monitoring.
+Distributed stations and networks for stellar occultations by TNOs and KBOs. 
+Mobile observing stations and international coordination?
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Video monitoring for meteors from multiple interlinked stations for 3D
+trajectory reconstruction.
 
-\subsection{Instrumentation in the future}
-\label{sec:future:instr}
+Amateur observing follows professional:
+\begin{itemize}
+\item Deeper field for amateur observations of Uranus and Neptune, particularly
+near-IR.
+\item Visible-light and near-IR spectroscopy; long-term datasets, serious
+photometry.  Calibration, calibration, calibration...
+\item Advanced technologies such as AO for image stabilisation?
+\end{itemize}
 
-Where are observing communities headed? Where could they be taken?
+Adoption of uniform standards for amateur imaging to be provided to online
+databases (already underway with PVOL).
+
+
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -413,7 +455,8 @@ Human-computer partnerships. Replacing citizens, see SN Zoo.
 \label{sec:future:models}
 
 Easily installed apps or browser-based tools enable outsourcing of data
-modelling. Operation of code, development of code.
+modelling. Operation of code, development of code. Crowd-sourcing of current
+detailed analyses.
 
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -421,8 +464,10 @@ modelling. Operation of code, development of code.
 \subsection{Scientific enquiry in the future}
 \label{sec:future:enquiry}
 
-Huge public databases. User interfaces designed for anyone. Enable social
-networks. Provide publishing support, see Letters.
+Huge public databases from wide field surveys: LSST, Euclid, SKA. User
+interfaces designed for anyone, with social networking enabled. 
+
+Provide publishing support, see Letters.
 
 
 % ------------------------------------------------------------------------------
