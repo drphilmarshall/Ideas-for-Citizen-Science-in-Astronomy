@@ -13,6 +13,7 @@
 \usepackage{amssymb,amsbsy,psfig}
 \usepackage{xspace}
 \usepackage[usenames]{color}
+\usepackage{graphicx}
 
 \input{macros.tex}
 
@@ -701,10 +702,10 @@ classification projects outside astronomy?
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+\phil{I think citizen software belongs here...}
+
 \subsection{Software development by citizens (\textbf{Phil}, Chris, 1 page)}
 \label{sec:instr:software}
-
-\phil{I think citizen software belongs here...}
 
 JUPOS measurers: wind measurement. 
 Impact detection.
@@ -722,15 +723,15 @@ Collaborative development projects with citizens.
 \section{Data Modeling: Citizen Analysts (4 pages)}
 \label{sec:model}
 
-New understanding of the world comes from the interpretation of data, in the
+New understanding of the world comes from the interpretation of data in the
 context of a model. The modeling activity itself often has technical
 difficulties that computers may find hard to overcome, associated with complex
 and/or computationally expensive, likelihood functions. Humans, by applying
-their developed intuition, can often contribute a great deal to the exploration
-of a model's parameter space by closing in quickly on the model configurations
-that are fit the data well. This process can be particularly satisfying,
-rather like solving a puzzle. How have citizen scientists been involved in
-model making and fitting?
+their developed intuition, can often contribute a great deal to the
+exploration of a model's parameter space by closing in quickly on the model
+configurations that are fit the data well. This process can be particularly
+satisfying, rather like solving a puzzle. How have citizen scientists been
+involved in model making and data fitting in astronomy, to date?
 
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -738,16 +739,90 @@ model making and fitting?
 \subsection{Data Modeling in Astronomy (\textbf{Phil}, Chris, 2 pages)}
 \label{sec:model:astro}
 
-Case studies:
+A number of  web-based citizen astronomy projects include an element of data
+modeling as part of their set tasks. The Milky Way Project
+\citep{SimpsonEtal2012} provides volunteers with a fairly flexible set of
+annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
+in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
+carried out by the Spitzer space telescope, which are hypothesised to have
+been caused by a recently-formed high mass star at the centre of the bubble.
+The (bubble) model in this case is simple and recognisable, making both the
+interface constructions and its operation relatively straightforward. The
+large sample of  bubble models have been used to investigate the possibility
+of further star formation being triggered at the bubble surfaces
+\citep{KendrewEtal2012}.
+
+Another Zooniverse project, Space
+Warps,\footnote{\texttt{http://spacewarps.org}} also involves data modeling,
+but not directly on the interface, which is restricted to enabling
+identification (``spotting'') gravitational lensed images. A fraction of the
+community is engaged in modeling the  identified lens candidates using
+web-based software developed and supported  by the science
+team.\footnote{\texttt{Lens Labs}} 
+
+Perhaps the most advanced attempt at data modeling in astronomical web-based
+citizen science has been the Galaxy Zoo Mergers project
+\citep{HolincheckEtal2010,WallinEtal2010}. Here, simple N-body simulations of
+galaxy mergers were performed in a java applet, and the results selected
+according to visual similarity to images of galaxy mergers (previously
+identified in the Galaxy Zoo project). A key proposal in this project is that
+the inspectors of the simulation outputs would be able to find matches to the
+data more readily than a computer could, for two reasons. First is that humans
+are good at {\it vague} pattern matching: they do not get distracted by
+detailed pixel value comparisons but instead have an intuitive understanding
+of when one object is ``like'' another. The second is that initialising a
+galaxy merger simulation requires a large number of parameters to be set --
+and its this high dimensionality  that makes the space of possible models hard
+to explore for a machine. Humans should be able to navigate the space using
+their intuition, which is partly physical and partly learned from experience
+gained from playing with the system. Initial tests on Arp 86  showed the crowd
+converging on a single location in parameter space, and that the simulated
+mergers at this location do indeed strongly resemble the Arp 86 system. The
+authors have since collected thousands of citizen-generated models for a
+sample of a large number SDSS merging systems (Holincheck et al, in
+preparation). 
+
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[t]
+\begin{minipage}{\linewidth}
+  \begin{minipage}{0.45\linewidth}
+    \centering\includegraphics[width=\linewidth]{figs/SimpsonEtal2012_interface.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.51\linewidth}
+    \centering\includegraphics[width=\linewidth]{figs/SimpsonEtal2012_bubbles.png}
+  \end{minipage}\hfill
+\end{minipage}
+\medskip
+
+\begin{minipage}{\linewidth}
+  \begin{minipage}{0.48\linewidth}
+    \centering\includegraphics[width=\linewidth]{figs/HolincheckEtal2010_comparing.png}
+  \end{minipage}\hfill
+  \begin{minipage}{0.48\linewidth}
+    \centering\includegraphics[width=\linewidth]{figs/HolincheckEtal2010_enhancing.png}
+  \end{minipage}\hfill
+\end{minipage}
+\caption{Examples of image modeling in web-based citizen science projects. Top
+row: star formation ``bubble'' identification and interpretation in Spitzer
+images in the Milky Way Project, with the annotation interface shown on the
+left, and some example (selected, averaged) bubbles on the right. Images from
+\citet{SimpsonEtal2012}. Bottom row: matching N-body simulated merging
+galaxies to SDSS images in the Galaxy Zoo Mergers project (left), and
+exploring parameter space two parameters at a time to refine the models
+(right). Screenshots from \citet{HolincheckEtal2010}.}
+\label{fig:modeling}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
+
+Case studies, without infrastructure provided:
 \begin{itemize}
-\item Neptune encounter
-\item Image modeling: Milky Way Project
 \item Lightcurve analysis: PlanetHunters' offline analysis
-\item Galaxy Zoo mergers
+\item Kaggle challenges: shape estimation, mass clump positioning. 
+\item GREAT challenge, compare and contrast.
 \end{itemize}
 
 % \BLOG{??}{Phil}{What's the most difficult thing a crowd can do?}
-
+% \item Neptune encounter (what is this?!)
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -757,7 +832,7 @@ Case studies:
 Case studies:
 \begin{itemize}
 \item Protein folding with Fold.it. Gamification as a technique.
-\item Other examples? 
+\item Other examples: look around SciStarter. 
 \end{itemize}
 
 % \BLOG{??}{Phil}{Who's really doing all the work?}
