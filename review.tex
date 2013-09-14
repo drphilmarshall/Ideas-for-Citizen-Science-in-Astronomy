@@ -408,7 +408,14 @@ threading our solar system; identify previously unrecognised meteor showers;
 and determine the statistics of potentially hazardous encounters with this
 extra-terrestrial material. 
  
+ 
+\subsubsection{``Deep Sky'' Observing}
 
+{\bf Chris: We need to cover the various amateur efforts observing objects
+outside the solar system. Activities I am aware of are: variable star
+community; visual supernovae spotting; John Johnson's collaboration with an
+expert amateur. Can you write what you know, and suggest pointers for me to
+follow up please? Thanks!}
 
 
 
@@ -416,17 +423,17 @@ extra-terrestrial material.
 
 % \BLOG{2}{Chris}{Are these the top 5 amateur contributions to astronomy?}
 
-Short case studies:
-\begin{itemize}
-\item Impacts on planets, the Moon. 
-\item International Meteoroid Association, world coverage.
-\item Planetary observations: JUPOS observers, nightly monitoring. 
-        Martian meteorology?
-\item Cometary monitoring.
-\item Asteroid and TNO searching.
-\item Variable nebulae.
-\item Supernova detection.
-\end{itemize}
+% Short case studies:
+% \begin{itemize}
+% \item Impacts on planets, the Moon. 
+% \item International Meteoroid Association, world coverage.
+% \item Planetary observations: JUPOS observers, nightly monitoring. 
+%         Martian meteorology?
+% \item Cometary monitoring.
+% \item Asteroid and TNO searching.
+% \item Variable nebulae.
+% \item Supernova detection.
+% \end{itemize}
 
 % \BLOG{3}{Leigh}{Will we see it coming? 
 % How we might better monitor impacts on other worlds.}
@@ -857,11 +864,50 @@ same way that Galaxy Zoo has by the astronomical community.
 
 \item Time domain astronomy: Supernova Zoo, PlanetHunters
 
-If citizen science is a way of dealing with `big data' then it is perhaps useful to remember that data sets can be big enough to be problematic in a variety of ways; the XXXX CITE XXXX describes the `three V's' of Big Data - volume, velocity and variety. With the increasing prominence of time-domain astronomy, astronomical projects requiring immediate inspection of live data can also benefit from citizen science. While transients such as supernovae or asteroids can often be found through the use of automatic routines, visual inspection is still used by many teams as part of the process of selecting candidates for follow-up. 
+If citizen science is a way of dealing with `big data' then it is perhaps
+useful to remember that data sets can be big enough to be problematic in a
+variety of ways; the XXXX CITE XXXX describes the `three V's' of Big Data -
+volume, velocity and variety. With the increasing prominence of time-domain
+astronomy, astronomical projects requiring immediate inspection of live data
+can also benefit from citizen science. While transients such as supernovae or
+asteroids can often be found through the use of automatic routines, visual
+inspection is still used by many teams as part of the process of selecting
+candidates for follow-up. 
 
-The most successful attempt to use crowdsourcing to attack these problems was an offshoot of Galaxy Zoo described in Smith et al. Data from the Palomar Transient Factory XXX CITE XXX was automatically processed and images of candidate supernovae uploaded on a nightly basis; this triggered an email to volunteers who, upon responding were shown the new image, a reference image and the subtraction between the two. By analyzing the answers to a series of questions, candidates were sorted into three categories, roughly corresponding to `probable supernova', 'likely astrophysical but non-supernova transient' and `artifact'. The results were displayed on a webpage and used to select targets for follow-up. Despite the site attracting many fewer classifiers than the main Galaxy Zoo, it was highly effective in sorting through data with consensus typically reached on all images within 15 minutes of the initial email being sent. 
+The most successful attempt to use crowdsourcing to attack these problems was
+an offshoot of Galaxy Zoo described in Smith et al. Data from the Palomar
+Transient Factory XXX CITE XXX was automatically processed and images of
+candidate supernovae uploaded on a nightly basis; this triggered an email to
+volunteers who, upon responding were shown the new image, a reference image
+and the subtraction between the two. By analyzing the answers to a series of
+questions, candidates were sorted into three categories, roughly corresponding
+to `probable supernova', 'likely astrophysical but non-supernova transient'
+and `artifact'. The results were displayed on a webpage and used to select
+targets for follow-up. Despite the site attracting many fewer classifiers than
+the main Galaxy Zoo, it was highly effective in sorting through data with
+consensus typically reached on all images within 15 minutes of the initial
+email being sent. 
 
-Archive projects such as the main Galaxy Zoo have the luxury of being able to be inefficient. When the appetite of volunteers for classification is high, and little of consequence is attached to finishing the task in, for example, three months instead of six, there is little incentive to direct attention efficiently. A random assignment of task to classifier thus, in most cases, suffices, but this is not true when rapid classification is important (or in the case of larger datasets). Using the supernova project's archive as a test, Simpson et al. developed a Bayesian method for assessing classifier performance; in this view, each classification provides information both about the subject of the classification and about the classifier themselves. Classifier performance given subject properties can thus be predicted and an optimum set of task assignments calculated. For systems involving tens of thousands of classifiers and perhaps a similar volume of subjects to be classified, an exact solution is computationally extremely expensive, but a MCMC approach can be used to find efficient solutions. Work by Simpson et al., as well as Horvitz et al and Waterhouse on Galaxy Zoo data, suggests that accuracy can be maintained with as few as 30\% of classifications. This sort of optimization will be increasingly important for online citizen science, but a major challenge remains in incorporating this sort of analysis in live systems rather than using archive data. 
+Archive projects such as the main Galaxy Zoo have the luxury of being able to
+be inefficient. When the appetite of volunteers for classification is high,
+and little of consequence is attached to finishing the task in, for example,
+three months instead of six, there is little incentive to direct attention
+efficiently. A random assignment of task to classifier thus, in most cases,
+suffices, but this is not true when rapid classification is important (or in
+the case of larger datasets). Using the supernova project's archive as a test,
+Simpson et al. developed a Bayesian method for assessing classifier
+performance; in this view, each classification provides information both about
+the subject of the classification and about the classifier themselves.
+Classifier performance given subject properties can thus be predicted and an
+optimum set of task assignments calculated. For systems involving tens of
+thousands of classifiers and perhaps a similar volume of subjects to be
+classified, an exact solution is computationally extremely expensive, but a
+MCMC approach can be used to find efficient solutions. Work by Simpson et al.,
+as well as Horvitz et al and Waterhouse on Galaxy Zoo data, suggests that
+accuracy can be maintained with as few as 30\% of classifications. This sort
+of optimization will be increasingly important for online citizen science, but
+a major challenge remains in incorporating this sort of analysis in live
+systems rather than using archive data. 
 
 \item Rapid-reaction events (jovian/lunar impacts, storm/plume eruptions)
 \item Data mining for asteroids and TNOs.
