@@ -22,12 +22,16 @@ Issues:
 Introduction (2 pages)
 ---------------------------------------------
 
-OK, page limit hit dead on. No references, is this a problem?
+* OK, page limit hit dead on. No references, is this a problem?
 
 
 Data Acquisition: Citizen Observing (5 pages)
 ---------------------------------------------
 
+* Active observing is 9 pages, not 3!
+* Very light on "deep sky" observing: AAVS, SNe, etc?
+* Passive observing needs Geert's blog post
+* Instrumentation is solar system only...
 
 
 Data Processing (6 pages)
