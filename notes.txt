@@ -19,6 +19,17 @@ Concluding Remarks (1 page)
 Issues:
 -------
 
+General
+---------------------------------------------
+
+* Currently too much emphasis on solar system (need to balance out Leigh's effort!)
+
+* We must not omit important work! How to safeguard this without the blog?
+
+* Review is over-length, without figures: strict editing will be needed.
+
+
+
 Introduction (2 pages)
 ---------------------------------------------
 
@@ -84,9 +95,9 @@ The Limits of Citizen Science (3 pages)
 * Write about accessibility limits
 
 
-
 Concluding Remarks (1 page)
 ---------------------------------------------
 
 * Write up guidelines for good citizen science, in general. Iteration/discussion with Chris. Do this last!
+
 
