@@ -1,0 +1,53 @@
+
+Notes on Citizen Astronomy Review
+=================================
+
+Layout:
+-------
+
+Introduction (2 pages)
+Data Acquisition: Citizen Observing (5 pages)
+Data Processing (6 pages)
+Data Modeling: Citizen Analysts (4 pages)
+Citizen-led Enquiry (3 pages)
+Understanding the Citizens (2 pages)
+Ideas for the future (4 pages)
+The Limits of Citizen Science (3 pages)
+Concluding Remarks (1 page)
+
+
+Issues:
+-------
+
+Introduction (2 pages)
+---------------------------------------------
+
+OK, page limit hit dead on. No references, is this a problem?
+
+
+Data Acquisition: Citizen Observing (5 pages)
+---------------------------------------------
+
+
+
+Data Processing (6 pages)
+---------------------------------------------
+
+Data Modeling: Citizen Analysts (4 pages)
+---------------------------------------------
+
+Citizen-led Enquiry (3 pages)
+---------------------------------------------
+
+Understanding the Citizens (2 pages)
+---------------------------------------------
+
+Ideas for the future (4 pages)
+---------------------------------------------
+
+The Limits of Citizen Science (3 pages)
+---------------------------------------------
+
+Concluding Remarks (1 page)
+---------------------------------------------
+
