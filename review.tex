@@ -653,11 +653,8 @@ instead of data being supplied by citizen observers for analysis by
 professionals data gathered by highly specialized and dedicated professional
 projects are passed to volunteers for analysis. 
 
-Case studies:
-\begin{itemize}
 
-\item Stardust@home
-
+\CaseStudy{Stardust@home}
 While significant preliminary work had been carried out by NASA's clickworkers
 project (see below), the project that first illustrated the potential of
 crowdsourcing for astronomical purposes was Stardust@home. This effort, which
@@ -683,8 +680,7 @@ XXXX Add references
 % connotations because it's just too tedious to keep writing 'distributed
 % analysis citizen science' or something like that. Other suggestions welcome. 
 
-\item Galaxy morphology with Galaxy Zoo
-
+\CaseStudy{Galaxy morphology with Galaxy Zoo}
 These results directly inspired the development of Galaxy Zoo, perhaps the
 most prominent scientific crowdsourcing project to date. Galaxy Zoo was built
 on the continued importance of morphological classification of galaxies. First
@@ -739,7 +735,7 @@ With sufficient effort to ensure each galaxy is classified multiple times (as
 many as 80 for many Galaxy Zoo images), these independent classifications need
 to be combined into a consensus. As discussed in later sections, this can
 become complex but for Galaxy Zoo a simple weighting which rewards
-consistency, first described in Land et al., was suffucient. Importantly,
+consistency, first described in Land et al., was sufficient. Importantly,
 combining classifications provides not only the assignment of a label but, in
 the vote fraction in a particular category, an indication of the reliability
 of the classification. This allows more subtle biases, such as the propensity
@@ -754,55 +750,13 @@ A full review of Galaxy Zoo science is beyond the scope of this review; a
 recent summary is given in the Galaxy Zoo 2 data release paper by Willett et
 al. However, it is worth noting that many of the project's most important
 results have been the result not of interaction with the main interface but
-represent rather serendipitous discoveries made by participants. The best
-known such system is `Hanny's Voorwerp' (Lintott et al.), a galaxy-scale light
-echo which reveals a recent ($\sim 100000$ years) shutdown of AGN activity in
-IC 2497, the neighboring spiral galaxy. The discovery of the Voorwerp, first
-recorded in the Galaxy Zoo forum a few weeks after the project started,
-inspired a more systematic search for similar phenomena in other galaxies.
-This project, made possible by the deep engagement of Galaxy Zoo team member
-Bill Keel in the forum community, succeeding in finding more than forty
-instances of clouds which appear to have been ionized by AGN activity, in
-systems a third of which show signs of significant drops in activity on a
-timescale of tens of thousands of years. 
-
-The ability of volunteers to carry out their own research, moving far beyond
-the mere `clockwork' required by the main interface, is best illustrated by
-the discovery of the Galaxy Zoo Peas. These small, round and, in SDSS imaging,
-green systems are dwarf systems with specific star formation rates (SFR per
-unit mass) which are unprecedented in the local Universe, matched only by
-high-redshift Lyman-break galaxies. Volunteers not only identified these
-systems, but organized a systematic search and further review of them,
-including using tools designed by SDSS for professional astronomers to acquire
-and study spectral data. The discovery of the Peas marked the first time the
-Galaxy Zoo team realized the potential of the community of citizen scientists
-the project had acquired, but it is important to note that the simpler,
-initial interaction provided by the main interface was necessary in order to
-develop that community in the first place. The participants in the citizen
-scientists' investigation of the Peas did not arrive on the site wanting to
-dig into spectra or confident of their ability to do so; these were the
-results of their participation. The project is, in addition to producing
-science, acting as an `engine of motivation' in inspiring its participants to
-become more involved. 
-
-We have dwelt on Galaxy Zoo at length because it allows us to clearly see the
-key advantages of crowdsourcing as a solution to scientific data analysis. It
-is capable of \emph{scaling} to the size of modern data sets to produce
-results of scientific value. It enables \emph{serendipity}, giving individual
-attention to each image and allowing the identification of (and advocacy for)
-systems which are literally one in a million such as Hanny's Voorwerp. The
-large datasets it produces, and in particular the ability to quantify
-uncertainty, improve \emph{machine learning} by providing large, rich training
-sets. Last but not least, crowdsourcing projects have enormous
-\emph{educational} potential, teaching participating volunteers about science
-and about the process of science even when that is not the explicit goal of
-the project. 
-
-xxxx More references 
+represent rather serendipitous discoveries made by participants. We return to
+these in Section~\ref{sec:explore} below.
 
 
-\item Surfaces of solar system bodies: Moon Zoo, Moonwatch. Saturn storms.
-JUPOS measurers.
+
+\CaseStudy{Surfaces of solar system bodies}
+Moon Zoo, Moonwatch.
 
 If studying galaxies remains, at least in part, a visual pursuit, then the
 same is certainly true of planetary science. NASA's clickworkers, which asked
@@ -816,13 +770,11 @@ although preliminary results have been promising these projects have yet to
 produce datasets that have been used by the planetary science community in the
 same way that Galaxy Zoo has by the astronomical community. 
 
-%Saturn and JUPOS to be added - I don't know much about either. 
-
 % Is this too negative? I wanted to go on to say lots about the need for
 % serious effort to make use of classifications, but felt it was perhaps better
 % to leave it there and move on. 
 
-\item Time domain astronomy: Supernova Zoo, PlanetHunters
+\CaseStudy{Time domain astronomy: Supernova Zoo}
 
 If citizen science is a way of dealing with `big data' then it is perhaps
 useful to remember that data sets can be big enough to be problematic in a
@@ -869,10 +821,8 @@ of optimization will be increasingly important for online citizen science, but
 a major challenge remains in incorporating this sort of analysis in live
 systems rather than using archive data. 
 
-\item Rapid-reaction events (jovian/lunar impacts, storm/plume eruptions)
-\item Data mining for asteroids and TNOs.
-\end{itemize}
-
+% \item Rapid-reaction events (jovian/lunar impacts, storm/plume eruptions)
+% \item Data mining for asteroids and TNOs.
 
 % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 % 
@@ -888,11 +838,10 @@ systems rather than using archive data.
 % \item etc.
 % \end{itemize}
 % 
-% 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 
-\subsection{Software development by citizens (\textbf{Phil}, Chris, 1 page)}
+\subsection{Software development by citizens (1 page)}
 \label{sec:instr:software}
 
 JUPOS measurers: wind measurement. 
@@ -928,8 +877,10 @@ involved in model making and data fitting in astronomy, to date?
 \label{sec:model:astro}
 
 A number of  web-based citizen astronomy projects include an element of data
-modeling as part of their set tasks. The Milky Way Project
-\citep{SimpsonEtal2012} provides volunteers with a fairly flexible set of
+modeling as part of their set tasks. 
+
+\CaseStudy{The Milky Way Project}
+\citet{SimpsonEtal2012} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
 carried out by the Spitzer space telescope, which are hypothesised to have
@@ -940,16 +891,17 @@ large sample of  bubble models have been used to investigate the possibility
 of further star formation being triggered at the bubble surfaces
 \citep{KendrewEtal2012}.
 
-Another Zooniverse project, Space
-Warps,\footnote{\texttt{http://spacewarps.org}} also involves data modeling,
-but not directly on the interface, which is restricted to enabling
-identification (``spotting'') gravitational lensed images. A fraction of the
-community is engaged in modeling the  identified lens candidates using
-web-based software developed and supported  by the science
-team.\footnote{\texttt{Lens Labs}} 
+% Another Zooniverse project, Space
+% Warps,\footnote{\texttt{http://spacewarps.org}} also involves data modeling,
+% but not directly on the interface, which is restricted to enabling
+% identification (``spotting'') gravitational lensed images. A fraction of the
+% community is engaged in modeling the  identified lens candidates using
+% web-based software developed and supported  by the science
+% team.\footnote{\texttt{Lens Labs}} 
 
-Perhaps the most advanced attempt at data modeling in astronomical web-based
-citizen science has been the Galaxy Zoo Mergers project
+\CaseStudy{Galaxy Zoo: Mergers}
+This has been perhaps the most advanced attempt at data modeling in 
+astronomical web-based citizen science
 \citep{HolincheckEtal2010,WallinEtal2010}. Here, simple N-body simulations of
 galaxy mergers were performed in a java applet, and the results selected
 according to visual similarity to images of galaxy mergers (previously
@@ -1027,6 +979,7 @@ their own software. For example, in the PlanetHunters project, a small group
 community-selected candidates, and fitted transit lightcurves to them using
 [?]. [Chris: can you please confirm and extend this?]
 
+\CaseStudy{Weak Lensing Data Challenges}
 Another very interesting case is that of the analysis challenges organised by
 the professional cosmology community.  The measurement of weak gravitational
 lensing by large scale structure (``cosmic shear'') relies on the measurement
@@ -1042,7 +995,9 @@ still professional researchers). A companion, somewhat streamlined galaxy
 shape measurement challenge, ``Mapping Dark Matter,'' which was hosted at the
 Kaggle website\footnote{\texttt{http://www.kaggle.com/c/mdm}} 
 \citep{KitchingEtal2013b}. The wider reach of this platform led to over 70
-teams making over 700 entries to the competition; in a comparison with the
+teams making over 700 entries to the competition; many of the teams did not
+contain professional astronomers, although most were still from academia.
+In a comparison with the
 GREAT challenges, the authors found a factor of several improvement in shear
 accuracy over comparable previous challenges. \citet{KitchingEtal2013b}
 suggest two interesting explanations for the success of the Kaggle challenge.
@@ -1070,17 +1025,17 @@ infrastructure and challenge rules (D.~Harvey, priv.~comm.).
 
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-\subsection{Data Modeling in Other Fields (2 pages)}
-\label{sec:model:astro}
-
-Case studies:
-\begin{itemize}
-\item Protein folding with Fold.it. Gamification as a technique.
-\item Other examples? 
-\end{itemize}
-
-
+% 
+% \subsection{Data Modeling in Other Fields (2 pages)}
+% \label{sec:model:astro}
+% 
+% Case studies:
+% \begin{itemize}
+% \item Protein folding with Fold.it. Gamification as a technique.
+% \item Other examples? 
+% \end{itemize}
+% 
+% 
 % ------------------------------------------------------------------------------
 
 \section{Citizen-led Enquiry (3 pages)}
@@ -1089,83 +1044,102 @@ Case studies:
 The previous sections have focused on specific, and isolated, activities in
 which citizens have participated. In most cases, the community's involvement has
 been a {\it contribution} to a scientific investigation, while not being
-involved in the design of the investigation. The most important part of any
-scientific investigation is the question at the heart of it: what is it we are
+involved in the design of that investigation. The most important part of any
+scientific investigation is the question at its heart: what is it we are
 trying to find out about the world? In this section we look at some cases where
-the process of enquiry, the science, has been instigated or led by citizens.  In
-principle, this is an area of great potential. Professional scientists can find
-it very difficult to step back from the technical details of their work, and see
-the bigger picture; in contrast, outsiders only see the big picture, and  so we
-might expect them to ask some unusual, surprising and searching questions. 
+the process of enquiry, the science, has been instigated or led by citizens.  
+
+In principle, this is an area of great potential. The constraints of funding
+proposals and management of research groups can often mean that professional
+scientists focus very narrowly on particular topics of research, using a
+particular technique for which they become known.  Steering away from this
+course implies taking risks with time management, and allocation of resources to
+an ultimately fruitless research area can be detrimental to careers.  Citizen
+scientists are largely free of these managerial and budgetary constraints, and
+are able to devote their attentions to whatever topics interest them: we might
+expect outsiders to ask some unusual questions, and make connections and
+suggestions that highly focused professionals may not have thought of. What are
+some enquiries that citizens have led in astronomy to date, and how have they
+been enabled and supported?
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\CaseStudy{Saturn Storm Watch.} 
+In this project, Cassini's observations of lightning emissions are connected
+with active amateur observations of convective cloud structures within the giant
+planet atmosphere; and the tracking of the vertices of Saturn's bizarre north
+polar hexagon \citep{88godfrey}, a 6-sided planet encircling wave that has
+persisted for at least 30 years but that has only recently been observed, by
+amateur astronomers.  In the first case, citizen scientists wished to identify
+the source of Saturn's radio emissions.  In the latter case, the long-term
+evolution of the hexagon vertices is being used to understand what sort of wave
+this is, and to identify its origins.
 
-\subsection{Individuals in action (Phil to edit, 1 page)}
-\label{sec:explore:individuals}
-
-The constraints of funding proposals and management of research groups can
-often mean that professional scientists focus very narrowly on particular
-topics of research, using a particular technique for which they become known. 
-Steering away from this course implies taking risks with time management, and
-allocation of resources to an ultimately fruitless research area can be
-detrimental to careers.  Citizen scientists are largely free of these
-managerial and budgetary constraints, and are able to devote their attentions
-to whatever topics interest them.  We propose that the creativity of citizen
-scientists, and the freedom to ask questions and direct scientific enquiry, is
-nurtured by the creation of communities.  These can be online communities,
-with individuals contributing ideas via discussion groups and challenging one
-another; or they can be ready-made communities, such as school classes and
-family groups. 
-
-Online forums arguably provide the most direct connection between citizens and
-professional scientists, and have already been discussed in this review. 
-Examples of individual successes include the ?Saturn Storm Watch? connecting
-Cassini?s observations of lightning emissions with active amateur observations
-of convective cloud structures within the giant planet atmosphere; and the
-tracking of the vertices of Saturn?s bizarre north polar hexagon
-\citep{88godfrey}, a 6-sided planet encircling wave that has persisted for at
-least 30 years but that has only recently been observed by amateur
-astronomers.  In the first case, citizen scientists wished to identify the
-source of Saturn?s radio emissions.  In the latter case, the long-term
-evolution of the hexagon vertices is being used to understand what sort of
-wave this is, and to identify its origins.
-
-Astronomy as an educational tool has been used to encourage a whole new
-generation of citizen astronomers, and the aid of teachers in guiding and
-encouraging the enquiries of school children is essential for the teaching of
-the scientific method.  The Faulkes telescope is an excellent example of
-citizen-led enquiry ? both student-devised and teacher-led investigations can
-be performed at the network of robotic observatories in Hawaii and Australia,
-allowing students to develop scientific questions using their own data and
-collaboration with other students around the world.  A selection of some of
-these projects can be found here: 
-http://www.faulkes-telescope.com/showcases/schools.  Other observatories
-around the world have telescopes devoted to citizen enquiry ? the Pic-du-Midi
-observatory\footnote{http://www.obs-mip.fr/pic-du-midi} in the French Pyrenees
-has a 0.6-m telescope devoted to amateur observers.   For example, in 2013 M.
-Delacroix used the 1-m observatory to image details on Uranus and
-Neptune\footnote{http://www.cloudynights.com/ubbthreads/showflat.php/Cat/0/Number/5955129/page/0/view/collapsed/sb/5/o/all/fpart/1/vc/1}.
-
-Case studies:
-\begin{itemize}
-\item Teacher-led science: Blackawton Bees. 
-\item Families as research groups: Monster eyes. % http://blogs.discovermagazine.com/notrocketscience/2012/10/30/12-year-old-uses-dungeons-and-dragons-to-help-scientist-dad-with-his-research/
-\end{itemize}
+% \CaseStudy{Online Observing} 
+% The Faulkes telescope is an excellent example of a facility enabling citizen-led
+% enquiry: both student-devised and teacher-led investigations can be performed at
+% the network of robotic observatories in Hawaii and Australia, allowing students
+% to develop scientific questions using their own data and collaboration with
+% other students around the world.  A selection of some of these projects can be
+% found on the observatory
+% website.\footnote{\texttt{http://www.faulkes-telescope.com/showcases/schools}}. 
+% Other observatories around the world have telescopes devoted to citizen enquiry:
+% the Pic-du-Midi observatory\footnote{http://www.obs-mip.fr/pic-du-midi} in the
+% French Pyrenees has a 0.6-m telescope devoted to amateur observers.   For
+% example, in 2013 M.~Delacroix used the 1-m observatory to image details on
+% Uranus and
+% Neptune\footnote{http://www.cloudynights.com/ubbthreads/showflat.php/Cat/0/Number/5955129/page/0/view/collapsed/sb/5/o/all/fpart/1/vc/1}.
+% \phil{1-m or 0.6m? Mention Bradford Telescope.}.
 
 
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\CaseStudy{The Galaxy Zoo Forum.}
+The best known serendipitous discovery emerging from the Galaxy Zoo project is
+`Hanny's Voorwerp' (Lintott et al.), a galaxy-scale light echo which reveals a
+recent ($\sim 100000$ years) shutdown of AGN activity in IC 2497, the
+neighboring spiral galaxy. The discovery of the Voorwerp was first recorded in
+the Galaxy Zoo forum a few weeks after the project started, and inspired a more
+systematic search for similar phenomena in other galaxies. This project, made
+possible by the deep engagement of Galaxy Zoo team member Bill Keel in the forum
+community, succeeding in finding more than forty instances of clouds which
+appear to have been ionized by AGN activity, in systems a third of which show
+signs of significant drops in activity on a timescale of tens of thousands of
+years. 
 
-\subsection{Facilitated research groups (\textbf{Chris}, Phil, 2 pages)}
-\label{sec:explore:groups}
+The ability of the Zoo volunteers to carry out their own research, moving far
+beyond the mere `clockwork' required by the main interface, is best illustrated
+by the discovery of the Galaxy Zoo Peas. These small, round and, in SDSS
+imaging, green systems are dwarf systems with specific star formation rates (SFR
+per unit mass) which are unprecedented in the local Universe, matched only by
+high-redshift Lyman-break galaxies. Volunteers not only identified these
+systems, but organized a systematic search and further review of them, including
+using tools designed by SDSS for professional astronomers to acquire and study
+spectral data. 
 
-Case studies:
-\begin{itemize}
-\item Galaxy Zoo forum. Voorwerp, Green Peas. Lens thread: search and model.
-\item Planet Hunters' investigations
-\item Quench.
-\item Deep sky obs (variable nebulae etc). Amateur asteroid observations and follow-up.
-\end{itemize}
+The discovery of the Peas marked the first time the Galaxy Zoo team realized the
+potential of the community of citizen scientists the project had acquired, but
+it is important to note that the simpler, initial interaction provided by the
+main interface was necessary in order to develop that community in the first
+place. The participants in the citizen scientists' investigation of the Peas did
+not arrive on the site wanting to dig into spectra or confident of their ability
+to do so; these were the results of their participation. The project is
+acting as an `engine of motivation' in inspiring
+its participants to become more involved. 
+
+
+Participants in citizen science projects like Galaxy Zoo and Saturn Storm Watch 
+are highly motivated but geographically widely distributed; the impact of the
+internet in enabling them to find each other and collaborate is remarkable. The
+most recent Zooniverse astronomy project, Galaxy Zoo: Quench, is actively
+encouraging citizen-led enquiry, by providing flexible tools for investigating
+not individual objects but samples of galaxies classified in the main Galaxy Zoo
+project. It is an experiment in citizen-driven scientific investigation, and we
+await its results with interest.
+
+% \CaseStudy{Quench}
+% 
+% \CaseStudy{BAA Deep Sky Observers: variable nebulae}
+% 
+% \CaseStudy{Amateur asteroid observations and follow-up.}
+
 
 % ------------------------------------------------------------------------------
 
@@ -1266,7 +1240,8 @@ Their thirst for knew information, and the  desire to be part of the
 scientific process drives them to actively observe the  night sky or to
 participate in analysis of large datasets.  
 
-For many people involved in citizen science, being part of a community, 
+For the more motivated people involved in citizen science, being part of a
+community, 
 albeit a distributed one, that brings great enjoyment and satisfaction.  With
 the connectivity of the internet, there is a social  aspect of citizen science
 that unites people with shared interests.   These pastimes and hobbies are
@@ -1426,6 +1401,9 @@ process?
 
 \subsection{Limits to collaboration}
 \label{sec:limits:collab}
+Online discussion forums also 
+arguably provide the most direct connection between citizens and professional
+scientists, and have already featured in this review.  
 
 Collaboration between professional and citizen astronomers. Does it scale?
 Communication issues: forum, letters. Contrast supervisor to student, with
@@ -1435,6 +1413,12 @@ citizens, eventually linked to professionals?
 Relationships between citizens and professionals. Mostly one-way? Examples of
 two-way interactions: zoo forum, solar system monitoring, spacecraft support.
 
+% \CaseStudy{Blackawton Bees}
+% Teacher-led science.
+% 
+% \CaseStudy{Monster eyes}
+% Families as research groups. 
+% % http://blogs.discovermagazine.com/notrocketscience/2012/10/30/12-year-old-uses-dungeons-and-dragons-to-help-scientist-dad-with-his-research/
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -1460,8 +1444,26 @@ field. Citizens turning professional.
 
 % ------------------------------------------------------------------------------
 
-\section{Concluding Remarks: Characteristics of Successful Citizen Science (1 page)}
+\section{Concluding Remarks (1 page)}
 \label{sec:conclusions}
+
+
+We have dwelt on Galaxy Zoo at length because it allows us to clearly see the
+key advantages of crowdsourcing as a solution to scientific data analysis. It
+is capable of \emph{scaling} to the size of modern data sets to produce
+results of scientific value. It enables \emph{serendipity}, giving individual
+attention to each image and allowing the identification of (and advocacy for)
+systems which are literally one in a million such as Hanny's Voorwerp. The
+large datasets it produces, and in particular the ability to quantify
+uncertainty, improve \emph{machine learning} by providing large, rich training
+sets. Last but not least, crowdsourcing projects have enormous
+\emph{educational} potential, teaching participating volunteers about science
+and about the process of science even when that is not the explicit goal of
+the project. 
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+{\it Characteristics of Successful Citizen Science:}
 
 To emerge.
 
