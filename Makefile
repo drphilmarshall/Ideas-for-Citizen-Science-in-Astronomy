@@ -1,7 +1,7 @@
 all: pdf
 
 clean:
-	rm -f *.aux *.log *.dvi *.bbl *.blg *.out *.toc review.pdf
+	@rm -f *.aux *.log *.dvi *.bbl *.blg *.out *.toc review.pdf
 
 pdf: review.pdf
 

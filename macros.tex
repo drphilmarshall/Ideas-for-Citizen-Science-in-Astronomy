@@ -33,9 +33,13 @@
 % \newcommand{\TODO}[1]{\textcolor{blue}{\bf To be written: #1}}
 
 % COMMENTING
-\newcommand{\phil}[1]{\textcolor{red}{\bf Phil: #1}}
-\newcommand{\chris}[1]{\textcolor{red}{\bf Chris: #1}}
-\newcommand{\leigh}[1]{\textcolor{red}{\bf Leigh: #1}}
-\newcommand{\todo}[2]{{\bf \it TODO: #1: #2}}
-\newcommand{\query}[2]{{\it \textcolor{red}{Q: #1: #2}}}
-\newcommand{\answer}[2]{{\it \textcolor{red}{A: #1: #2}}}
+
+\definecolor{purple}{RGB}{150,0,200}
+\definecolor{pine}{RGB}{0,150,0}
+\definecolor{brown}{RGB}{170,40,40}
+\newcommand{\phil}[1]{\bf \textcolor{purple}{#1}}
+\newcommand{\chris}[1]{\bf \textcolor{pine}{#1}}
+\newcommand{\leigh}[1]{\bf \textcolor{brown}{#1}}
+\newcommand{\todo}[2]{{\bf \textcolor{red}{TO-DO: #1: #2}}}
+\newcommand{\question}[2]{{\bf \textcolor{blue}{Question for #1: #2}}}
+\newcommand{\answer}[2]{{\bf \textcolor{blue}{Answer from #1: #2}}}
