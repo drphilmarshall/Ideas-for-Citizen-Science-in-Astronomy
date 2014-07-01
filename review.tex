@@ -339,7 +339,7 @@ blown east and west by powerful zonal jets.  The jet velocities, and the
 dispersion of cloud material, reveals processes at work beneath the visible
 ammonia ice clouds, and serve as a probe of the fluid dynamics at work. 
 Tracking the motion of features requires correlation of images obtained night
-after night; with filters sounding in and out of strong Jovian methane
+after night; with filters sounding in and out of strong jovian methane
 absorption features providing a three dimensional view of the planet's cloud
 decks.  Both colour composites and raw filtered images are uploaded to online
 servers, organised by date and time, such as the Planetary Virtual Observatory
@@ -430,7 +430,7 @@ international campaign of professional observations to understand the
 asteroidal collision that had created the scar
 \citep[e.g.,][]{10depater,11orton}.  As observers use video imaging to capture
 their images (see \Sref{}), those videos have also been used to
-identify flashes due to meteors in the Jovian atmosphere.  At least three
+identify flashes due to meteors in the jovian atmosphere.  At least three
 flashes were confirmed between 2010 and 2012, and the light curves used to
 determine the sizes and frequency of objects colliding with Jupiter
 \citep[e.g.,][]{10hueso}. 
@@ -577,6 +577,7 @@ computing jobs that can be farmed out to grids of computers owned by citizens.
 Distributed ``grid'' computing does not fit our definition of citizen science, 
 since it lacks the intellectual contribution element.
 
+\todo{Phil}{Condense this preamble right down}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -589,27 +590,30 @@ development has translated directly into new knowledge is in the monitoring of
 giant planet meteorology, both using images provided by active observers, and
 images acquired and archived by professional facilities and spacecraft. 
 Images are regularly qualitatively described by a number of organisations,
-including the British Astronomical Association?s Jupiter
+including the British Astronomical Association's Jupiter
 section\footnote{http://www.britastro.org/jupiter/}, by a team of amateurs
 with substantial expertise in Jupiter's appearance \citep{95rogers}.  Their
 regular bulletins describe the changing appearance of the banded structure,
 the emergence of new turbulent structures and weather phenomena, and keep a
 record of the long-term atmospheric changes.  However, recent software
 developments have provided a much more quantitative angle on these
-observations.  The WinJUPOS
-software\footnote{http://jupos.privat.t-online.de/} was developed by a team of
-amateurs led by G. Hahn.  This allows multiple images to be stacked with a
-correction for the rapid (once per ten hour) rotation of Jupiter or Saturn,
-then reprojected onto a latitude-longitude coordinate system, so that the
-precise positional details of atmospheric features can be determined via
-?point-and-click.?  By doing this over many nights surrounding Jupiter?s
+observations.  
+
+\todo{Phil}{Condense the above paragraph and focus on image processing.}
+
+The WinJUPOS software\footnote{http://jupos.privat.t-online.de/} was developed
+by a team of amateurs led by G. Hahn; it allows multiple images to be stacked
+with a correction for the rapid (once per ten hour) rotation of Jupiter or
+Saturn, then reprojected onto a latitude-longitude coordinate system, so that
+the precise positional details of atmospheric features can be determined via
+``point-and-click.''  By doing this over many nights surrounding Jupiter's
 opposition, the team builds up enormous drift charts (tens of thousands of
 positional measurements) for features, ranging from the tiniest convective
-feature being moved by the jet streams, to the largest vortices.  The
-positions can be extrapolated forward in time, enabling targeted observations
-by professional observatories or even visiting spacecraft.  This long-term
-record of Jupiter?s visible appearance by citizen scientists has proven
-invaluable for jovian atmospheric scientists.
+feature being moved by the jet streams, to the largest vortices.  The positions
+can be extrapolated forward in time, enabling targeted observations by
+professional observatories or even visiting spacecraft.  This long-term record
+of Jupiter's visible appearance by citizen scientists has proven invaluable for
+jovian atmospheric scientists.
 
 %%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -626,12 +630,12 @@ wavelengths by Christopher Go, figure from \citet{HuesoEtal2010}.}
 %%%%%%%%%%%%%%%%%%%
 
 
-As described in Section \ref{}, one of the benefits of the lucky imaging
+As described in \Sref{}, one of the benefits of the lucky imaging
 technique for solar system imaging is the hours of video footage of these
 planets.  These enormous datasets can be processed to search for impact
 flashes to constrain the statistics (and detectability) of collisions with a
 range of targets, notable Jupiter and the Moon
-(Figure~\ref{fig:jupiter-impacts}).  Software has been written by
+(\Fref{fig:jupiter-impacts}).  Software has been written by
 citizen scientists for distribution to active observers, allowing them to
 process their own video files to search for impacts in an automated way (e.g.,
 Jupiter impact detections\footnote{http://www.pvol.ehu.es/software/} and
@@ -653,14 +657,17 @@ Autostakkert\footnote{www.autostakkert.com}, among others.  These programmes
 take the video files saved by the camera from the lucky imaging technique
 (Section \ref{}) and allow the user to align and stack only the clearest
 images.  Some differences become noticeable when user preferences are
-introduced ? for example, use of wavelets to sharpen images can sometimes
-?over-process? the image and introduce artefacts.  Colour images are put
+introduced; for example, use of wavelets to sharpen images can sometimes
+``over-process'' the image, and introduce artefacts.  Colour images are put
 together and tuned using commercial packages like Adobe Photoshop, and the
 balance between red, green and blue is at the users discretion, usually with
 the aim of maximising contrast to show as many features as possible.  When
 such images are used for science (e.g., point to point contrast measurements),
 it is often desirable to work with the raw, unprocessed images alongside the
 processed ones, precisely to avoid these artefacts and user biases.
+
+\todo{All}{Can we include some example refs here, of good examples of amateur
+software use?}
 
 It is not just active observers who have begun using sophisticated image
 processing techniques.  There is a growing community of citizen software
@@ -671,18 +678,20 @@ and use of, space exploration data.''  This includes both raw data provided by
 the space agencies but not published or officially released (e.g., the Cassini
 raw data stream of images from
 Saturn\footnote{http://saturn.jpl.nasa.gov/photos/raw/} and those from the
-Curiosity rover on Mars\footnote{
-http://mars.jpl.nasa.gov/msl/multimedia/raw/}), as well as those images
+Curiosity rover on Mars,\footnote{
+http://mars.jpl.nasa.gov/msl/multimedia/raw/}) as well as those images
 previously released by the agencies but re-processed and colourised by
 dedicated citizen scientists.  Depending on the quality of the original, raw
 images, this can sometimes produce renderings of old data in new and
 startlingly beautiful ways.  Although not directly used for scientific
 enquiry, they certainly promote astronomy to the broader public.
 
+\question{Chris}{Point for discussion: how hard-nosed do we want to be about science versus outreach in this venue? The above paragraph raised a small red flag with me.}
+
 Citizen image processing expanded enormously with the ease of high performance
 personal computing, and the availability of raw images from missions that the
 professional teams (i.e., those responsible for running the missions) simply
-don?t have the time or resources to process completely.  From quantitative
+don't have the time or resources to process completely.  From quantitative
 analyses of large datasets, to image processing strategies employed by active
 observers and armchair explorers, this field relies on software development to
 move forwards.
@@ -692,20 +701,23 @@ move forwards.
 \subsection{Visual Classification in Astronomy (3 pages)}
 \label{sec:class:astro}
 
-As an observational science, visual classification has played a significant
-role in astronomical history. Despite significant advances in machine learning
-and computer vision, the visual inspection of data remains an important part
-of the subject, taking advantage of the human capacity for pattern
-recognition. While many in the 1990s predicted that the increasing size of
-astronomical datasets would make such time-intensive inspection impossible,
-the ability of the world wide web to reach large audiences has meant the
-involvement of hundreds of thousands of citizen scientists in this form of
-data analysis. It is perhaps worth noting that this sort of project represents
-an inversion of the traditional model of amateur involvement in astronomer;
-instead of data being supplied by citizen observers for analysis by
-professionals data gathered by highly specialized and dedicated professional
-projects are passed to volunteers for analysis. 
+\question{Chris}{Since this is the stuff the ARAA editors probably had in mind when they asked us to write this review, we might consider expanding this at the expense of the observing stuff. Or at least not choppping it back as hard. What do you think?}
 
+As an observational science, visual classification has played an important role
+in astronomy throughout its history. Despite significant advances in machine
+learning and computer vision, the visual inspection of data remains an important
+part of the subject, taking advantage of the amazing human capacity for visual
+pattern recognition. While many in the 1990s predicted that the increasing size
+of astronomical datasets would make such time-intensive inspection impossible,
+the ability of the world wide web to reach large audiences has meant the
+involvement of hundreds of thousands of citizen scientists in this form of data
+analysis. It is perhaps worth noting that this sort of project represents an
+inversion of the traditional model of amateur involvement in astronomer; instead
+of data being supplied by citizen observers for analysis by professionals data
+gathered by highly specialized and dedicated professional projects are passed to
+volunteers for analysis. 
+
+\todo{Phil}{Perhaps move some of this preamble to a discussion/conclusions section later...}
 
 \CaseStudy{Stardust@home}
 While significant preliminary work had been carried out by NASA's clickworkers
@@ -727,77 +739,90 @@ grains which do not involve intrinsically beautiful images, and that, with a
 suitable website design and stringent testing, scientifically valuable results
 could be obtained. 
 
-XXXX Add references 
+\todo{Chris}{Add Stardust@home references...}
 
-% Note to coauthors - I've resorted to crowdsourcing here despite its negative
-% connotations because it's just too tedious to keep writing 'distributed
-% analysis citizen science' or something like that. Other suggestions welcome. 
+\todo{Chris}{Add Stardust@home url as a footnote.}
 
-\CaseStudy{Galaxy morphology with Galaxy Zoo}
-These results directly inspired the development of Galaxy Zoo, perhaps the
-most prominent scientific crowdsourcing project to date. Galaxy Zoo was built
-on the continued importance of morphological classification of galaxies. First
+\chris{I've resorted to crowdsourcing here despite its negative
+connotations because it's just too tedious to keep writing 'distributed
+analysis citizen science' or something like that. Other suggestions welcome.}
+\phil{I like the term crowdsourcing, and I think the audience will understand it. It's currently in the title of Space Warps paper 1, BTW...}
+
+\CaseStudy{Galaxy morphology with Galaxy Zoo} 
+These results directly inspired the development of Galaxy Zoo, perhaps the most
+prominent scientific crowdsourcing project to date. Galaxy Zoo was built on the
+continued importance of morphological classification of galaxies. First
 introduced in a systematic fashion by Hubble, and later developed by amongst
 others de Vaucoleurs, it remains the case that the morphology of a system is
-closely related to - but not entirely defined by - parameters such as colour,
-star formation history, dynamics, concentration and so on. In an effort to
-prepare for large surveys such as the Sloan Digital Sky Survey (SDSS), Lahav
-et al. followed especially by the work of Ball et al. developed neural
-networks trained on small samples of expert classifications in order to
-automate the process of classification,\footnote{The Lahav papers are perhaps
-as interesting for their psychology as for their astrophysics, as the
-classifications reveal the relations between the senior classifiers employed
-to be experts} arguing that the size of the then up-coming surveys left no
-place for manual classification.
+closely related to -- but not entirely defined by -- parameters such as colour,
+star formation history, dynamics, concentration and so on.  In an effort to
+prepare for large surveys such as the Sloan Digital Sky Survey (SDSS), Lahav et
+al. followed especially by the work of Ball et al. developed neural networks
+trained on small samples of expert classifications in order to automate the
+process of classification,\footnote{The Lahav papers are perhaps as interesting
+for their psychology as for their astrophysics, as the classifications reveal
+the relations between the senior classifiers employed to be experts} arguing
+that the size of the then up-coming surveys left no place for manual
+classification.
+
+\todo{Chris}{Add real refs for automatic morphology classification}
 
 The performance of the automatic classifiers depended on the input parameters,
 including colour, magnitude and size. These variables correlate well with
 morphology, but are not themselves morphological, and when included they
 dominate the classification. In particularly for galaxies which do not fit the
-general trends, such as spirals with dominant bulges or star-forming
+general trends, such as spirals with dominant bulges, or star-forming
 ellipticals, automated classifiers whether using these simple measures or more
 complex proxies for morphology such as texture fail to match the performance
 of expert classifiers. Schawinski and Nair, amongst others, spent substantial
 time during their time as graduate students classifying tens of thousands of
-galaxies. 
+galaxies. \todo{Chris}{Add citations showing value of Schawinski and Nair's efforts.}
 
 Inspired by Stardust@home, a group led by one of the authors (Lintott) created
 Galaxy Zoo in 2007 to provide basic classifications of SDSS
 galaxies\footnote{The original Galaxy Zoo is preserved at
-http://zoo1.galaxyzoo.org with the current incarnation at www.galaxyzoo.org.}
-Classifiers were presented with a coloured image centered on and scaled to one
-of more than 800,000 galaxies, and could select from one of six options:
-clockwise, anti clockwise and edge-on spirals, ellipticals, mergers and
-`star/don't know'. Despite the initial inclusion of an easily-passed test,
-little knowledge was required or indeed presented to classifiers who could do
-something real soon after arriving on the site; this approach, in contrast to
-Stardust@home where a difficult test needed to be completed before authentic
-and useful contributions could be made, was successful in encouraging large
-numbers of visitors to participate. This tactic - in which both passing and
-sustained engagement provide substantial contribution - is illustrated in
-figure XXX INSERT BOX DIAGRAM XXXX which shows results from Galaxy Zoo 2. This
-later version of the project asked for more detailed classifications via a
-decision tree containing questions such as `How prominent is the bulge?', and
-later iterations of the project have applied a similar approach to galaxies
-drawn from \emph{Hubble Space Telescope} surveys including \textsc{GEMS,
-GOODS, COSMOS} and \textsc{CANDELS}. 
+\texttt{http://zoo1.galaxyzoo.org} with the current incarnation at
+\texttt{http://www.galaxyzoo.org}.} Classifiers were presented with a coloured
+image centered on and scaled to one of more than 800,000 galaxies, and could
+select from one of six options: clockwise, anti clockwise and edge-on spirals,
+ellipticals, mergers and ``star/don't know.'' Aside from  an easily-passed
+initial test, little knowledge was required or indeed presented to classifiers,
+enabling them to proceed quickly doing something real soon after arriving at the
+site; this approach, in contrast to Stardust@home where a difficult test needed
+to be completed before authentic and useful contributions could be made, was
+successful in encouraging large numbers of visitors to participate. This tactic
+-- in which both passing and sustained engagement provide substantial
+contribution -- is illustrated in \Fref{}  which shows results from Galaxy Zoo
+2. \todo{Chris}{Insert box diagram illustrating Zooniverse tactics / GZ2
+results.} This later version of the project asked for more detailed
+classifications via a decision tree containing questions such as `How prominent
+is the bulge?', and later iterations of the project have applied a similar
+approach to galaxies drawn from \emph{Hubble Space Telescope} surveys including
+\textsc{GEMS, GOODS, COSMOS} and \textsc{CANDELS}. 
 
-XXX STATISTICS XXXX. These figures are undoubtedly impressive, but they would
-be meaningless if the classifications provided were not suitable for science.
-With sufficient effort to ensure each galaxy is classified multiple times (as
-many as 80 for many Galaxy Zoo images), these independent classifications need
-to be combined into a consensus. As discussed in later sections, this can
-become complex but for Galaxy Zoo a simple weighting which rewards
-consistency, first described in Land et al., was sufficient. Importantly,
-combining classifications provides not only the assignment of a label but, in
-the vote fraction in a particular category, an indication of the reliability
-of the classification. This allows more subtle biases, such as the propensity
-for small, faint or distant galaxies to appear as elliptical regardless of
-their true morphology, to be measured and accounted for (see Bamford et al.).
-The net result is that the Galaxy Zoo classifications are an excellent match
-for results from expert classification, and have produced science ranging from
-studies of red spirals (Masters et al.) to investigations of spiral spin
-(Slosar et al.).
+\todo{Chris}{Add galaxy zoo participation statistics}. 
+
+These figures are undoubtedly impressive, but they would be meaningless if the
+classifications provided were not suitable for science. With sufficient effort
+to ensure each galaxy is classified multiple times (as many as 80 for many
+Galaxy Zoo images), these independent classifications need to be combined into a
+consensus. As discussed in later sections, this can become complex but for
+Galaxy Zoo a simple weighting which rewards consistency, first described in
+\citet{Land++}, was sufficient. \phil{By what criteria was it sufficient?}
+
+\todo{Chris}{Check consistency between sections: there are lots of ``see below'' type statements in this section.}
+
+Importantly, combining classifications provides not only the assignment of a
+label but, in the vote fraction in a particular category, an indication of the
+reliability of the classification. This allows more subtle biases, such as the
+propensity for small, faint or distant galaxies to appear as elliptical
+regardless of their true morphology, to be measured and accounted for (see
+Bamford et al.). The net result is that the Galaxy Zoo classifications are an
+excellent match for results from expert classification, and have produced
+science ranging from studies of red spirals (Masters et al.) to investigations
+of spiral spin (Slosar et al.).
+
+\todo{Chris}{Let's back up the accuracy claims here with some citations and numbers.}
 
 A full review of Galaxy Zoo science is beyond the scope of this review; a
 recent summary is given in the Galaxy Zoo 2 data release paper by Willett et
@@ -806,73 +831,96 @@ results have been the result not of interaction with the main interface but
 represent rather serendipitous discoveries made by participants. We return to
 these in Section~\ref{sec:explore} below.
 
+\question{Chris}{How much GZ science do we want to cite? Some key/high impact papers would be good, I think. There is currently a difference in emphasis and style between this section and Leigh's observing sections, that we ought to work to reduce (perhaps on both ends). Leigh gives lists of results with very short introductions; this section tells a more involved story of one project. Let's discuss how to resolve this.}
 
 
-\CaseStudy{Surfaces of solar system bodies}
-Moon Zoo, Moonwatch.
+\CaseStudy{Surfaces of solar system bodies: Moon Zoo, Moonwatch.}
 
-If studying galaxies remains, at least in part, a visual pursuit, then the
-same is certainly true of planetary science. NASA's clickworkers, which asked
-volunteers to identify craters on the Martain surface, lays claim to be the
+If studying galaxies remains, at least in part, a visual pursuit, then the same
+is certainly true of planetary science. NASA's clickworkers, which asked
+volunteers to identify craters on the Martian surface, lays claim to be the
 oldest astronomical crowdsourcing project. The consensus results matched those
-available from experts XXXXX CHECK XXXXX at the time, but failed to go beyond
-this promising start to produce results of real scientific value. More
-recently, interfaces inviting classifiers to look at the Moon, Mercury, Mars
-and Vesta have been launched and attracted significant classifications, but
-although preliminary results have been promising these projects have yet to
-produce datasets that have been used by the planetary science community in the
-same way that Galaxy Zoo has by the astronomical community. 
+available from experts at the time, but failed to go beyond this promising start
+to produce results of real scientific value. More recently, interfaces inviting
+classifiers to look at the Moon, Mercury, Mars and Vesta have been launched and
+attracted significant numbers of classifications, but although preliminary
+results have been promising these projects have yet to produce datasets that
+have been used by the planetary science community in the same way that Galaxy
+Zoo has by the astronomical community. 
 
-% Is this too negative? I wanted to go on to say lots about the need for
-% serious effort to make use of classifications, but felt it was perhaps better
-% to leave it there and move on. 
+\todo{Chris}{Fact-check the consensus with experts claim about clickworkers.}
+
+\todo{Chris}{Provide clickworkers reference.}
+
+\chris{Is this too negative? I wanted to go on to say lots about the need for
+serious effort to make use of classifications, but felt it was perhaps better
+to leave it there and move on.}
+\phil{I think it's fine like this. Do they have any papers to cite at all? We could at least give the urls in footnotes.}
+
+\todo{Chris}{Tidy up the multiple mentions of clickworkers. Whats the optimal ordering of these sections given their inter-references?}
+
 
 \CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}
 
-If citizen science is a way of dealing with `big data' then it is perhaps
-useful to remember that data sets can be big enough to be problematic in a
-variety of ways; the XXXX CITE XXXX describes the `three V's' of Big Data -
-volume, velocity and variety. With the increasing prominence of time-domain
-astronomy, astronomical projects requiring immediate inspection of live data
-can also benefit from citizen science. While transients such as supernovae or
-asteroids can often be found through the use of automatic routines, visual
-inspection is still used by many teams as part of the process of selecting
-candidates for follow-up. 
+If citizen science is to be a way of dealing with ``Big Data'' then it is
+perhaps useful to remember that data sets can be big enough to be problematic in
+a variety of ways; the XXXX CITE XXXX describes the `three Vs'' of Big Data -
+volume, velocity and variety. Time-domain astronomy projects requiring the
+immediate inspection of challenging  volumes of live data can also benefit from
+citizen science. While transients such as supernovae or asteroids can often be
+found through the use of automatic routines, visual inspection is still used by
+many teams as part of the process of selecting candidates for follow-up. 
 
-The most successful attempt to use crowdsourcing to attack these problems was
-an offshoot of Galaxy Zoo described in Smith et al. Data from the Palomar
-Transient Factory XXX CITE XXX was automatically processed and images of
-candidate supernovae uploaded on a nightly basis; this triggered an email to
-volunteers who, upon responding were shown the new image, a reference image
-and the subtraction between the two. By analyzing the answers to a series of
-questions, candidates were sorted into three categories, roughly corresponding
-to `probable supernova', 'likely astrophysical but non-supernova transient'
-and `artifact'. The results were displayed on a webpage and used to select
-targets for follow-up. Despite the site attracting many fewer classifiers than
-the main Galaxy Zoo, it was highly effective in sorting through data with
-consensus typically reached on all images within 15 minutes of the initial
-email being sent. 
+\todo{Chris}{Citation for expert visual classification of supernova candidates? SDSS SN search?}
 
-Archive projects such as the main Galaxy Zoo have the luxury of being able to
-be inefficient. When the appetite of volunteers for classification is high,
-and little of consequence is attached to finishing the task in, for example,
-three months instead of six, there is little incentive to direct attention
-efficiently. A random assignment of task to classifier thus, in most cases,
-suffices, but this is not true when rapid classification is important (or in
-the case of larger datasets). Using the supernova project's archive as a test,
-Simpson et al. developed a Bayesian method for assessing classifier
-performance; in this view, each classification provides information both about
-the subject of the classification and about the classifier themselves.
-Classifier performance given subject properties can thus be predicted and an
-optimum set of task assignments calculated. For systems involving tens of
-thousands of classifiers and perhaps a similar volume of subjects to be
-classified, an exact solution is computationally extremely expensive, but a
-MCMC approach can be used to find efficient solutions. Work by Simpson et al.,
-as well as Horvitz et al and Waterhouse on Galaxy Zoo data, suggests that
-accuracy can be maintained with as few as 30\% of classifications. This sort
-of optimization will be increasingly important for online citizen science, but
-a major challenge remains in incorporating this sort of analysis in live
-systems rather than using archive data. 
+The most successful attempt to use crowdsourcing to attack these problems to
+date has been the offshoot of Galaxy Zoo described in Smith et al, ``Supernova
+Zoo.'' Data from the Palomar Transient Factory XXX CITE XXX was automatically
+processed and images of candidate supernovae uploaded on a nightly basis; this
+triggered an email to volunteers who, upon responding were shown the new image,
+a reference image and the subtraction between the two. By analyzing the answers
+to a series of questions, candidates were sorted into three categories, roughly
+corresponding to ``probable supernova,'' ``likely astrophysical but
+non-supernova transient'' and ``artifact.'' The results were displayed on a
+webpage and used to select targets for follow-up. Despite the site attracting
+many fewer classifiers than the main Galaxy Zoo, it was highly effective in
+sorting through data, with consensus typically reached on all images within 15
+minutes of the initial email being sent. 
+
+\todo{Chris}{Add SN zoo, PTF refs}
+
+\question{Chris}{We should review Richards and Blooms' work using the SN zoo data to improve the automated analysis -- this is an important application of citizen science results, no? Where does it belong though? Here is just the place it happened to come up -- but it could have been anywhere, I think.}
+
+\question{Chris}{Is this the right place to discuss ideas for future time domain astronomy projects with LSST? Or shall we postpone that to a ``future'' section?}
+
+Archive projects such as the main Galaxy Zoo have the luxury of being able to be
+inefficient.  \phil{This made me frown. it's bad to be inefficient when we are
+talking about peoples time! Can we re-direct this somehow? I'm not sure this part belongs in time domain astronomy: don't we want to improve efficiency in all projects?} When the appetite of
+volunteers for classification is high, and little of consequence is attached to
+finishing the task in, for example, three months instead of six, there is little
+incentive to direct attention efficiently. A random assignment of task to
+classifier thus, in most cases, suffices, but this is not true when rapid
+classification is important (or in the case of larger datasets). Using the
+supernova project's archive as a test, Simpson et al. developed a Bayesian
+method for assessing classifier performance; in this view, each classification
+provides information both about the subject of the classification and about the
+classifier themselves. Classifier performance given subject properties can thus
+be predicted and an optimum set of task assignments calculated. For systems
+involving tens of thousands of classifiers and perhaps a similar volume of
+subjects to be classified, an exact solution is computationally extremely
+expensive, but a MCMC approach can be used to find efficient solutions. Work by
+Simpson et al., as well as Horvitz et al and Waterhouse on Galaxy Zoo data,
+suggests that accuracy can be maintained with as few as 30\% of classifications.
+This sort of optimization will be increasingly important for online citizen
+science, but a major challenge (\phil{What sort of challenge?}) remains in
+incorporating this sort of analysis in live systems rather than using archive
+data. 
+
+\todo{Phil}{Add reference to Space Warps, and planned online/real time extension here?}
+
+\todo{Chris}{Bibtex references!}
+
+\todo{Phil,Chris}{Discuss where to put section on increasing efficiency through classifier analysis}
 
 A different approach to time-domain astronomy through citizen science is
 exemplified by the Planet Hunters project, which asks volunteers to examine
@@ -884,8 +932,9 @@ Hunters in identifying more than fifty planet candidates missed by the
 automatic routines suggests that there remains a role for inspection by eye in
 cases where the relevant science requires completeness of classifications.
 While several of the planets found by Planet Hunters, including the project's
-first confirmed planet (PH1b, Schwamb et al.) are unusual - PH1b, a
-circumbinary, is the first planet known in a four-star system - others,
+first confirmed planet (PH1b, Schwamb et al.), are unusual 
+-- PH1b, a
+circumbinary, is the first planet known in a four-star system --  others,
 including the more than forty candidates identified in the habitable zone of
 their parent star by Ji et al., might have been expected to be recovered by
 more conventional searches. Planet Hunters, therefore, is acting as an
@@ -894,10 +943,12 @@ inspired improvements in subsequent analysis (Bathalia et al.). More recently,
 advanced users have participated in the identification of unusual stellar
 properties - see XXXXXXXX. 
 
-% \item Rapid-reaction events (jovian/lunar impacts, storm/plume eruptions)
-% \item Data mining for asteroids and TNOs.
+\question{Leigh}{Are there any visual classification activities going on in solar system science that belong in this section rather than anywhere else? They needn't be based around pupose-built websites like Galaxy Zoo, but if the product of them is visual classification data we might include them here for contrast. I guess there is visual classification going on in the
+rapid-reaction events (jovian/lunar impacts, storm/plume eruptions) described in the observing section -- but how are those classifications collected and analyzed? Is there any systematic analysis of the crowd's outputs?}
 
-%Should we try and add Solar Stormwatch somewhere? 
+\question{Leigh}{I also have a note here that says ``Data mining for asteroids
+and TNOs'' - know anything about that?}
+
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
