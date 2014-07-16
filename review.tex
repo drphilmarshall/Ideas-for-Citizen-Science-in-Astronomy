@@ -112,10 +112,9 @@ the solutions of the Big Data problem in astronomy?
 This review is organised as follows. We survey the contributions to science that
 citizens have made to date, organized according to the stage of the scientific
 enquiry that those contributions fell into. Astronomy research typically starts
-with observations: so do we, in \Sref{sec:obs}. We then proceed through a very
-brief discussion of citizen instrumentation, and then consider  data processing,
-data modeling and finally citizen-led enquiry in 
-Sections~\ref{sec:instr}--\ref{sec:explore}. With this overview in place, we
+with observations: so do we, in \Sref{sec:obs}. We then proceed to consider 
+visual classification, data modeling and finally citizen-led enquiry in 
+Sections~\ref{sec:class}--\ref{sec:explore}. With this overview in place, we
 review in \Sref{sec:crowd} the literature on, and the collected experience of,
 the population of citizens who have taken part, or are currently taking part, in
 scientific research. We then turn to the future, and speculate on how citizens
@@ -138,6 +137,7 @@ observing the night sky with less sophisticated equipment -- and as we shall
 see, there are even citizens making  astronomical observations almost
 inadvertently. What astronomical data are the citizenry taking, and what is it
 being used for?
+
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -198,6 +198,18 @@ professional-amateur (``Pro-Am'') collaboration. While the solar system provides
 some of the most amenable targets for amateur observation, ``deep sky''
 observations by the non-professional community provide important further insight
 into the capabilities and potential of citizen astronomers.
+
+% Instrumentation built and used by citizen scientists have increased in
+% sophistication: complex personal observatories with large-aperture motorised
+% telescope, multiple filters, and high precision low-light cameras have all
+% become {\it de rigeur}.  Increasingly sophisticated software is also now
+% available to aid in the reduction and quantitative analysis of amateur imaging,
+% as described in \Sref{} below.  Vibrationally-damped mounts, advanced CCD and
+% CMOS detectors, and a GOTO system to mechanically move to a set of celestial
+% coordinates and track that location all serve to optimise the amount of time the
+% observer actually gets to spend looking at the sky, and paves the way for fully
+% robotic observatories.  The reader is referred to \citet{13mousis} for a
+% thorough review of instrumentation currently in use for solar system studies.
 
 
 % Comparisons with the visible albedo provided by citizen
@@ -340,22 +352,25 @@ BA,][]{06simon-miller}; to determining the life cycle of the belt/zone structure
 \citep{96sanchez, 11fletcher}. 
 
 Long-term monitoring exercises prove most fruitful in response to new and
-unexpected solar system events, including eruptions of gigantic plumes \citep{08sanchez,
-11fletcher}, changes to giant ovals \citep{06simon-miller} and impact debris
-produced by asteroidal and cometary collisions \citep{10hammel}.  An impact
-scar near Jupiter's south polar region was first discovered in imaging by
-Australian amateur Anthony Wesley on July 19th, 2009, and led to an
-international campaign of professional observations to understand the
-asteroidal collision that had created the scar
-\citep[e.g.,][]{10depater,11orton}.  As observers use video imaging to capture
-their images (see \Sref{}), those videos have also been used to
-identify flashes due to meteors in the jovian atmosphere.  At least three
-flashes were confirmed between 2010 and 2012, and the light curves used to
-determine the sizes and frequency of objects colliding with Jupiter
+unexpected solar system events, including eruptions of gigantic plumes
+\citep{08sanchez, 11fletcher}, changes to giant ovals \citep{06simon-miller} and
+impact debris produced by asteroidal and cometary collisions \citep{10hammel}. 
+An impact scar near Jupiter's south polar region was first discovered in imaging
+by Australian amateur Anthony Wesley on July 19th, 2009, and led to an
+international campaign of professional observations to understand the asteroidal
+collision that had created the scar \citep[e.g.,][]{10depater,11orton}.  
+
+Meanwhile, video monitoring has been used to enable ``lucky imaging'' of
+Jupiter: the best images at moments of clear seeing from the high-resolution
+video frames are selected, extracted and stacked together, using fairly
+sophisticated software to correct for the distortions associated with the
+telescope optics and residual atmospheric seeing.  This technique has the added
+benefit of providing time-sampled observations for impact flash detection.  At
+least three flashes were confirmed between 2010 and 2012, and the light curves
+used to determine the sizes and frequency of objects colliding with Jupiter
 \citep[e.g.,][]{10hueso}. 
 
-
-Similar monitoring studies are underway for Saturn, Uranus and Neptune, with
+Monitoring studies are underway for Saturn, Uranus and Neptune, with
 increasing levels of difficulty.  Saturn's appearance is typically more
 subdued than that of Jupiter, but 20-30 cm diameter telescopes are capable of
 resolving small convective cloud activity.  A close collaboration between
@@ -513,49 +528,6 @@ of unequipped observers for doing very bright object transient astronomy.
 \todo{Phil}{Track down refernce for Barentsen twitter meteor project...}
 
 \question{Phil,Chris}{Are there other passive observing examples? Only two so far...}
-
-
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-\subsection{Citizen Instrumentation (1 page)}
-\label{sec:instr}
-
-Instrumentation built and used by citizen scientists have increased in
-sophistication: complex personal observatories with large-aperture motorised
-telescope, multiple filters, and high precision low-light cameras have all
-become {\it de rigeur}.  Increasingly sophisticated software is also now
-available to aid in the reduction and quantitative analysis of amateur imaging,
-as described in \Sref{} below.  Vibrationally-damped mounts, advanced CCD and
-CMOS detectors, and a GOTO system to mechanically move to a set of celestial
-coordinates and track that location all serve to optimise the amount of time the
-observer actually gets to spend looking at the sky, and paves the way for fully
-robotic observatories.  The reader is referred to \citet{13mousis} for a
-thorough review of instrumentation currently in use for solar system studies.
-
-\todo{Chris,Phil}{Refs for galactic and extragalactic citizen instrumentation?}
-
-\question{Chris,Phil}{Where does observational software belong? Phil thinks:
-with instrumentation -- data analysis software is different?}
-
-The instrumentation and software must necessarily be tuned to the phenomenon of
-interest, with many active (\question{leigh}{solar system?}) observers choosing
-to use video monitoring to capture images in moment of excellent seeing, a
-technique known as lucky imaging.  The best images at moments of clear seeing
-from the high-resolution video frames are selected, extracted and stacked
-together in a software programme.  Some software also allows corrections of the
-distortions associated with telescope optics and residual atmospheric seeing. 
-These techniques are commonly employed in observations of planetary atmospheres
-(e.g., Venus, Jupiter) to provide high-resolution images, and have the added
-benefit of providing time-sampled observations for impact flash detection
-\citep[e.g.,][]{10hueso}. The science contributed has been driven by the
-instrumentation available to the citizens, but in some cases amateur observers
-have undertaken their own customisation work to contribute new information to
-the field.  
-
-
-\todo{Chris,Phil}{Review citizen instrumentation for ``deep sky observing'' in
-this section too. What kit is being used? Online/robotic telescopes, like the
-Bradford Telescope? Personal observatories, rented mountain-top space?}
 
 
 % ------------------------------------------------------------------------------
