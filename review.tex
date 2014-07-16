@@ -72,12 +72,16 @@ some speculations for citizen astronomy in particular.
 \label{sec:intro}
 
 The term ``citizen science'' refers to the activities of people who are not paid
-to carry out scientific research, but who make intellectual
-contributions to scientific research nonetheless. They come from all
-walks of life, and their contributions are diverse, both in type and research
-area. This review is about the science projects they have participated in to
-date, the tasks they have performed, and how astronomy has benefited -- and
-could benefit further -- from their efforts.
+to carry out scientific research, but who make intellectual contributions to
+scientific research nonetheless.\footnote{In this review we differentiate
+between the data analysis that citizens carry out themselves, and  distributed
+``grid'' computing farmed out to computers owned by citizens, and omit the
+latter since it does not fit our definition of citizen science as involving
+intellectual  contributions from citizens.} They come from all walks of life,
+and their contributions are diverse, both in type and research area. This review
+is about the science projects they have participated in to date, the tasks they
+have performed, and how astronomy has benefited -- and could benefit further --
+from their efforts.
 
 Citizen involvement in science pre-dates the profession itself, and there is a
 long and honourable tradition of amateur observers making important discoveries
@@ -96,17 +100,17 @@ exponential increase in citizen involvement in science. The field is evolving
 very quickly, with more and more professional scientists becoming aware of the
 possibilities offered by collaborating with, for example, specialists operating
 outside the usual parameters of professional astronomical observation, or tens
-of thousands of people eager to perform microtasks in their spare time.  Our aim
-in this work is to review the scientific literature as it stands for ideas
-implemented in citizen science projects, primarily in astronomy but occasionally
-in other fields, and then produce a summary of successful project
-characteristics for future research groups to learn from.
+of thousands of people eager to perform microtasks in their spare time.  
 
-As our title states, this is a review of ideas for astronomy. We will look
-forward as well as back, and try to answer the questions: How can the full
-potential of citizen science be realised in astronomy? What are the particular
-niches that citizen science can fill, in our field? How might it contribute to
-the solutions of the Big Data problem in astronomy?
+Our aim in this work is to review the scientific literature as it stands for
+ideas implemented in citizen science projects, primarily in astronomy but
+occasionally in other fields, and then produce a summary of successful project
+characteristics for future research groups to learn from.  As our title states,
+this is a review of ideas for astronomy. We will look forward as well as back,
+and try to answer the questions: How can the full potential of citizen science
+be realised in astronomy? What are the particular niches that citizen science
+can fill, in our field? How might it contribute to the solutions of the Big Data
+problem in astronomy?
 
 
 This review is organised as follows. We survey the contributions to science that
@@ -325,7 +329,8 @@ information on the density, and hence the composition of the asteroids.
 \todo{Leigh}{Add refs for monitoring comets, asteroids etc.}
 
 
-\CaseStudy{Monitoring the Planets.}
+\CaseStudy{Monitoring the Planets.} 
+
 Jupiter's size, brightness and colourful cloud contrasts make it an ideal target
 for citizen monitoring.  Winds, waves, storms and plumes shape the day-to-day
 appearance, with cloud structures being blown east and west by powerful zonal
@@ -334,25 +339,23 @@ processes at work beneath the visible ammonia ice clouds, and serve as a probe
 of the fluid dynamics at work.  Tracking the motion of features requires
 correlation of images obtained night after night; with filters sounding in and
 out of strong jovian methane absorption features providing a three dimensional
-view of the planet's cloud decks.  
+view of the planet's cloud decks.  Monitoring studies are also underway for
+Saturn, Uranus and Neptune, with increasing levels of difficulty. 
 
-Both colour composites and raw filtered images are uploaded to online servers,
-organised by date and time, such as the Planetary Virtual Observatory and
-Laboratory (PVOL\footnote{\texttt{http://www.pvol.ehu.es/pvol}}) maintained for
-the International Outer Planets Watch \citep[IOPW][]{10hueso}.  The global
-distribution of giant planet observers permits global monitoring of Jupiter and
-Saturn as they rotate over 10 hours.  Descriptive records of morphological
-changes and events are maintained and continuously updated by organisations such
-as the British Astronomical Association (BAA) and the Association of Lunar and
-Planetary Observers (ALPO).   Those images can be used by amateurs and
-professionals alike to quantitatively study the zoology of activity; from
-measuring wind speeds \citep{08sanchez}; investigating the strength and changes
-to the large vortices \citep[e.g., the 2006 reddening of Oval
-BA,][]{06simon-miller}; to determining the life cycle of the belt/zone structure
-\citep{96sanchez, 11fletcher}. 
+The global distribution of giant planet observers permits global monitoring of
+Jupiter and Saturn as they rotate over 10 hours. Citizens upload raw filtered
+images and colour composites, organised by date and time, to online servers,
+such as the Planetary Virtual Observatory and Laboratory
+(PVOL\footnote{\texttt{http://www.pvol.ehu.es/pvol}}) maintained for the
+International Outer Planets Watch \citep[IOPW][]{10hueso}.  Those images can be
+used by amateurs and professionals alike to quantitatively study the zoology of
+activity; from measuring wind speeds \citep{08sanchez}; investigating the
+strength and changes to the large vortices \citep[e.g., the 2006 reddening of
+Oval BA,][]{06simon-miller}; to determining the life cycle of the belt/zone
+structure \citep{96sanchez, 11fletcher}. 
 
-Long-term monitoring exercises prove most fruitful in response to new and
-unexpected solar system events, including eruptions of gigantic plumes
+Long-term monitoring exercises prove particularly fruitful in response to new
+and unexpected solar system events, including eruptions of gigantic plumes
 \citep{08sanchez, 11fletcher}, changes to giant ovals \citep{06simon-miller} and
 impact debris produced by asteroidal and cometary collisions \citep{10hammel}. 
 An impact scar near Jupiter's south polar region was first discovered in imaging
@@ -360,33 +363,96 @@ by Australian amateur Anthony Wesley on July 19th, 2009, and led to an
 international campaign of professional observations to understand the asteroidal
 collision that had created the scar \citep[e.g.,][]{10depater,11orton}.  
 
-Meanwhile, video monitoring has been used to enable ``lucky imaging'' of
-Jupiter: the best images at moments of clear seeing from the high-resolution
-video frames are selected, extracted and stacked together, using fairly
-sophisticated software to correct for the distortions associated with the
-telescope optics and residual atmospheric seeing.  This technique has the added
-benefit of providing time-sampled observations for impact flash detection.  At
-least three flashes were confirmed between 2010 and 2012, and the light curves
-used to determine the sizes and frequency of objects colliding with Jupiter
-\citep[e.g.,][]{10hueso}. 
+%%%%%%%%%%%%%%%%%%%
+\begin{figure}[!ht]
+% convert -crop 800x400+0+20 citscirev_figures.002.png jupiter-impacts.png
+\centering\includegraphics[width=\linewidth]{figs/jupiter-impacts.png}
+\caption{Citizen science contributions to monitoring of impacts in the Jupiter
+system. (a) Dark impact scar in Jupiter's atmosphere imaged by Anthony
+Wesley on July 19th 2009 \citep{Sanchez-LavegaEtal2010}. (b) The
+evolution of a smaller bolide impact on June 3rd 2010 at red
+wavelengths, also imaged by Wesley. (c) The evolution at blue
+wavelengths by Christopher Go, figure from \citet{HuesoEtal2010}.}
+\label{fig:jupiter-impacts}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%
 
-Monitoring studies are underway for Saturn, Uranus and Neptune, with
-increasing levels of difficulty.  Saturn's appearance is typically more
-subdued than that of Jupiter, but 20-30 cm diameter telescopes are capable of
-resolving small convective cloud activity.  A close collaboration between
-amateurs and Cassini spacecraft scientists allows correlation of
-lightning-related radio emissions detected by the spacecraft with visible
-cloud structures on the disc (known as Saturn Storm Watch)
+Video monitoring has been used to enable high resolution ``lucky'' imaging of
+Jupiter: the best images at moments of clear seeing from the high-resolution
+video frames are selected, extracted and stacked together, using custom software
+to correct for the distortions associated with the telescope optics and residual
+atmospheric seeing.  Software written by citizen scientists for free
+distribution to active observers, such as
+Registax\footnote{www.astronomie.be/registax} and
+Autostakkert\footnote{www.autostakkert.com},  allows them to process their own
+video files to search for impacts in an automated way (e.g., Jupiter impact
+detections\footnote{http://www.pvol.ehu.es/software/} and LunarScan from the
+ALPO Lunar Meteoritic Impact
+Search\footnote{http://alpo-astronomy.org/lunarupload/lunimpacts.htm}), thus
+avoiding the need for transfer and storage of large datasets on some centralised
+server. 
+%
+% Some differences become noticeable when user preferences are introduced; for
+% example, use of wavelets to sharpen images can sometimes ``over-process'' the
+% image, and introduce artefacts.  Colour images are put together and tuned using
+% commercial packages like Adobe Photoshop, and the balance between red, green and
+% blue is at the users discretion, usually with the aim of maximising contrast to
+% show as many features as possible.  When such images are used for science (e.g.,
+% point to point contrast measurements), it is often desirable to work with the
+% raw, unprocessed images alongside the processed ones, precisely to avoid these
+% artefacts and user biases.
+%
+The lucky imaging technique has the added benefit of providing long baseline
+time-sampled observations for impact flash detection.   At least three flashes
+were confirmed between 2010 and 2012, and the light curves used to determine the
+sizes and frequency of objects colliding with Jupiter \citep[e.g.,][]{10hueso}
+(\Fref{fig:jupiter-impacts}).  
+
+
+Descriptive records of morphological changes and events are maintained and
+continuously updated by organisations of citizen scientists such as the British
+Astronomical Association (BAA) and the Association of Lunar and Planetary
+Observers (ALPO). The BAA's Jupiter
+section\footnote{http://www.britastro.org/jupiter/} is a team of amateurs with
+substantial expertise in Jupiter's appearance \citep{95rogers};  Their regular
+bulletins describe the changing appearance of the banded structure, the
+emergence of new turbulent structures and weather phenomena, and keep a record
+of the long-term atmospheric changes.  
+
+Recent software developments have provided a much more quantitative angle on
+these observations. The WinJUPOS
+software\footnote{http://jupos.privat.t-online.de/} was developed by a team of
+amateurs led by G. Hahn and H.-J. Mettig. It allows multiple images to be
+stacked with a correction for the rapid (once per ten hour) rotation of Jupiter
+or Saturn, then reprojected onto a latitude-longitude coordinate system, so that
+the precise positional details of atmospheric features can be determined via
+``point-and-click.''  By doing this over many nights surrounding Jupiter's
+opposition, the team builds up enormous drift charts (tens of thousands of
+positional measurements) for features, ranging from the tiniest convective
+feature being moved by the jet streams, to the largest vortices.  The positions
+can be extrapolated forward in time, enabling targeted observations by
+professional observatories or even visiting spacecraft.  This long-term record
+of Jupiter's visible appearance by citizen scientists has proven invaluable for
+jovian atmospheric scientists.
+
+\todo{Leigh}{Please read this case study carefully, and please rearrange so that
+it makes sense: I worry that I have not merged the software and observing parts
+well.}
+
+Saturn's appearance is typically more subdued than that of Jupiter, but 20-30 cm
+diameter telescopes are capable of resolving small convective cloud activity.  A
+close collaboration between amateurs and Cassini spacecraft scientists allows
+correlation of lightning-related radio emissions detected by the spacecraft with
+visible cloud structures on the disc (known as Saturn Storm Watch)
 \citep[e.g.,][]{11fischer}, which would not be possible with the targeted
-regional views provided by Cassini's cameras alone.  This provides insights
-into the moist convective processes thought to power the dynamics of the giant
+regional views provided by Cassini's cameras alone.  This provides insights into
+the moist convective processes thought to power the dynamics of the giant
 planet, and is a good example of how citizen science can support an
-international planetary mission. Amateur observations of Uranus and Neptune
-are in their infancy and require telescopes with diameters exceeding 25 cm,
-but there have been confirmed reports of atmospheric banding and discrete
-cloud features when near-infrared filters are used to maximise contrast
-between white clouds and the background and long exposure times of tens of
-minutes.
+international planetary mission. Amateur observations of Uranus and Neptune are
+in their infancy and require telescopes with diameters exceeding 25 cm, but
+there have been confirmed reports of atmospheric banding and discrete cloud
+features when near-infrared filters are used to maximise contrast between white
+clouds and the background and long exposure times of tens of minutes.
 
 Active citizen observing also provides long-term monitoring in the inner solar
 system.  Venus' photochemical smog shields the planet's surface from view, but
@@ -482,8 +548,36 @@ monitoring data, and ask if this is scalable/repeatable. How does it compare to
 efforts in other fields, notably ecology?}
 
 
-
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% 
+% \subsection{Archive Observing (1 page)}
+% \label{sec:obs:archive}
+% 
+% 
+% \CaseStudy{Reprocessing Planetary Mission Images: UnmannedSpaceflight.com.} It
+% is not just active observers who have begun using sophisticated image processing
+% techniques.  There is a growing community of citizen software specialists who
+% devote their time to processing of raw images from interplanetary missions,
+% including those that the professional teams (i.e., those responsible for running
+% the missions) simply don't have the time or resources to process completely.  
+% Chief among these is the online forum, UnmannedSpaceflight.com, whose stated aim
+% is to ``advance public interest in, and use of, space exploration data.''  This
+% includes both raw data provided by the space agencies but not published or
+% officially released (e.g., the Cassini raw data stream of images from
+% Saturn\footnote{http://saturn.jpl.nasa.gov/photos/raw/} and those from the
+% Curiosity rover on Mars,\footnote{
+% http://mars.jpl.nasa.gov/msl/multimedia/raw/}) as well as those images
+% previously released by the agencies but re-processed and colourised by dedicated
+% citizen scientists.  Depending on the quality of the original, raw images, this
+% can sometimes produce renderings of old data in new and startlingly beautiful
+% ways.  Although not directly used for scientific enquiry, they certainly promote
+% astronomy to the broader public.
+% 
+% \question{Chris}{Point for discussion: how hard-nosed do we want to be about
+% science versus outreach in this venue? The above paragraph raised a small red
+% flag with me.}
+% 
+% % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Passive Observing (1 page)}
 \label{sec:obs:passive}
@@ -532,166 +626,29 @@ of unequipped observers for doing very bright object transient astronomy.
 
 % ------------------------------------------------------------------------------
 
-\section{Data Processing (6 pages)}
+\section{Visual Classification (6 pages)}
 \label{sec:class}
 
-Building, instrumenting and maintaining a telescope, and then observing the
-night sky with it, are perhaps the most familiar activities to amateur
-astronomers. Meanwhile, professional astronomers spend far longer working with
-the data they have taken after their observing run, reducing and exploring
-images and spectra, and detecting and characterising objects and features. This
-data processing phase is an essential part of the scientific process; it results
-in a set of summary statistics, that can be more
-conveniently propagated through to the interpretation phase. That is, data
-processing involves distillation of data into knowledge -- but stops short of
-the generation of understanding. What sorts of data processing have citizens
-been actively engaged in? We include the word ``actively'' here, to
-differentiate between the data processing that astronomers carry out, and 
-computing jobs that can be farmed out to grids of computers owned by citizens.
-Distributed ``grid'' computing does not fit our definition of citizen science, 
-since it lacks the intellectual contribution element.
+Observing the night sky with a telescope is perhaps the most familiar of the
+activities of amateur astronomers, but as the previous section showed, citizens
+are also actively involved in the processing and interpretation of the data they
+have taken.  In this and the next section we look at projects where much larger
+archival datasets are made available to crowds of citizens, who are asked to
+inspect astronomical images, and help describe and characterize the features in
+them. Visual classification has played an important role in astronomy throughout
+its history. Despite significant advances in machine learning and computer
+vision, the visual inspection of data remains an important part of the subject,
+taking advantage of the amazing human capacity for visual pattern recognition.
+While many in the 1990s predicted that the increasing size of astronomical
+datasets would make such time-intensive inspection impossible, the ability of
+the world wide web to reach large audiences has meant the involvement of
+hundreds of thousands of citizen scientists in this form of data analysis.  
 
-\todo{Phil}{Condense this preamble right down}
-
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-\subsection{Image Processing (1 page)}
-\label{sec:class:non-sensory}
-
-Visual classification is by no means the only activity in which citizens have
-been participating.  One area where visual classification and software
-development has translated directly into new knowledge is in the monitoring of
-giant planet meteorology, both using images provided by active observers, and
-images acquired and archived by professional facilities and spacecraft. 
-Images are regularly qualitatively described by a number of organisations,
-including the British Astronomical Association's Jupiter
-section\footnote{http://www.britastro.org/jupiter/}, by a team of amateurs
-with substantial expertise in Jupiter's appearance \citep{95rogers}.  Their
-regular bulletins describe the changing appearance of the banded structure,
-the emergence of new turbulent structures and weather phenomena, and keep a
-record of the long-term atmospheric changes.  However, recent software
-developments have provided a much more quantitative angle on these
-observations.  
-
-\todo{Phil}{Condense the above paragraph and focus on image processing.}
-
-The WinJUPOS software\footnote{http://jupos.privat.t-online.de/} was developed
-by a team of amateurs led by G. Hahn; it allows multiple images to be stacked
-with a correction for the rapid (once per ten hour) rotation of Jupiter or
-Saturn, then reprojected onto a latitude-longitude coordinate system, so that
-the precise positional details of atmospheric features can be determined via
-``point-and-click.''  By doing this over many nights surrounding Jupiter's
-opposition, the team builds up enormous drift charts (tens of thousands of
-positional measurements) for features, ranging from the tiniest convective
-feature being moved by the jet streams, to the largest vortices.  The positions
-can be extrapolated forward in time, enabling targeted observations by
-professional observatories or even visiting spacecraft.  This long-term record
-of Jupiter's visible appearance by citizen scientists has proven invaluable for
-jovian atmospheric scientists.
-
-%%%%%%%%%%%%%%%%%%%
-\begin{figure}[!ht]
-% convert -crop 800x400+0+20 citscirev_figures.002.png jupiter-impacts.png
-\centering\includegraphics[width=\linewidth]{figs/jupiter-impacts.png}
-\caption{Citizen science contributions to monitoring of impacts in the Jupiter
-system. (a) Dark impact scar in Jupiter's atmosphere imaged by Anthony
-Wesley on July 19th 2009 \citep{Sanchez-LavegaEtal2010}. (b) The
-evolution of a smaller bolide impact on June 3rd 2010 at red
-wavelengths, also imaged by Wesley. (c) The evolution at blue
-wavelengths by Christopher Go, figure from \citet{HuesoEtal2010}.}
-\label{fig:jupiter-impacts}
-\end{figure}
-%%%%%%%%%%%%%%%%%%%
-
-
-As described in \Sref{}, one of the benefits of the lucky imaging
-technique for solar system imaging is the hours of video footage of these
-planets.  These enormous datasets can be processed to search for impact
-flashes to constrain the statistics (and detectability) of collisions with a
-range of targets, notable Jupiter and the Moon
-(\Fref{fig:jupiter-impacts}).  Software has been written by
-citizen scientists for distribution to active observers, allowing them to
-process their own video files to search for impacts in an automated way (e.g.,
-Jupiter impact detections\footnote{http://www.pvol.ehu.es/software/} and
-LunarScan from the ALPO Lunar Meteoritic Impact
-Search\footnote{http://alpo-astronomy.org/lunarupload/lunimpacts.htm}).  This
-avoids the need for transfer and storage of large datasets on some centralised
-server.  Both positive and negative detections are important to constrain the
-likelihood of jovian and lunar impacts.
-
-One of the primary drivers for astrophotographers is to create artistic
-masterpieces, remaining true to scientific accuracy but also generating a
-product that they are proud to distribute to the broader community.  For this
-reason, many active observers have ventured into the realm of software
-development to reduce, process and clean their astronomical images.  Both
-commercially available software and freely-distributed home-grown codes have
-been used to correct for distortions and stack images, including
-Registax\footnote{www.astronomie.be/registax} and
-Autostakkert\footnote{www.autostakkert.com}, among others.  These programmes
-take the video files saved by the camera from the lucky imaging technique
-(Section \ref{}) and allow the user to align and stack only the clearest
-images.  Some differences become noticeable when user preferences are
-introduced; for example, use of wavelets to sharpen images can sometimes
-``over-process'' the image, and introduce artefacts.  Colour images are put
-together and tuned using commercial packages like Adobe Photoshop, and the
-balance between red, green and blue is at the users discretion, usually with
-the aim of maximising contrast to show as many features as possible.  When
-such images are used for science (e.g., point to point contrast measurements),
-it is often desirable to work with the raw, unprocessed images alongside the
-processed ones, precisely to avoid these artefacts and user biases.
-
-\todo{All}{Can we include some example refs here, of good examples of amateur
-software use?}
-
-It is not just active observers who have begun using sophisticated image
-processing techniques.  There is a growing community of citizen software
-specialists who devote their time to processing of raw images from
-interplanetary missions.  Chief among these is the online forum,
-UnmannedSpaceflight.com, whose stated aim is to ``advance public interest in,
-and use of, space exploration data.''  This includes both raw data provided by
-the space agencies but not published or officially released (e.g., the Cassini
-raw data stream of images from
-Saturn\footnote{http://saturn.jpl.nasa.gov/photos/raw/} and those from the
-Curiosity rover on Mars,\footnote{
-http://mars.jpl.nasa.gov/msl/multimedia/raw/}) as well as those images
-previously released by the agencies but re-processed and colourised by
-dedicated citizen scientists.  Depending on the quality of the original, raw
-images, this can sometimes produce renderings of old data in new and
-startlingly beautiful ways.  Although not directly used for scientific
-enquiry, they certainly promote astronomy to the broader public.
-
-\question{Chris}{Point for discussion: how hard-nosed do we want to be about science versus outreach in this venue? The above paragraph raised a small red flag with me.}
-
-Citizen image processing expanded enormously with the ease of high performance
-personal computing, and the availability of raw images from missions that the
-professional teams (i.e., those responsible for running the missions) simply
-don't have the time or resources to process completely.  From quantitative
-analyses of large datasets, to image processing strategies employed by active
-observers and armchair explorers, this field relies on software development to
-move forwards.
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Visual Classification in Astronomy (3 pages)}
 \label{sec:class:astro}
-
-\question{Chris}{Since this is the stuff the ARAA editors probably had in mind when they asked us to write this review, we might consider expanding this at the expense of the observing stuff. Or at least not choppping it back as hard. What do you think?}
-
-As an observational science, visual classification has played an important role
-in astronomy throughout its history. Despite significant advances in machine
-learning and computer vision, the visual inspection of data remains an important
-part of the subject, taking advantage of the amazing human capacity for visual
-pattern recognition. While many in the 1990s predicted that the increasing size
-of astronomical datasets would make such time-intensive inspection impossible,
-the ability of the world wide web to reach large audiences has meant the
-involvement of hundreds of thousands of citizen scientists in this form of data
-analysis. It is perhaps worth noting that this sort of project represents an
-inversion of the traditional model of amateur involvement in astronomer; instead
-of data being supplied by citizen observers for analysis by professionals data
-gathered by highly specialized and dedicated professional projects are passed to
-volunteers for analysis. 
-
-\todo{Phil}{Perhaps move some of this preamble to a discussion/conclusions section later...}
 
 \CaseStudy{Stardust@home}
 While significant preliminary work had been carried out by NASA's clickworkers
@@ -716,11 +673,6 @@ could be obtained.
 \todo{Chris}{Add Stardust@home references...}
 
 \todo{Chris}{Add Stardust@home url as a footnote.}
-
-\chris{I've resorted to crowdsourcing here despite its negative
-connotations because it's just too tedious to keep writing 'distributed
-analysis citizen science' or something like that. Other suggestions welcome.}
-\phil{I like the term crowdsourcing, and I think the audience will understand it. It's currently in the title of Space Warps paper 1, BTW...}
 
 \CaseStudy{Galaxy morphology with Galaxy Zoo} 
 These results directly inspired the development of Galaxy Zoo, perhaps the most
@@ -1039,23 +991,6 @@ users).
 A strong comparison of the type of reward structure utilized by
 Eyewire and the approach used by more traditional projects such as Galaxy Zoo
 is urgently needed in order to inform future project design. 
-
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-
-\subsection{Software development by citizens (1 page)}
-\label{sec:instr:software}
-
-JUPOS measurers: wind measurement. 
-Impact detection.
-
-PlanetHunters, Galaxy Zoo analysis.
-
-Stumm at astrometry.net.  
-
-Collaborative development projects with citizens. 
-
-\phil{I don't think we have much to say here. The ``software instrumentation'' in the Jupiter community could justifiably be covered in the citizen instrumentation section above. Apart from one or two PH super-users analyzing data themselves, is there much evidence of scientific data analysis coding being done by citizens? There could be (I am trying to build stuff with Amit for Space Warps Labs in his spare time, but it's not there yet. This could easily be a paragraph in a section on the future of citizen science though -- especially given the open sourcing of Zooniverse, new Google grant projects etc? I say we bin this section and absorb its ideas into the two other places I describe. Anyway, all of that would be data modeling rather than data processing, I think.}
 
 
 % ------------------------------------------------------------------------------
