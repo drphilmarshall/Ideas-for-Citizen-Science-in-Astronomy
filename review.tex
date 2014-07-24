@@ -1004,29 +1004,42 @@ data fitting in astronomy, and other fields, to date?
 \citet{SimpsonEtal2012} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
-carried out by the Spitzer space telescope, which are hypothesised to have
-been caused by a recently-formed high mass star at the centre of the bubble.
-The (bubble) model in this case is simple and recognisable, making both the
-interface constructions and its operation relatively straightforward. The
-large sample of  bubble models have been used to investigate the possibility
-of further star formation being triggered at the bubble surfaces
-\citep{KendrewEtal2012}. A subsequent effort \citep{Beaumont} used data provided by the project to train a machine learning algorithm, \emph{Brut}, in bubble finding. \emph{Brut} is able to identify a small number of sources which are excluded from the Simpson et al. catalogue and which are difficult for humans, specifically bubbles near bright sources which have low contrast relative to their surroundings. In addition, \emph{Brut} proved effective at identifying suspect bubbles included in the previous surveys. Given the relatively small size of the MWP sample, the main use of machine learning is to contribute an independent check on the data; for larger samples, as discussed below, an approach in which machine learning trains on citizen science data and gradually takes over the classification task could be considered. 
+carried out by the Spitzer space telescope, which are hypothesised to have been
+caused by a recently-formed high mass star at the centre of the bubble. The
+(bubble) model in this case is simple and recognisable, making both the
+interface constructions and its operation relatively straightforward. The large
+sample of  bubble models have been used to investigate the possibility of
+further star formation being triggered at the bubble surfaces
+\citep{KendrewEtal2012}. A subsequent effort \citep{Beaumont} used data provided
+by the project to train a machine learning algorithm, \emph{Brut}, in bubble
+finding. \emph{Brut} is able to identify a small number of sources which are
+excluded from the \citeauthor{SimpsonEtal2012} catalogue, and which are
+difficult for humans, specifically bubbles near bright sources which have low
+contrast relative to their surroundings. In addition, \emph{Brut} proved
+effective at identifying suspect bubbles included in the previous surveys. Given
+the relatively small size of the MWP sample, the main use of machine learning is
+to contribute an independent check on the data; for larger samples, as discussed
+below, an approach in which machine learning trains on citizen science data and
+gradually takes over the classification task could be considered. 
 
-% Another Zooniverse project, Space
-% Warps,\footnote{\texttt{http://spacewarps.org}} also involves data modeling,
-% but not directly on the interface, which is restricted to enabling
-% identification (``spotting'') gravitational lensed images. A fraction of the
-% community is engaged in modeling the  identified lens candidates using
-% web-based software developed and supported  by the science
-% team.\footnote{\texttt{Lens Labs}} 
+\CaseStudy{Modelling Lens Candidates}  The Space Warps
+project\footnote{\texttt{http://spacewarps.org}} has an informal data modeling
+element. The classification interface is restricted to enabling identification
+of candidate gravitationally-lensed features, but all the images are available
+via the project's discussion forum. A small team of volunteers (including
+several citizens who helped design the project) has engaged in modeling the 
+identified lens candidates using web-based software developed and supported by
+the project science team.\footnote{\texttt{http://www.SpaghettiLens}} Results from a small
+test programme show that the model parameters derived by the  ensemble of
+citizens are as accurate as those derived by experts \citep{KuengEtal2014}. A
+pilot collaborative modeling analysis can also be browsed in the discussion
+forum.\footnote{\texttt{http://talk.spacewarps.org/XXX}}
 
-\todo{Phil}{Add text on modeling in Space Warps. No Letter, but an extensive
-Talk discussion board, and Rafi's paper (on modeling the Space Warps sims with
-SpaghettiLens) should be out soon...}
+\todo{Phil}{Provide URLs for spaghettilens and modeling thread on Talk.}
 
 \CaseStudy{Galaxy Zoo: Mergers} This has been perhaps the most advanced attempt
 at data modeling in  astronomical web-based citizen science
-\citep{HolincheckEtal2010,WallinEtal2010}. (\question{Chris}{Is this statement
+\citep{HolincheckEtal2010,WallinEtal2010}. \question{Chris}{Is this statement
 still true? Good if you can check through this case study...} Here, simple
 N-body simulations of galaxy mergers were performed in a java applet, and the
 results selected according to visual similarity to images of galaxy mergers
