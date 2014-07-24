@@ -987,19 +987,18 @@ frequently asked questions from new users).
 
 % ------------------------------------------------------------------------------
 
-\section{Data Modeling: Citizen Analysts (4 pages)}
+\section{Data Modelling (4 pages)}
 \label{sec:model}
 
-New understanding of the world comes from the interpretation of data in the
-context of a model. The activity of such ``data modelling'' itself often has
-technical difficulties that computers may find hard to overcome, associated with
-complex and/or computationally expensive, likelihood functions. Humans, by
-applying their developed intuition, can often contribute a great deal to the
-exploration of a model's parameter space by closing in quickly on the model
-configurations that fit the data well. This process can be particularly
-satisfying, rather like solving a puzzle. How have citizen scientists been
-involved in model making and data fitting in astronomy, and other fields, to
-date?
+New understanding of the world comes from the interpretation (fitting) of data
+with a physical model. Such ``data modelling'' often involves technical
+difficulties that computers may find hard to overcome, associated with complex
+and/or computationally expensive likelihood functions. Humans, by applying their
+developed intuition, can often contribute a great deal to the exploration of a
+model's parameter space by closing in quickly on the model configurations that
+fit the data well. This process can be particularly satisfying, rather like
+solving a puzzle. How have citizen scientists been involved in model making and
+data fitting in astronomy, and other fields, to date?
 
 \CaseStudy{The Milky Way Project}
 \citet{SimpsonEtal2012} provided volunteers with a fairly flexible set of
@@ -1050,38 +1049,6 @@ preparation).
 
 \todo{Phil}{Follow up merger zoo papers}
 
-% %%%%%%%%%%%%%%%%%%%
-% \begin{figure}[!ht]
-% \begin{minipage}{\linewidth}
-%   \begin{minipage}{0.45\linewidth}
-%     \centering\includegraphics[width=\linewidth]{figs/SimpsonEtal2012_interface.png}
-%   \end{minipage}\hfill
-%   \begin{minipage}{0.51\linewidth}
-%     \centering\includegraphics[width=\linewidth]{figs/SimpsonEtal2012_bubbles.png}
-%   \end{minipage}\hfill
-% \end{minipage}
-% \medskip
-% 
-% \begin{minipage}{\linewidth}
-%   \begin{minipage}{0.48\linewidth}
-%     \centering\includegraphics[width=\linewidth]{figs/HolincheckEtal2010_comparing.png}
-%   \end{minipage}\hfill
-%   \begin{minipage}{0.48\linewidth}
-%     \centering\includegraphics[width=\linewidth]{figs/HolincheckEtal2010_enhancing.png}
-%   \end{minipage}\hfill
-% \end{minipage}
-% \caption{Examples of image modeling in web-based citizen science projects. Top
-% row: star formation ``bubble'' identification and interpretation in Spitzer
-% images in the Milky Way Project, with the annotation interface shown on the
-% left, and some example (selected, averaged) bubbles on the right. Images from
-% \citet{SimpsonEtal2012}. Bottom row: matching N-body simulated merging
-% galaxies to SDSS images in the Galaxy Zoo Mergers project (left), and
-% exploring parameter space two parameters at a time to refine the models
-% (right). Screenshots from \citet{HolincheckEtal2010}.}
-% \label{fig:modeling}
-% \end{figure}
-% %%%%%%%%%%%%%%%%%%%
-
 %%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
 % cp citscirev_figures.003.png modeling.png
@@ -1099,19 +1066,10 @@ exploring parameter space two parameters at a time to refine the models
 %%%%%%%%%%%%%%%%%%%
 
 
-The above examples involved modeling infrastructure provided by either the
-project's developers or science teams. There have also been cases where
-citizens have carried out modeling analyses using their own tools, or writing
-their own software. For example, in the PlanetHunters project, a small group
-[?] of volunteers downloaded full Kepler lightcurve datasets for the best [?]
-community-selected candidates, and fitted transit lightcurves to them using
-[?]. 
-
-\question{Chris}{Is the PH forum analysis worthy of a case study here? What did the super-users actually do in th eway of advanced lightcurve modeling?}
-
-\CaseStudy{Weak Lensing Data Challenges}
-Another very interesting case is that of the analysis challenges organised by
-the professional cosmology community.  The measurement of weak gravitational
+\CaseStudy{Online Data Challenges}
+A very interesting case of citizens being involved in astronomical 
+data modelling is that of the analysis challenges organised by members of
+the professional astrophysics community. The measurement of weak gravitational
 lensing by large scale structure (``cosmic shear'') relies on the measurement
 of the shapes of distant, faint galaxies with extreme accuracy. The STEP
 \citep{HeymansEtal2006,MasseyEtal2007} and GREAT
@@ -1120,46 +1078,50 @@ estimation challenges have had an enormous impact on the field, revealing
 biases present in existing techniques, and providing a way for researchers
 outside the world of professional cosmology to participate. In particular, the
 GREAT08 challenge saw very successful entries (including the winner) from two
-(out of a total of 11) teams of researchers from outside the field (albeit
+(out of a total of 11) teams of researchers from outside of astronomy (albeit
 still professional researchers). A companion, somewhat streamlined galaxy
 shape measurement challenge, ``Mapping Dark Matter,'' which was hosted at the
 Kaggle website\footnote{\texttt{http://www.kaggle.com/c/mdm}} 
 \citep{KitchingEtal2013b}. The wider reach of this platform led to over 70
 teams making over 700 entries to the competition; many of the teams did not
 contain professional astronomers, although most were still from academia.
-In a comparison with the
-GREAT challenges, the authors found a factor of several improvement in shear
-accuracy over comparable previous challenges. \citet{KitchingEtal2013b}
-suggest two interesting explanations for the success of the Kaggle challenge.
-First, the challenge was designed to be as accessible as possible, with an
-extensive training set of data that needed very little explanation; in this
-way the challenge was geared towards {\it idea generation}. Second, they note
-that the competitive  nature of the challenge (a webpage leaderboard was
-updated in real time as entries were submitted) seemed to stimulate the
-analysts into improving their submissions. Kaggle offers cash prizes, which
-will have had some effect as well (the pot
-was \$3000 for this challenge, even if indirectly).
 
-A second astronomical Kaggle challenge involved inferring the positions of
-dark matter halos based on their weak lensing effects (``Dark
-Worlds,''\footnote{\texttt{http://www.kaggle.com/c/DarkWorlds}} Harvey et al,
-in prep.) This challenge attracted the attention of 357 teams, perhaps due to
-its larger prizes. It also sparked some debate in its forums as to the design
-of the challenge: the models used to generate the data, the size of the test
-datasets (and consequent stability of the leaderboard),  the choice of
+In a comparison with the GREAT challenges, the \citeauthor{KitchingEtal2013b}
+found a factor of several improvement in shear accuracy over comparable previous
+challenges, and suggested two interesting explanations for this success. First,
+the challenge was designed to be as accessible as possible, with an extensive
+training set of data that needed very little explanation; in this way the
+challenge was geared towards {\it idea generation}. Second, they noted that the
+competitive  nature of the challenge (a webpage leaderboard was updated in real
+time as entries were submitted) seemed to stimulate the analysts into improving
+their submissions. Kaggle offers cash prizes, which will have had some effect as
+well (the pot was \$3000 for this challenge, even if indirectly).
+
+Two more astronomical Kaggle challenges have since been set. The first involved
+inferring the positions of dark matter halos based on their weak lensing effects
+(``Dark Worlds,''\footnote{\texttt{http://www.kaggle.com/c/DarkWorlds}} Harvey
+et al, in prep.) This challenge attracted the attention of 357 teams, perhaps
+due to its larger prizes. It also sparked some debate in its forums as to the
+design of the challenge: the models used to generate the data, the size of the
+test datasets (and consequent stability of the leaderboard),  the choice of
 leaderboard metric and so on. These issues are also of generic importance for
 scientists looking to crowd-source algorithm development. It is interesting to
 note that the Kaggle forums are a useful resource for the Kaggle development
 team: the citizens who are active there do influence the design of the site
-infrastructure and challenge rules (D.~Harvey, priv.~comm.).
+infrastructure and challenge rules (D.~Harvey, priv.~comm.). The most recent
+Kaggle astronomy challenge was to reproduce the Galaxy Zoo crowd-sourced galaxy
+morphologies, given the same color images. XXX teams entered this challenge ...
+(K.\ Willett, priv.\ comm.).
 
 \todo{Phil}{Update Kaggle challenge references -- Harvey paper.}
 
+\todo{Phil}{Update Kaggle challenge with Galaxy Zoo. Ask Kyle for spiel.}
 
 \CaseStudy{Protein Modelling with Fold.It} 
 Gamification therein.
 
  \todo{Phil}{Review Fold.It, discuss gamification.}
+
 
 % ------------------------------------------------------------------------------
 
@@ -1219,6 +1181,16 @@ Neptune\footnote{http://www.cloudynights.com/ubbthreads/showflat.php/Cat/0/Numbe
 Seems maybe pro,ising, but we could do with some success stories to review, and
 \emph{cite.}}
 
+The above examples involved modeling infrastructure provided by either the
+project's developers or science teams. There have also been cases where citizens
+have carried out modeling analyses using their own tools. In \sref{sec:enquiry}
+below, we  in the
+PlanetHunters project, a small group [?] of volunteers downloaded full Kepler
+lightcurve datasets for the best [?] community-selected candidates, and fitted
+transit lightcurves to them using [?]. 
+
+\question{Chris}{Is the PH forum analysis worthy of a case study here? What did
+the super-users actually do in th eway of advanced lightcurve modeling?}
 
 \CaseStudy{The Galaxy Zoo Forum.} The best known serendipitous discovery
 emerging from the Galaxy Zoo project is ``Hanny's Voorwerp'' (Lintott et al.), a
