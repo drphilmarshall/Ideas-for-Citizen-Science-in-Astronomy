@@ -734,7 +734,8 @@ consensus. As discussed in later sections, this can become complex but for
 Galaxy Zoo a simple weighting which rewards consistency, first described in
 \citet{Land++}, was sufficient. \phil{By what criteria was it sufficient?}
 
-\todo{Chris}{Check consistency between sections: there are lots of ``see below'' type statements in this section.}
+\todo{Chris}{Check consistency between sections: there are lots of ``see below''
+type statements in this section.}
 
 Importantly, combining classifications provides not only the assignment of a
 label but, in the vote fraction in a particular category, an indication of the
@@ -746,7 +747,8 @@ excellent match for results from expert classification, and have produced
 science ranging from studies of red spirals (Masters et al.) to investigations
 of spiral spin (Slosar et al.).
 
-\todo{Chris}{Let's back up the accuracy claims here with some citations and numbers.}
+\todo{Chris}{Let's back up the accuracy claims here with some citations and
+numbers.}
 
 A full review of Galaxy Zoo science is beyond the scope of this review; a
 recent summary is given in the Galaxy Zoo 2 data release paper by Willett et
@@ -764,7 +766,6 @@ Let's discuss how to resolve this.}
 
 
 \CaseStudy{Surfaces of solar system bodies: Moon Zoo, Moonwatch.}
-
 If studying galaxies remains, at least in part, a visual pursuit, then the same
 is certainly true of planetary science. NASA's clickworkers, which asked
 volunteers to identify craters on the Martian surface, lays claim to be the
@@ -789,17 +790,16 @@ to leave it there and move on.}
 \todo{Chris}{Tidy up the multiple mentions of clickworkers. Whats the optimal ordering of these sections given their inter-references?}
 
 
-\CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}
+\CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters} 
+\citet{threeVs} describe the three ways -- volume, velocity and variety -- in
+which the analysis of ``Big Data'' can be challenging. Time-domain astronomy
+projects, that require the immediate inspection of challenging volumes of live,
+high velocity, complex data, can benefit from citizen science, as shown in these
+two recent projects.  While transients such as supernovae or asteroids can often
+be found through the use of automatic routines, visual inspection is still used
+by many teams as part of the process of selecting candidates for follow-up. 
 
-If citizen science is to be a way of dealing with ``Big Data'' then it is
-perhaps useful to remember that data sets can be big enough to be problematic in
-a variety of ways; the XXXX CITE XXXX describes the `three Vs'' of Big Data -
-volume, velocity and variety. Time-domain astronomy projects requiring the
-immediate inspection of challenging  volumes of live data can also benefit from
-citizen science. While transients such as supernovae or asteroids can often be
-found through the use of automatic routines, visual inspection is still used by
-many teams as part of the process of selecting candidates for follow-up. 
-
+\todo{Chris}{Citation for ``3 V's''}
 \todo{Chris}{Citation for expert visual classification of supernova candidates? SDSS SN search?}
 
 The most successful attempt to use crowdsourcing to attack these problems to
@@ -818,38 +818,10 @@ minutes of the initial email being sent.
 
 \todo{Chris}{Add SN zoo, PTF refs}
 
-\question{Chris}{We should review Richards and Blooms' work using the SN zoo data to improve the automated analysis -- this is an important application of citizen science results, no? Where does it belong though? Here is just the place it happened to come up -- but it could have been anywhere, I think.}
-
-\question{Chris}{Is this the right place to discuss ideas for future time domain astronomy projects with LSST? Or shall we postpone that to a ``future'' section?}
-
-Archive projects such as the main Galaxy Zoo have the luxury of being able to be
-inefficient.  \phil{This made me frown. it's bad to be inefficient when we are
-talking about peoples time! Can we re-direct this somehow? I'm not sure this part belongs in time domain astronomy: don't we want to improve efficiency in all projects?} When the appetite of
-volunteers for classification is high, and little of consequence is attached to
-finishing the task in, for example, three months instead of six, there is little
-incentive to direct attention efficiently. A random assignment of task to
-classifier thus, in most cases, suffices, but this is not true when rapid
-classification is important (or in the case of larger datasets). Using the
-supernova project's archive as a test, Simpson et al. developed a Bayesian
-method for assessing classifier performance; in this view, each classification
-provides information both about the subject of the classification and about the
-classifier themselves. Classifier performance given subject properties can thus
-be predicted and an optimum set of task assignments calculated. For systems
-involving tens of thousands of classifiers and perhaps a similar volume of
-subjects to be classified, an exact solution is computationally extremely
-expensive, but a MCMC approach can be used to find efficient solutions. Work by
-Simpson et al., as well as Horvitz et al and Waterhouse on Galaxy Zoo data,
-suggests that accuracy can be maintained with as few as 30\% of classifications.
-This sort of optimization will be increasingly important for online citizen
-science, but a major challenge (\phil{What sort of challenge?}) remains in
-incorporating this sort of analysis in live systems rather than using archive
-data. 
-
-\todo{Phil}{Add reference to Space Warps, and planned online/real time extension here?}
-
-\todo{Chris}{Bibtex references!}
-
-\todo{Phil,Chris}{Discuss where to put section on increasing efficiency through classifier analysis}
+\question{Chris}{We should review Richards and Blooms' work using the SN zoo
+data to improve the automated analysis -- this is an important application of
+citizen science results, no? Where does it belong though? Here is just the place
+it happened to come up -- but it could have been anywhere, I think.}
 
 A different approach to time-domain astronomy through citizen science is
 exemplified by the Planet Hunters project, which asks volunteers to examine
@@ -857,20 +829,26 @@ light curves drawn from the dataset provided by the \emph{Kepler} mission in
 order to identify interesting events in retrospect. While the task of
 identifying transits from extrasolar planets is, at first glance, one which
 seems more suited for automated than for human analysis, the success of Planet
-Hunters in identifying more than fifty planet candidates missed by the
-automatic routines suggests that there remains a role for inspection by eye in
-cases where the relevant science requires completeness of classifications.
-While several of the planets found by Planet Hunters, including the project's
-first confirmed planet (PH1b, Schwamb et al.), are unusual 
--- PH1b, a
-circumbinary, is the first planet known in a four-star system --  others,
-including the more than forty candidates identified in the habitable zone of
-their parent star by Ji et al., might have been expected to be recovered by
-more conventional searches. Planet Hunters, therefore, is acting as an
-independent test of the Kepler pipeline's efficiency (Schwamb et al.) and has
-inspired improvements in subsequent analysis (Bathalia et al.). More recently,
-advanced users have participated in the identification of unusual stellar
-properties - see XXXXXXXX. 
+Hunters in identifying more than fifty planet candidates missed by the automatic
+routines suggests that there remains a role for inspection by eye in cases where
+the relevant science requires completeness of classifications. While several of
+the planets found by Planet Hunters, including the project's first confirmed
+planet (PH1b, Schwamb et al.), are unusual  -- PH1b, a circumbinary, is the
+first planet known in a four-star system --  others, including the more than
+forty candidates identified in the habitable zone of their parent star by Ji et
+al., might have been expected to be recovered by more conventional searches.
+Planet Hunters, therefore, is acting as an independent test of the Kepler
+pipeline's efficiency (Schwamb et al.) and has inspired improvements in
+subsequent analysis (Bathalia et al.). More recently, advanced users have
+participated in the identification of unusual stellar properties - see
+XXXXXXXX. 
+
+\todo{Chris}{Bibtex refs for time domain astronomy!}
+
+\question{Chris}{Is this the right place to discuss ideas for future time domain
+astronomy projects with LSST? Or shall we postpone that to a ``future''
+section?}
+
 
 \question{Leigh}{Are there any visual classification activities going on in solar system science that belong in this section rather than anywhere else? They needn't be based around pupose-built websites like Galaxy Zoo, but if the product of them is visual classification data we might include them here for contrast. I guess there is visual classification going on in the
 rapid-reaction events (jovian/lunar impacts, storm/plume eruptions) described in the observing section -- but how are those classifications collected and analyzed? Is there any systematic analysis of the crowd's outputs?}
@@ -880,6 +858,47 @@ and TNOs'' - know anything about that?}
 
 \question{Chris}{Are there any other astronomical classification-based citizen
 science projects we should review? Planet 4? Non-Zooniverse projects?}
+
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+\subsection{Classification Analysis}
+\label{sec:class:analysis}
+
+In most visual classification projects, working on archived image data with
+little time pressure, the random assignment of task to classifier, followed by
+simple, democratic treatment of the classifications has been judged sufficient.
+However, the need for rapid processing of images in time domain astronomy
+projects has prompted the investigation of more efficient analysis of the
+classification data.  Using the supernova project's archive as a test,
+\citet{SimpsonEtalIBCC} developed a Bayesian method, IBCC, for assessing
+classifier performance; in this view, each classification provides information
+both about the subject of the classification and about the classifier
+themselves. Classifier performance given subject properties can thus be
+predicted and an optimum set of task assignments calculated. For systems
+involving tens of thousands of classifiers and perhaps a similar volume of
+subjects to be classified, an exact solution is computationally extremely
+expensive, but a MCMC approach can be used to find efficient solutions. Work by
+Simpson et al., as well as Horvitz et al and Waterhouse on Galaxy Zoo data,
+suggests that accuracy can be maintained with as few as 30\% of
+classifications. 
+
+This sort of optimization will be increasingly important for online citizen
+science. The  analysis of classifications in real time will increase the
+efficiency of visual classification projects, and also enable feedback on the
+projects' progress to be given much more promptly -- an important part of
+the collaboration between professionals and amateurs in crowd-sourcing projects.
+
+Steps towards real-time classification analysis have been taken in the Space
+Warps project. Marshall et al (in preparation) derived a simplified version of
+the IBCC classification analysis that updates a probablistic model of both the
+subjects and the agents that represent the classifiers in a statistically online
+manner (Marshall et al, in prep). This analysis was run daily during each of the
+Space Warps projects, and subjects retired from the stream as they crossed a low
+probability threshold. This algorithm is being implemented into the web
+application itself for future projects. Incorporating this sort of real-time
+analysis in projects using a live stream of data, rather than an archive, will
+be a major challenge. \todo{Chris}{this statement about live projects needs a
+sentence explaining what the challenge actually is!}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
