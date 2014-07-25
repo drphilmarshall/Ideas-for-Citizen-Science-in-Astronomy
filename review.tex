@@ -844,10 +844,12 @@ suggests that accuracy can be maintained with as few as 30\% of
 classifications. 
 
 This sort of optimization will be increasingly important for online citizen
-science. The  analysis of classifications in real time will increase the
-efficiency of visual classification projects, and also enable feedback on the
-projects' progress to be given much more promptly -- an important part of
-the collaboration between professionals and amateurs in crowd-sourcing projects.
+science, and especially in projects that use a live stream of data, rather than
+an archive, since the classification analysis will need to be done in real time.
+Analysis strategies which require re-optimisation of the entire subject and
+agent model using all past classifications will likely be prohibitively
+expensive, and so the focus will need to be on ``progressive'' strategies that
+approximate the full inference.
 
 \CaseStudy{Rare event detection: Space Warps} 
 Steps towards real-time classification analysis have been taken in the Space
@@ -868,9 +870,11 @@ retired from the stream as they crossed a low probability threshold. This
 algorithm is being implemented into the web application itself for future
 datasets. 
 
-Incorporating this sort of analysis in projects using a live stream of data, rather than an archive, will
-be a major challenge, requiring real time analysis of classifications. In particular, strategies which require each classification to update our knowledge of every subject being classified and every user will likely be expensive, and `progressive' strategies that approximate the best case need to be developed. 
-\todo{Phil}{\#72 Does this make more sense now?}
+The increased  efficiency of visual classification projects that will come with
+real-time analysis will enables feedback on the projects' progress to be given
+much more promptly -- an important part of the collaboration between
+professionals and amateurs in crowd-sourcing projects.
+
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
