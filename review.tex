@@ -584,23 +584,19 @@ observing community connected via online social networks not usually
 associated with astronomy. 
 
 \CaseStudy{The Orbit of Comet Holmes from the Photographs Uploaded to Flickr.}
-\citet{Lang++2011} used N images scraped from the photo sharing website Flickr
+\citet{Lang++2011} used more than 2000 images scraped from the photo sharing website Flickr
 as inputs to a reconstruction of the orbit of Comet Holmes. This comet was
-bright enough to be visible with the naked eye in XX, 20XX, and a large number
-of photographs were taken of it, and uploaded to the Flickr site.
-\citeauthor{Lang++2011} were able to astrometrically calibrate the images that
-contained enough detectable stars in the background using their automatic
-image registration software, \texttt{astrometry.net}. This had been enabled as
+bright enough to be visible with the naked eye during its 2007 apparition, and a large number
+of photographs were taken of it and uploaded to the Flickr site.
+\citeauthor{Lang++2011} were able to astrometrically calibrate many of the images using their automatic
+image registration software, \texttt{astrometry.net}, which relies on background stars. This had been enabled as
 a Flickr ``bot,'' crawling over all images submitted to the
 \texttt{astrometry.net} group and sending the photos' owners messages showing
-them where on the sky their images were taken. The calibrated images trace out
-the trajectory of the comet over N nights, allowing a refinement of the
-comet's orbit of ... As the authors point out ...  While in this case the
+them where on the sky their images were taken.  The time of observation could in many cases be derived from metadata included in the image headers. The calibrated images trace out
+the trajectory of the comet, producing a result which is close to that obtained from the JPL Horizons system \citep{Giorgini}. Estimates of orbital parameters from Flickr images alone are accurate, when compared to the Horizons values, to within a few standard deviations. As the authors point out, while in this case the
 photographers did not realize they were participating in a scientific study,
 the potential of combining powerful calibration software with large amounts of
-citizen-supplied imaging data is made clear. 
-
-\todo{Phil}{\#22 Finish off Lang and Hogg Comet Holmes review.}
+citizen-supplied imaging data is made clear. This method of `unconscious' citizen science may prove to have significant value in fields beyond astronomy too - if models of statistical sampling can be developed - with ecological surveys of images submitted to sites like Flickr likely in the next few years. 
 
 \CaseStudy{Detecting Meteor Showers with Twitter.}
 By saving a nightly (?) log of all tweets submitted to the web service
@@ -765,7 +761,7 @@ Zoo has by the astronomical community.
 \todo{Chris}{\#69 Tidy up the multiple mentions of clickworkers. Whats the optimal ordering of these sections given their inter-references?}
 
 
-\CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters} 
+\CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}  \label{SNZoo} 
 \citet{threeVs} describe the three ways -- volume, velocity and variety -- in
 which the analysis of ``Big Data'' can be challenging. Time-domain astronomy
 projects, that require the immediate inspection of challenging volumes of live,
@@ -1383,12 +1379,12 @@ professional scientists, are primarily motivated by getting science done.
 \section{The Future of Citizen Astronomy (4 pages)}
 \label{sec:future}
 
-Based on the experience captured in the preceding pages, we can now make some
-tentative speculation on what might be made possible by advances in observing
-technology and public dataset size and availability, and suggest some possible
-fruitful directions for citizen science in astronomy. We also try and identify
-some key challenges, and possible limitations, that we are likely to have to
+The future of significant citizen science in astrophysics depends to some extend on progress in machine learning; if the `technological singularity' first described by John von Neumann \citep{Ulam}, is imminent then there will be little need for either citizen or professional astronomers! A less ambitious astronomical equivalent - the point at which human review of data is no longer necessary - has been forecast for decades, but as we have described above the number of problems for which manual review of images or data is still carried out is enormous. Even if the proportion of data for which human inspection is necessary decreases dramatically over the next decade, the continued growth in the size of astronomical datasets should ensure that there remains plenty for citizen scientists to do. This section discusses what seems to be the likely path citizen science will take, and we also try and identify some key challenges, and possible limitations, that those planning projects are likely to have to
 face.
+
+Consider the example of optical transients. The LSST system paper \citet{LSSTsystem} gives a conservative estimate of $10^5-10^6$ alerts a night. If only 1\% of these require human classification, then that still might produce 10,000 images requiring inspection each night, or roughly one every 100 seconds. Given the increased reliability and likelihood of serendipitous discovery provided by review by citizen scientists, we should take seriously the incorporation of open inspection into plans for LSST transients. Similar arguments (with large error bars) can be made for other surveys, including the vast amounts of data expected to be generated by the Square Kilometer Array; review of transients for LOFAR already requires some human intervention. 
+
+Implicit in this way of thinking is a division of task between human and machine classifiers, something with the majority of projects to data have been able to avoid. Galaxy Zoo and similar projects err instead on the side of including the widest possible range of data, in order to make the task of combining classifications simpler; once the data volume or rate grows further, this must be sacrificed for efficiency's sake. A simple example of human/machine task allocation was mentioned in section \ref{SNzoo}, where analysis of PTF images identified those images which had candidate supernovae which could be inspected by volunteers. It is worth noting that the inclusion of human inspection changed the nature of the machine learning task; instead of prioritising fidelity (producing a small but accurately classified set of candidates), the task for machine learning is to identify a subset of the images which contains many false positives but also a complete set of all supernovae. 
 
 Strands:
 
