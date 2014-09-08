@@ -554,20 +554,22 @@ could be obtained.
 
 \todo{Chris}{\#30 Add Stardust@home references, Stardust@home url as a footnote.}
 
-\CaseStudy{Galaxy morphology with Galaxy Zoo} 
-These results directly inspired the development of Galaxy Zoo, perhaps the most
-prominent scientific crowd-sourcing project to date. Galaxy Zoo was built on the
-continued importance of morphological classification of galaxies. First
-introduced in a systematic fashion by Hubble, and later developed by amongst
-others de Vaucoleurs, it remains the case that the morphology of a system is
-closely related to -- but not entirely defined by -- parameters such as colour,
-star formation history, dynamics, concentration and so on.  In an effort to
-prepare for large surveys such as the Sloan Digital Sky Survey (SDSS), \citet{Lahav1995} and \citet{Lahav1996} followed especially by the work of \citet{Ball} developed neural networks
-trained on small samples of expert classifications in order to automate the
-process of classification,\footnote{The Lahav papers are perhaps as interesting
-for their psychology as for their astrophysics, as the classifications reveal
-the relations between the senior classifiers employed to be experts} arguing
-that the size of the then up-coming surveys left no place for manual
+\CaseStudy{Galaxy morphology with Galaxy Zoo}  These results directly inspired
+the development of Galaxy Zoo, perhaps the most prominent scientific
+crowd-sourcing project to date. Galaxy Zoo was built on the continued
+importance of morphological classification of galaxies. First introduced in a
+systematic fashion by Hubble, and later developed by amongst others de
+Vaucoleurs, it remains the case that the morphology of a system is closely
+related to -- but not entirely defined by -- parameters such as colour, star
+formation history, dynamics, concentration and so on.  In an effort to prepare
+for large surveys such as the Sloan Digital Sky Survey (SDSS),
+\citet{Lahav1995} and \citet{Lahav1996} followed especially by the work of
+\citet{Ball} developed neural networks trained on small samples of expert
+classifications in order to automate the process of
+classification,\footnote{The Lahav papers are perhaps as interesting for their
+psychology as for their astrophysics, as the classifications reveal the
+relations between the senior classifiers employed to be experts} arguing that
+the size of the then up-coming surveys left no place for manual
 classification.
 
 \todo{Chris}{\#32 Add real refs for automatic morphology classification}
@@ -628,7 +630,9 @@ excellent match for results from expert classification, and have produced
 science ranging from studies of red spirals (Masters et al.) to investigations
 of spiral spin (Slosar et al.).
 
-\todo{Chris}{\#36 Let's back up the accuracy claims here with some citations and numbers.}
+\todo{Chris}{\#36 Let's back up the accuracy claims here with some citations
+and numbers.}
+
 
 A full review of Galaxy Zoo science is beyond the scope of this review; a
 recent summary is given in the Galaxy Zoo 2 data release paper by Willett et
@@ -657,14 +661,15 @@ same way that Galaxy Zoo has by the astronomical community.
 
 
 \CaseStudy{Tracking Features in Giant Planet Atmospheres: WinJUPOS}
-However, in \Sref{sec:obs:active} we described the observing strategies used by
-the global network of citizen observers to monitor the appearance of planetary
-atmospheres.  Recent software developments have provided a much more
-quantitative perspective on these citizen observations. The WinJUPOS
-software\footnote{http://jupos.privat.t-online.de/} was developed by a team of
-citizen scientists led by G. Hahn and H.-J. Mettig. It allows multiple images of
-a giant planet to be stacked with a correction for the rapid rotation of Jupiter
-or Saturn  (once every 10 hours), then reprojected onto a latitude-longitude
+% However, in \Sref{sec:obs:active} we described the observing strategies used 
+JUPOS\footnote{http://jupos.privat.t-online.de/} is an amateur astronomy
+project involving a global network of citizen observers to monitor the
+appearance of planetary atmospheres.  Recent software developments have
+provided a much more quantitative perspective on these citizen observations.
+The WinJUPOS software\footnote{http://jupos.privat.t-online.de/} was developed
+by a team of citizen scientists led by G. Hahn; it allows multiple images of a
+giant planet to be stacked with a correction for the rapid rotation of Jupiter
+or Saturn  (once every 10 hours), then re-projected onto a latitude-longitude
 coordinate system, so that the precise positional details of atmospheric
 features can be determined via ``point-and-click,'' relying on the citizen's
 ability to identify features on the planetary disc.  
@@ -683,9 +688,6 @@ is reliant on the citizen observer community to provide this sort of
 contextual mapping for the close-in observations from the orbiting
 spacecraft).  This long-term record of Jupiter's visible appearance by citizen
 scientists has proven invaluable for jovian atmospheric scientists.
-
-\todo{Phil}{Add references for where the WinJUPOS drift charts have been used
-in published research. Pinged Hahn.}
 
 
 \CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}  \label{SNZoo} 
@@ -711,7 +713,18 @@ non-supernova transient'' and ``artifact.'' The results were displayed on a
 webpage and used to select targets for follow-up. Despite the site attracting
 many fewer classifiers than the main Galaxy Zoo, it was highly effective in
 sorting through data, with consensus typically reached on all images within 15
-minutes of the initial email being sent. The large dataset generated by this project was used by \citet{Brink} to develop a supervised learning approach to automatic classification for PTF transients. The performance of this routine, which for a false-positive rate of 1\% is more than 90\% complete, depends on the kind of large training set that can be provided by citizen science and suggests a future path for large surveys in which citizen science provides initial, training data followed by machines taking on much of the work. Encouragingly, the routine, which makes use of a set of 42 features extracted from survey images, has performance which is insensitive to a small fraction of mislabeled training data, suggesting that the requirements for accuracy of citizen science projects which aim to calibrate later machine learning may be less stringent than otherwise thought. 
+minutes of the initial email being sent. The large dataset generated by this
+project was used by \citet{Brink} to develop a supervised learning approach to
+automatic classification for PTF transients. The performance of this routine,
+which for a false-positive rate of 1\% is more than 90\% complete, depends on
+the kind of large training set that can be provided by citizen science and
+suggests a future path for large surveys in which citizen science provides
+initial, training data followed by machines taking on much of the work.
+Encouragingly, the routine, which makes use of a set of 42 features extracted
+from survey images, has performance which is insensitive to a small fraction
+of mislabeled training data, suggesting that the requirements for accuracy of
+citizen science projects which aim to calibrate later machine learning may be
+less stringent than otherwise thought. 
 
 
 A different approach to time-domain astronomy through citizen science is
@@ -1001,6 +1014,11 @@ Kaggle astronomy challenge was to reproduce the Galaxy Zoo crowd-sourced galaxy
 morphologies, given the same color images. XXX teams entered this challenge ...
 (K.\ Willett, priv.\ comm.).
 
+
+\todo{Phil}{\#52 Refer to Banerji et al 2010, and any other work aimed at
+reproducing GZ classifications by machines, here? Machines learning from human
+classifications, is going to come up in future section...}
+
 \todo{Phil}{\#52 Update Kaggle challenge references -- Harvey paper. Update Kaggle challenge with Galaxy Zoo. Ask Kyle for spiel.}
 % Note contrast between having and not having a cash prize...
 % 
@@ -1011,7 +1029,7 @@ morphologies, given the same color images. XXX teams entered this challenge ...
 \CaseStudy{Protein Modelling with Fold.It} 
 Gamification therein.
 
- \todo{Phil}{\#62 Review Fold.It, discuss gamification.}
+\todo{Phil}{\#62 Review Fold.It, discuss gamification.}
 
 
 % ------------------------------------------------------------------------------
@@ -1128,9 +1146,11 @@ lightcurves to them using [?].
 % % http://blogs.discovermagazine.com/notrocketscience/2012/10/30/12-year-old-uses-dungeons-and-dragons-to-help-scientist-dad-with-his-research/
 
 
+\newpage
+
 % ------------------------------------------------------------------------------
 
-\section{Understanding the Citizens (2 pages)}
+\section{Understanding the Citizens}
 \label{sec:crowd}
 
 Having surveyed some of the activities involving citizen scientists, we can
@@ -1147,8 +1167,8 @@ Who is participating in citizen astronomy? We might expect the demographics to
 vary with activity, and with the level of commitment required. We have some
 understanding of at least the former division from two studies that were
 carried out approximately simultaneously, one of the community  participating
-in Galaxy Zoo, and another of the  American Association of Variable Star
-Observers (AAVSO).  \citet{Rad++13} surveyed the Galaxy Zoo volunteer
+in Galaxy Zoo, and another of the American Association of Variable Star
+Observers (AAVSO).  \citet{Rad++2013} surveyed the Galaxy Zoo volunteer
 community to investigate their motivations (\Sref{sec:crowd:motivation}
 below), via a voluntary online questionnaire. The 11,000 self-selected Galaxy
 Zoo users identified as 80\% male, with both genders having an approximately
@@ -1197,22 +1217,22 @@ reach.
 \subsection{Motivation}
 \label{sec:crowd:motivation}
 
-\todo{Chris}{\#45 Read the motivation section to see if it works well for discussing motivation and gamification the way you want to.}
+% \todo{Chris}{\#45 Read the motivation section to see if it works well for discussing motivation and gamification the way you want to.}
 
 What motivates citizen scientists? The two demographic studies referred to
 above also covered this question; it was the primary motivation for
-\citeauthor{Rad++2013}. Having previously identified 12 categories of
-motivation in an earlier pilot study \citep{Rad++2010}, \citeauthor{Rad++2013}
-asked the 170,000 volunteers at the time to comment on how motivated they were
-by each of these categories, and which was their primary motivation. The 6\%
-who responded gave consistent answers to around 900 forum users who responded
-in a separate appeal, allowing us to draw conclusions about this presumably
-more engaged sub-population. A desire to {\it contribute} to science was found
-to be the dominant primary motivation, being selected by 40\% of respondents.
-{\it Astronomy}, {\it science}, {\it vastness}, {\it beauty} and 
-{\it discovery} were all motivation categories that were found to very
-important to the volunteers, while {\it fun}, {\it learning} and {\it
-community} were less important. 
+\citeauthor{Rad++2013} Having previously \citep{Rad++2010} identified 12
+categories of motivation in an earlier pilot study, \citet{Rad++2013} asked
+the 170,000 volunteers at the time to comment on how motivated they were by
+each of these categories, and which was their primary motivation. The 6\% who
+responded gave consistent answers to around 900 forum users who responded in a
+separate appeal, allowing us to draw conclusions about this presumably more
+engaged sub-population. A desire to {\it contribute} to science was found to
+be the dominant primary motivation, being selected by 40\% of respondents.
+{\it Astronomy}, {\it science}, {\it vastness}, {\it beauty} and  {\it
+discovery} were all motivation categories that were found to very important to
+the volunteers, while {\it fun}, {\it learning} and {\it community} were less
+important. 
 
 The AAVSO demographic survey \citep{P+P2012} found similar results: over a third
 of variable star observers cited involvement in science and research as their
@@ -1237,11 +1257,13 @@ understanding of the astrophysics connected to each project, and found that
 performance on this questionnaire correlated with high levels of participation
 in the projects. In the Space Warps project, the probabilistic model for the
 crowd includes a measure of each classifier's skill; a strong correlation is
-seen between skill, and both the number of images seen. It seems as though the
-skillful classifiers remain engaged in the project for a long time, while
-almost no long-term participants have low skill -- an observation consistent
-with citizen scientists being motivated by contributing to science.
+seen between skill, and both the number of images seen (Marshall et al, in
+prep.). It seems as though the skillful classifiers remain engaged in the
+project for a long time, while almost no long-term participants have low skill
+-- an observation consistent with citizen scientists being motivated by
+contributing to science.
 
+\newpage
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -1511,22 +1533,22 @@ but also a complete set of all supernovae.
 
 In this example, human and machine classification proceeded in series rather
 than in parallel, but more complex interactions are possible. The accuracy of
-machine learning typically depends on the quality of the ``gold standard'' data
-which can be provided for the problem in question, and, although citizen science
-projects can assist by providing training sets which are orders of magnitude
-larger than might otherwise have been available, work by \citet{Banerji}
-established that the confidence intervals provided by classifications from
-multiple volunteers can also improve accuracy. Predicting human responses (in
-the form of probabilities of classification) is an easier task than
-straightforward sorting. We expect, therefore, intermediate-size surveys to
-benefit in the future from a ``citizen science phase,'' in which data is
-classified by volunteers prior to the automation of the task. This pattern has
-already been followed by the PTF supernova project discussed above, but perhaps
-it is more useful to think of the citizen scientists as providing training sets
-on demand, so that as conditions change from night to night, or the performance
-of the instrument evolves over time, a small percentage of the total data is
-always processed by humans in order to provide a constantly updated training
-set. 
+machine learning typically depends on the quality of the ``gold standard''
+data which can be provided for the problem in question, and, although citizen
+science projects can assist by providing training sets which are orders of
+magnitude larger than might otherwise have been available, work by
+\citet{Banerji++2010} established that the confidence intervals provided by
+classifications from multiple volunteers can also improve accuracy. Predicting
+human responses (in the form of probabilities of classification) is an easier
+task than straightforward sorting. We expect, therefore, intermediate-size
+surveys to benefit in the future from a ``citizen science phase,'' in which
+data is classified by volunteers prior to the automation of the task. This
+pattern has already been followed by the PTF supernova project discussed
+above, but perhaps it is more useful to think of the citizen scientists as
+providing training sets on demand, so that as conditions change from night to
+night, or the performance of the instrument evolves over time, a small
+percentage of the total data is always processed by humans in order to provide
+a constantly updated training set. 
 
 This approach is complementary to the work discussed in
 \Sref{sec:class:analysis}, which mentioned efforts to improve the efficiency of
