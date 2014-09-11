@@ -1,14 +1,11 @@
 # Ideas for Citizen Science in Astronomy
 
-A review article in preparation, commissioned by  
-Annual Reviews of Astronomy and Astrophysics.
+A review article in preparation, commissioned by Annual Reviews of Astronomy and Astrophysics.
 
-Authors: 
+All content is Copyright 2014 the following authors: 
 * Phil Marshall (KIPAC, Stanford University/SLAC)
 * Chris Lintott (Department of Physics, University of Oxford)
 * Leigh Fletcher (Department of Physics, University of Oxford)
-
-All content is Copyright 2014 the above authors.
 
 
 ## Providing Feedback
