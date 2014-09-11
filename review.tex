@@ -6,6 +6,9 @@
 %
 % Copyright 2014 P.J.Marshall, C.J.Lintott & L.N.Fletcher 
 %
+% 14000 words, 70 references, 2 large figures: 30 pages
+% from http://www.annualreviews.org/page/authors/article-length-estimator-2
+%
 % ==============================================================================
 
 \documentclass{ar2e}
@@ -32,17 +35,17 @@
 
 \title{Ideas for Citizen Science in Astronomy}
 
-\author{Philip J.\ Marshall,$^{1,2}$
-Christopher J. Lintott,$^{2}$ and
-Leigh N. Fletcher,$^{3}$
-\affiliation{%
-\small
-$^1$ Kavli Institute for Particle Astrophysics and Cosmology, P.O.~Box~20450, \newline
-MS~29, Stanford, CA 94309, USA. \newline
-$^2$ Department of Physics, Denys Wilkinson Building, University of Oxford, \newline
-Keble Road, Oxford, OX1 3RH, UK.\newline
-$^3$ Atmospheric, Oceanic and Planetary Physics, Clarendon Laboratory, University
-of Oxford, Parks Road, Oxford OX1 3PU}}
+\author{%
+Philip J.\ Marshall
+  \affiliation{Kavli Institute for Particle Astrophysics and Cosmology, P.O.~Box~20450, \newline
+   MS~29, Stanford, CA 94309, USA.}
+Christopher J. Lintott
+  \affiliation{Department of Physics, Denys Wilkinson Building, University of Oxford, \newline
+   Keble Road, Oxford, OX1 3RH, UK.}
+Leigh N. Fletcher
+  \affiliation{Atmospheric, Oceanic and Planetary Physics, Clarendon Laboratory, University
+   of Oxford, Parks Road, Oxford OX1 3PU}
+}
 
 \markboth{Marshall, Lintott \& Fletcher}{Citizen Astronomy}
 
@@ -74,7 +77,7 @@ easily filled by great observatories or machine learning methods.
 
 % ==============================================================================
 
-\section{Introduction (2 pages)}
+\section{INTRODUCTION}
 \label{sec:intro}
 
 The term ``citizen science'' refers to the activities of people who are not paid
@@ -137,7 +140,7 @@ make some concluding remarks in \Sref{sec:conclusions}.
 
 % ------------------------------------------------------------------------------
 
-\section{Amateur Observing (7 pages)}
+\section{AMATEUR OBSERVING}
 \label{sec:obs}
 
 There is currently an active community of well-equipped amateur observers making
@@ -464,37 +467,7 @@ the Citizen Sky project are presented in a special issue of the JAAVSO at
 to help interpret their interferometric imaging of the obscuring disk in the
 system.
 
-
-
-% % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-% 
-% \subsection{Archive Observing}
-% \label{sec:obs:archive}
-% 
-% 
-% \CaseStudy{Reprocessing Planetary Mission Images: UnmannedSpaceflight.com.} It
-% is not just active observers who have begun using sophisticated image processing
-% techniques.  There is a growing community of citizen software specialists who
-% devote their time to processing of raw images from interplanetary missions,
-% including those that the professional teams (i.e., those responsible for running
-% the missions) simply don't have the time or resources to process completely.  
-% Chief among these is the online forum, UnmannedSpaceflight.com, whose stated aim
-% is to ``advance public interest in, and use of, space exploration data.''  This
-% includes both raw data provided by the space agencies but not published or
-% officially released (e.g., the Cassini raw data stream of images from
-% Saturn\footnote{http://saturn.jpl.nasa.gov/photos/raw/} and those from the
-% Curiosity rover on Mars,\footnote{
-% http://mars.jpl.nasa.gov/msl/multimedia/raw/}) as well as those images
-% previously released by the agencies but re-processed and colourised by dedicated
-% citizen scientists.  Depending on the quality of the original, raw images, this
-% can sometimes produce renderings of old data in new and startlingly beautiful
-% ways.  Although not directly used for scientific enquiry, they certainly promote
-% astronomy to the broader public.
-% 
-% \question{Chris}{Point for discussion: how hard-nosed do we want to be about
-% science versus outreach in this venue? The above paragraph raised a small red
-% flag with me.}
-% 
+ 
 % % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Passive Observing}
@@ -538,7 +511,7 @@ of unequipped observers for doing very bright object transient astronomy.
 
 % ------------------------------------------------------------------------------
 
-\section{Visual Classification (7 pages)}
+\section{VISUAL CLASSIFICATION}
 \label{sec:class}
 
 Observing the night sky with a telescope is perhaps the most familiar of the
@@ -601,18 +574,16 @@ relations between the senior classifiers employed to be experts} arguing that
 the size of the then up-coming surveys left no place for manual
 classification.
 
-\todo{Chris}{\#32 Add real refs for automatic morphology classification}
-
 The performance of the automatic classifiers depended on the input parameters,
 including colour, magnitude and size. These variables correlate well with
 morphology, but are not themselves morphological, and when included they
 dominate the classification. In particularly for galaxies which do not fit the
 general trends, such as spirals with dominant bulges or star-forming
-ellipticals, automated classifiers whether using these simple measures or more
-complex proxies for morphology such as texture fail to match the performance
-of expert classifiers. Schawinski \citep{Scha2007} and Nair \citep{Nair}, amongst others, spent substantial
-time during their time as graduate students classifying tens of thousands of
-galaxies. 
+ellipticals, automated classifiers, whether using these simple measures or
+more complex proxies for morphology such as texture, fail to match the
+performance of expert classifiers. As a result, \citet{Scha2007},
+\citet{Nair}, and others have spent substantial amounts of time visually
+classifying tens of thousands of galaxies. 
 
 Inspired by Stardust@home, a group led by one of the authors (Lintott) created
 Galaxy Zoo in 2007 to provide basic classifications of SDSS
@@ -776,6 +747,7 @@ subsequent analysis (Bathalia et al.). More recently, advanced users have
 participated in the identification of unusual stellar properties - see
 XXXXXXXX. 
 
+\todo{Chris}{provide real references in Planet Hunters section \#83}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -902,7 +874,7 @@ frequently asked questions from new users).
 
 % ------------------------------------------------------------------------------
 
-\section{Data Modelling (4 pages)}
+\section{DATA MODELLING}
 \label{sec:model}
 
 New understanding of the world comes from the interpretation (fitting) of data
@@ -1068,7 +1040,7 @@ machines compares with crowds. Conclusion?}
 
 % ------------------------------------------------------------------------------
 
-\section{Citizen-led Enquiry (3 pages)}
+\section{CITIZEN-LED ENQUIRY}
 \label{sec:explore}
 
 The previous sections have focused on specific, and isolated, activities in
@@ -1153,13 +1125,6 @@ await its results with interest.
 
 \todo{Chris}{\#55 Write up Galaxy Zoo Quench...}
 
-% \CaseStudy{BAA Deep Sky Observers: variable nebulae}
-% 
-% \CaseStudy{Amateur asteroid observations and follow-up.}
-%
-% \question{Chris}{In principle there is a whole body of citizen-led research we
-% could review, published in the BAA magazine and elsewhere. What shall we do
-% about this?}
 
 \CaseStudy{Lightcurve analysis on Planet Hunters Talk.}  The data modelling
 examples of the \Sref{sec:model} all involved modeling infrastructure provided
@@ -1183,7 +1148,7 @@ lightcurves to them using [?].
 
 % ------------------------------------------------------------------------------
 
-\section{Understanding the Citizens (3 pages)}
+\section{UNDERSTANDING THE CITIZENS}
 \label{sec:crowd}
 
 Having surveyed some of the activities involving citizen scientists, we can
@@ -1351,37 +1316,8 @@ professional scientists, are primarily motivated by getting science done.
 
 % ------------------------------------------------------------------------------
 
-\section{The Future of Citizen Astronomy (4 pages)}
+\section{THE FUTURE OF CITIZEN ASTRONOMY}
 \label{sec:future}
-
-\todo{Chris}{\#58 Write up possibilities of future citizen astronomy}.
-\todo{Phil}{\#60 Write up challenges of future citizen astronomy}.
-
-% Plan, to include all types of citizen astronomy (observing, classification)
-% and include both possibilities and challenges. Paragraphs:
-% 
-% 1) Preamble: present picture of two communities, working with professionals.
-% Concept of niches for citizens. 
-%
-% 2) Overview of where professional astronomy is heading. Large surveys: time 
-% domain and cosmology to faint limits. Networks of small telescopes, and 
-% extremely large telescopes for follow-up. Niches: bright object observing. 
-% Survey data mining, as part of human-machine partnership.
-% 
-% 3) Pushing observational boundaries (Leigh)
-% Amateurs' own big data problem, in feature recognition.
-%
-% 4) Evolving need for visual inspection, tension with big data, need to scale up.
-% Human-computer partnerships. Live and at scale, as strategy to enable rapid follow-up, and coping with data volume (and
-% complexity), and to keep motivation of crowd high.
-%
-% 5) Data complexity. New opportunities, for setting more advanced tasks.
-% Advanced, enabling, open-ended/flexible interfaces for open ended 
-% exploration.
-% 
-% 6) Notes on Accessibility & Collaboration 
-
-% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 % 1) Preamble: present picture of two communities, working with professionals.
 % Concept of niches for citizens. 
@@ -1400,7 +1336,6 @@ professional astronomy evolves. In it we try to identify the niches that
 citizens can best occupy in this changing environment, and also some key
 challenges that those planning citizen science projects are likely to have to
 face.
-
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -1433,75 +1368,26 @@ peculiarities over time, replacing the crowd-sourced citizen analysis currently
 underway.  However, such an investment would require both international funding
 and considerable time and effort.
 
-% From Leigh: 
-
-% Today, the crucial benefits of active citizen observing are that of time and
-% coverage, enabled by a global network of passionate and talented observers,
-% connected and sharing their contributions via the internet.  The professional
-% community, restricted to the over-burdened resources of space observatories
-% and ground-based facilities, do not have the capability to replace this
-% contribution. Furthermore, would we want to?  After all, the close connection
-% between professional and amateur communities has broadened the audience for
-% scientific discoveries, and allowed us to use astronomy to educate and enthuse
-% the next generation of budding citizen scientists.  This two-way highway is a
-% key benefit of our present era of citizen astronomy.  However, citizen
-% scientists currently do this for fun and education, and professionals should
-% be wary of demanding more standardised, calibrated and uniform techniques for
-% temporal and spatial monitoring, as enthusiasm may wane if this begins to
-% sound like 'work' rather than a hobby.
-
-
-% ``One might imagine that, as observing technology improves, citizen discoveries
-% via active observation might extend out to the distant Kuiper Belt, although
-% many of these targets are so dim that they are unavailable to all but the
-% largest of apertures.'' 
-
-% \question{Leigh}{So what then is the future of citizen
-% discovery in the solar system? Mining of the LSST archive? Will there be an
-% active observing aspect to this effort?}
-
-% Reply from Leigh: 
-% I would imagine that some citizens would certainly participate in data  mining
-% efforts, but I get the impression that this doesn?t capture the  imagination
-% in the same way as the active observing does. In the  latter, I expect to see
-% improvements in spatial resolution, filter  coverage and sensitivity so that
-% amateurs can detect smaller and  smaller features on planetary objects -
-% resolving storm systems on  Neptune, for example. I wrote about much of this
-% in the ?Pushing  observational boundaries? section. Their main problem will
-% be  automated feature detection in planetary movies (such as impact  flashes),
-% which comes with a ?big data? problem, given that regular  video monitoring of
-% the planets will take up terabytes of data!
-
-...
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 % 3) Pushing observational boundaries (Leigh)
 % Amateurs' own big data problem, in feature recognition.
 
-% \CaseStudy{Pushing observational boundaries.}
-% Amateur observing follows professional:
-% \begin{itemize}
-% \item Deeper field for amateur observations of Uranus and Neptune, particularly
-% near-IR.
-% \item Visible-light and near-IR spectroscopy; long-term datasets, serious
-% photometry.  Calibration, calibration, calibration...
-% \item Advanced technologies such as AO for image stabilisation?
-% \end{itemize}
-
 However, the advances in hardware becoming available to citizen observers
-suggest other roles they could play. Larger optics, more sensitive cameras, and
-spectral coverage extending to longer wavelengths in the infrared could permit
-citizen investigations of Uranus and Neptune; the cold and icy bodies in the
-distant solar system (e.g., Trans-Neptunian objects and the Kuiper Belt), and
-asteroids and solar system debris closer to home.  Transits of extrasolar
+suggest other roles they could play. Larger optics, more sensitive cameras,
+and spectral coverage extending to longer wavelengths in the infrared could
+permit citizen investigations of Uranus and Neptune; the cold and icy bodies
+in the distant solar system (e.g., Trans-Neptunian objects and the Kuiper
+Belt), and a wider variety of bright variable stars.  Transits of extrasolar
 planets in front of their parent stars would be permitted from modest
 observatories provided they had stable conditions.  New platforms might also
-become available to the citizen scientist, including balloon-borne observatories
-rising up and out of the majority of the atmospheric turbulence to provide
-crisper and more detailed observations of astronomical targets. We may well see
-networks of citizen deep sky observers investigating new transients found in the
-wide field surveys, at least at the bright end. 
+become available to the citizen scientist, including balloon-borne
+observatories rising up and out of the majority of the atmospheric turbulence
+to provide crisper and more detailed observations of astronomical targets. We
+may well see networks of citizen deep sky observers investigating new bright
+transients found in the wide field surveys,  while
+continuing to expand their own surveys.
 
 Aside from pushing the observational boundaries, one challenge that amateur
 astronomy may face is its own big data problem.   For example, solar system
@@ -1511,9 +1397,8 @@ manipulated. Will this community take to crowd-sourcing its visual inspection?
 
 \chris{This could be a place to add a note about your Google project: it could
 in principle  enable the citizen observers to enlist other citizens to help with
-interpreting their observations, no?}
+interpreting their observations, no? \#84}
 
-\phil{Revisit this observing section post-AVSO text...}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -1637,31 +1522,15 @@ when efficiency is paramount.
 As we have seen in previous sections, volunteers can and do also move beyond
 simple classification problems, and such behaviour could become increasingly
 important as the volume and complexity of astronomical data continues to
-increase. 
-%
-% {\it
-% Transient surveys, in particular, will require rapid decisions about
-% follow-up which could even be carried out by citizens themselves using remote
-% observing facilities with suitable capabilities.
-% 
-% %%%%%%%%%%%%%%%%%%%%%%
-% 
-% (XXXXX CHRIS TO PHIL : could be a way to put in the text below as part of a
-% continuous section - what do you think?).
-% 
-% (XXXXX PHIL TO CHRIS : ye-es - I like the continuous section plan, I am
-% implementing it as you see. I think I want the observing stuff first though, so
-% this tie-in might end up going further up. See above!
-% 
-% %%%%%%%%%%%%%%%%%%%%%%
-% }
-%
-We might imagine providing user-friendly, web-based tools enabling  fairly
-sophisticated data analysis to be performed by anyone with a browser. The
-experience documented above invites us to consider the possibility of teams of
-citizens  performing analyses that currently require a significant amount of
-research student time. Checking survey images and catalogs  for processing
-failures and fitting non-linear models to data are just two possibilities.
+increase.  We might imagine providing user-friendly, web-based tools enabling 
+fairly sophisticated data analysis to be performed by anyone with a browser.
+The experience documented above invites us to consider the possibility of
+teams of citizens  performing analyses that currently require a significant
+amount of research student time. Checking survey images and catalogs  for
+processing failures and fitting non-linear models to data are just two
+possibilities. The Kaggle experience should give us some encouragement here;
+might those citizens who are motivated by data challenges appreciate some
+opportunities to analyze real astronomical data?
 
 Enabling these advanced activities at the required scale could require the
 appearance of a significantly increased cohort of advanced online citizen
@@ -1709,7 +1578,7 @@ of citizen science?}
 
 % ------------------------------------------------------------------------------
 
-\section{Concluding Remarks (1 page)}
+\section{CONCLUDING REMARKS (1 page)}
 \label{sec:conclusions}
 
 Over the last two decades, citizen astronomy has undergone a period of rapid
@@ -1785,7 +1654,7 @@ CJL acknowledges...
 % ------------------------------------------------------------------------------
 % Here is a test sentence, with a test citation \citep{Lin++08}.
 
-\section{Literature Cited}
+\section{LITERATURE CITED}
 
 % ARAA style:
 \bibliographystyle{Astronomy}
