@@ -1,9 +1,22 @@
 # Ideas for Citizen Science in Astronomy
 
-How can we realize the potential of citizen science in astronomy? How 
-far have we got so far? What might the limits be?
+A review article in preparation, commissioned by  
+Annual Reviews of Astronomy and Astrophysics.
 
-Annual Review of Astronomy and Astrophysics (2014), in preparation.
+Authors: 
+* Phil Marshall (KIPAC, Stanford University/SLAC)
+* Chris Lintott (Department of Physics, University of Oxford)
+* Leigh Fletcher (Department of Physics, University of Oxford)
 
-Phil Marshall, Leigh Fletcher, & Chris Lintott 
-(Department of Physics, University of Oxford)
+All content is Copyright 2014 the above authors.
+
+
+## Providing Feedback
+
+If you would like to comment on the review, please submit an issue to this
+repository at **[this
+link](https://github.com/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy/issues)**.
+Pull requests will also be considered.
+
+Alternatively, you can send email to **[Phil](mailto:pjm@stanford.edu)**, and
+he will process your feedback into an issue for you.
