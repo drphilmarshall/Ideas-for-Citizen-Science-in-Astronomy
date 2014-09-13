@@ -473,7 +473,7 @@ system.
 % \todo{Phil}{Fold in comments from Arne Henden #}
 
  
-% % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+% - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 \subsection{Passive Observing}
 \label{sec:obs:passive}
@@ -484,6 +484,8 @@ data available for scientific analysis. This has been demonstrated by two
 recent professionally-led studies, that made use of a largely passive
 observing community connected via online social networks not usually
 associated with astronomy. 
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{The Orbit of Comet Holmes from the Photographs Uploaded to Flickr.}
 \citet{Lang++2011} used more than 2000 images scraped from the photo sharing
@@ -509,6 +511,8 @@ imaging data is made clear. This method of ``unconscious'' citizen science may
 prove to have significant value in fields beyond astronomy too, if models of the
 statistical sampling can be developed, with ecological surveys of images
 submitted to sites like Flickr likely in the next few years. 
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Informal Earth-Meteor Impact Detection.} 
 As well as observing other planets for impacts, citizen scientists have also
@@ -548,68 +552,72 @@ Observing the night sky with a telescope is perhaps the most familiar of the
 activities of amateur astronomers, but as the previous section showed, citizens
 are also actively involved in the processing and interpretation of the data they
 have taken.  In this and the next section we look at projects where much larger
-archival datasets are made available to crowds of citizens, who are asked to
-inspect astronomical images, and help describe and characterize the features in
-them. Despite significant advances in machine learning and computer vision, the
-visual inspection of data remains an important part of astronomy, as it
-continues to take advantage of the amazing human capacity for visual pattern
-recognition. While many in the 1990s predicted that the increasing size of
-astronomical datasets would make such time-intensive inspection impossible, the
-extensive reach of the world wide web has enabled the involvement of hundreds of
-thousands of citizen scientists in this form of ``crowd-sourced'' data
-analysis. 
+archival astronomical datasets have been made available to crowds of citizens,
+who are asked to inspect images and light curves, and help describe and
+characterize the features in them. Despite significant advances in machine
+learning and computer vision, the visual inspection of data remains an important
+part of astronomy, as it continues to take advantage of the amazing human
+capacity for visual pattern recognition. While many in the 1990s predicted that
+the increasing size of astronomical datasets would make such time-intensive
+inspection impossible, the extensive reach of the world wide web has enabled the
+involvement of hundreds of thousands of citizen scientists in this form of
+``crowd-sourced'' data analysis. 
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-\subsection{Visual Classification in Astronomy}
+\subsection{Crowd-sourced Classification in Astronomy}
 \label{sec:class:astro}
 
 \CaseStudy{Stardust@home}
-While significant preliminary work had been carried out by NASA's clickworkers
-project (see below), the project that first illustrated the potential of
-crowd-sourcing for astronomical purposes was 
-Stardust@home\footnote{\url{http://stardustathome.ssl.berkeley.edu/}}. This effort, which
-asked volunteers to scan through images of samples returned from Comet Wild-2
-by the \emph{Stardust} mission, attracted a large audience to the apparently
-unprepossessing task of looking for dust grains in an effort to identify
-samples of material from outside our Solar System. The site was built on
-BOSSA, an early attempt to build a generalized platform for such crowd-sourcing
-projects (see next section), and featured a stringent test which had to be
-passed before classifications were counted. Despite this hurdle, more than
-20,000 people took part and a variety of dust grains were removed from the
-aerogel for further study, at least one later proving an excellent candidate
-for an interstellar grain. Perhaps the most significant long-term impact of
+While significant preliminary work had been carried out by NASA's
+``clickworkers'' (see below), the project that first illustrated the potential
+of crowd-sourcing for astronomical purposes was 
+Stardust@home\footnote{\url{http://stardustathome.ssl.berkeley.edu/}}. The team
+asked volunteers to scan through images of samples returned from Comet Wild-2 by
+the \emph{Stardust} mission, attracted a large audience to the apparently
+unprepossessing task of looking for dust grains in an effort to identify samples
+of material from outside our Solar System. The site was built on BOSSA, an early
+attempt to build a generalized platform for such crowd-sourcing projects, and
+featured a stringent test which volunteers had to pass before their
+classifications would be counted. Despite this hurdle, more than 20,000 people
+took part, and a variety of dust grains were removed from the aerogel for
+further study, at least one later proving an excellent candidate for an
+interstellar grain. Perhaps the most significant long-term impact of
 Stardust@home, though, was the demonstration that large amounts of volunteer
-effort were available even for relatively `unsexy' tasks such as hunting dust
-grains which do not involve intrinsically beautiful images, and that, with a
-suitable website design and stringent testing, scientifically valuable results
-could be obtained. 
+effort were available even for such seemingly uninspiring tasks such as hunting
+dust grains in images unlikely to be described as intrinsically beautiful, and
+that, with a suitable website design and stringent testing, scientifically
+valuable results could be obtained. 
 
-\todo{Chris}{\#30 Add Stardust@home references, Stardust@home url as a footnote.}
+% \todo{Chris}{\#30 Add Stardust@home references.}
 
-\CaseStudy{Galaxy morphology with Galaxy Zoo}  These results directly inspired
-the development of Galaxy Zoo, perhaps the most prominent scientific
-crowd-sourcing project to date. Galaxy Zoo was built on the continued
-importance of morphological classification of galaxies. First introduced in a
-systematic fashion by Hubble, and later developed by amongst others de
-Vaucoleurs, it remains the case that the morphology of a system is closely
-related to -- but not entirely defined by -- parameters such as colour, star
-formation history, dynamics, concentration and so on.  In an effort to prepare
-for large surveys such as the Sloan Digital Sky Survey (SDSS),
-\citet{Lahav1995} and \citet{Lahav1996} followed especially by the work of
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
+\CaseStudy{Galaxy morphology with Galaxy Zoo}  
+
+The Stardust@home experience directly inspired the development of Galaxy Zoo,
+perhaps the most prominent scientific crowd-sourcing project to date. Galaxy Zoo
+was built on the continued importance of morphological classification of
+galaxies, first introduced in a systematic fashion by Hubble, and later
+developed by, among others, de Vaucoleurs.  While the morphology of a galaxy is
+closely related to its other properties, such as colour, star formation history,
+dynamics, concentration and so on, it is not entirely defined by then: there is
+more information in resolved images of galaxies than is captured in these
+observables.  In an effort to prepare for large surveys, such as the Sloan
+Digital Sky Survey (SDSS),
+\citeauthor{Lahav1995}~(\citeyear{Lahav1995},\citeyear{Lahav1996}), and later,
 \citet{Ball} developed neural networks trained on small samples of expert
-classifications in order to automate the process of
-classification,\footnote{The Lahav papers are perhaps as interesting for their
-psychology as for their astrophysics, as the classifications reveal the
-relations between the senior classifiers employed to be experts} arguing that
-the size of the then up-coming surveys left no place for manual
-classification.
+classified images,\footnote{The Lahav papers are perhaps as interesting for
+their psychology as for their astrophysics, as the classifications reveal the
+relations between the senior classifiers employed to be experts.} in order to
+automate the process of classification arguing that the size of the then
+up-coming surveys left no place for visual classification.
 
-The performance of the automatic classifiers depended on the input parameters,
+The performance of these automatic classifiers depended on the input parameters,
 including colour, magnitude and size. These variables correlate well with
 morphology, but are not themselves morphological, and when included they
 dominate the classification. In particularly for galaxies which do not fit the
-general trends, such as spirals with dominant bulges or star-forming
+general trends, such as spirals with dominant bulges, or star-forming
 ellipticals, automated classifiers, whether using these simple measures or
 more complex proxies for morphology such as texture, fail to match the
 performance of expert classifiers. As a result, \citet{Scha2007},
@@ -622,74 +630,74 @@ galaxies\footnote{The original Galaxy Zoo is preserved at
 \url{http://zoo1.galaxyzoo.org} with the current incarnation at
 \url{http://www.galaxyzoo.org}.} Classifiers were presented with a coloured
 image centered on and scaled to one of more than 800,000 galaxies, and could
-select from one of six options: clockwise, anti clockwise and edge-on spirals,
+select from one of six options to characterise that object's morphology: 
+clockwise, anti clockwise and edge-on spirals,
 ellipticals, mergers and ``star/don't know.'' Aside from  an easily-passed
 initial test, little knowledge was required or indeed presented to classifiers,
-enabling them to proceed quickly doing something real soon after arriving at the
-site; this approach, in contrast to Stardust@home where a difficult test needed
-to be completed before authentic and useful contributions could be made, was
-successful in encouraging large numbers of visitors to participate. This tactic
--- in which both passing and sustained engagement provide substantial
-contribution -- is illustrated in \Fref{}  which shows results from Galaxy Zoo
-2. 
-\todo{Chris}{\#34 Insert box diagram illustrating Zooniverse tactics / GZ2 results.} 
-This later version of the project asked for more detailed
+enabling them to proceed quickly to doing something real soon after arriving at the
+site; this approach, in contrast to Stardust@home, was
+successful in encouraging large numbers of visitors to participate. 
+This tactic -- in which both passing and sustained engagement provide
+substantial contribution -- is illustrated in \Fref{} which shows results from
+Galaxy Zoo 2. This later version of the project asked for more detailed
 classifications via a decision tree containing questions such as `How prominent
 is the bulge?', and later iterations of the project have applied a similar
 approach to galaxies drawn from \emph{Hubble Space Telescope} surveys including
 \textsc{GEMS, GOODS, COSMOS} and \textsc{CANDELS}. 
+% 
+% \todo{Chris}{\#34 Insert box diagram illustrating Zooniverse tactics / GZ2 results.} 
+% \todo{Chris}{\#35 Add galaxy zoo participation statistics}. 
 
-\todo{Chris}{\#35 Add galaxy zoo participation statistics}. 
-
-These figures are undoubtedly impressive, but they would be meaningless if the
-classifications provided were not suitable for science. With sufficient effort
-to ensure each galaxy is classified multiple times (as many as 80 for many
-Galaxy Zoo images), these independent classifications need to be combined into a
-consensus. As discussed in later sections, this can become complex but for
-Galaxy Zoo a simple weighting which rewards consistency, first described in
-\citet{Land++}, was sufficient. \phil{By what criteria was it sufficient?}
-
-\todo{Chris}{\#68 Check consistency between sections: there are lots of ``see below'' type statements in this section.}
-
+To date, over XXXXX people have participated in the Galaxy Zoo project, but such
+figures would be meaningless if the classifications provided were not suitable
+for science. With sufficient effort to ensure each galaxy is classified multiple
+times (as many as 80 for many Galaxy Zoo images), these independent
+classifications need to be combined into a consensus. As discussed in later
+sections, this can become complex, but for Galaxy Zoo a simple weighting which
+rewards consistency, first described in \citet{Land++}, was deemed sufficient.
+%
+% \todo{Chris}{\#68 Check consistency between sections: there are lots of ``see below'' type statements in this section.}
+%
 Importantly, combining classifications provides not only the assignment of a
 label but, in the vote fraction in a particular category, an indication of the
 reliability of the classification. This allows more subtle biases, such as the
 propensity for small, faint or distant galaxies to appear as elliptical
-regardless of their true morphology, to be measured and accounted for (see
-Bamford et al.). The net result is that the Galaxy Zoo classifications are an
-excellent match for results from expert classification, and have produced
-science ranging from studies of red spirals (Masters et al.) to investigations
-of spiral spin (Slosar et al.).
+regardless of their true morphology, to be measured and accounted for
+\citep[see][]{Bamford++}. The net result is that the Galaxy Zoo classifications
+are an excellent match for results from expert classification, and have produced
+science ranging from studies of red spirals \citep{Masters++} to investigations
+of spiral spin \citep{Slosar++}.
+A full review of Galaxy Zoo science is beyond the scope of this review; a recent
+summary is given in the Galaxy Zoo 2 data release paper by \citet{Willett++}.
 
-\todo{Chris}{\#36 Let's back up the accuracy claims here with some citations
-and numbers.}
+% \todo{Chris}{\#36 Let's back up the accuracy claims here with some citations
+% and numbers.}
+
+It is worth noting that some of the project's most important results
+have been the result not of interaction with the main classification interface,
+but represent rather serendipitous discoveries made by participants. 
+We return to these in \Sref{sec:explore} below.
 
 
-A full review of Galaxy Zoo science is beyond the scope of this review; a
-recent summary is given in the Galaxy Zoo 2 data release paper by Willett et
-al. However, it is worth noting that many of the project's most important
-results have been the result not of interaction with the main interface but
-represent rather serendipitous discoveries made by participants. We return to
-these in \Sref{sec:explore} below.
-
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Surfaces of solar system bodies: Moon Zoo, Moonwatch.}
-If studying galaxies remains, at least in part, a visual pursuit, then the
-same is certainly true of planetary science. NASA's clickworkers, which asked
+If studying galaxies remains, at least in part, a visual pursuit, then the same
+is certainly true of planetary science. NASA's clickworkers, which asked
 volunteers to identify craters on the Martian surface, lays claim to be the
-oldest astronomical crowd-sourcing project. The consensus results matched
-those available from experts at the time, but failed to go beyond this
-promising start to produce results of real scientific value. More recently,
-interfaces inviting classifiers to look at the Moon, Mercury, Mars and Vesta
-have been launched and attracted significant numbers of classifications, but
-although preliminary results have been promising these projects have yet to
-produce datasets that have been used by the planetary science community in the
-same way that Galaxy Zoo has by the astronomical community. 
+oldest astronomical crowd-sourcing project. The consensus results matched those
+available from experts at the time, but failed to go beyond this promising start
+to produce results of real scientific value. More recently, interfaces inviting
+classifiers to look at the Moon, Mercury, Mars and Vesta have been launched and
+attracted significant numbers of classifications; however, although preliminary
+results have been promising these projects have yet to produce datasets that
+have been used by the planetary science community in the same way that Galaxy
+Zoo has by the astronomical community. 
 
-\todo{Chris}{\#38 Fact-check the consensus with experts claim about clickworkers, provide clickworkers reference.}
+% \todo{Chris}{\#38 Provide clickworkers reference.}
 
-\todo{Chris}{\#69 Tidy up the multiple mentions of clickworkers. Whats the optimal ordering of these sections given their inter-references?}
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Tracking Features in Giant Planet Atmospheres: WinJUPOS}
 % However, in \Sref{sec:obs:active} we described the observing strategies used 
@@ -720,6 +728,8 @@ contextual mapping for the close-in observations from the orbiting
 spacecraft).  This long-term record of Jupiter's visible appearance by citizen
 scientists has proven invaluable for jovian atmospheric scientists.
 
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}  \label{SNZoo} 
 \citet{threeVs} describe the three ways -- volume, velocity and variety -- in
@@ -811,6 +821,8 @@ agent model using all past classifications will likely be prohibitively
 expensive, and so the focus will need to be on ``progressive'' strategies that
 approximate the full inference.
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Rare event detection: Space Warps} 
 Steps towards real-time classification analysis have been taken in the Space
 Warps project. Space Warps is a rare object search: volunteers are shown deep
@@ -860,6 +872,8 @@ analysis of survey data which has been collected for a multitude of purposes
 may require a more sophisticated model for data analysis than the simple
 decision tree presented by projects such as Galaxy Zoo. 
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Snapshot Serengeti}  This Zooniverse project enables the analysis of
 images from more than two hundred motion-sensitive ``camera traps,'' offers a
 particularly sophisticated response. Driven in part by the need for an interface
@@ -888,6 +902,8 @@ volunteers. The online citizen astronomy projects developed so far have tended
 to emphasise co-operation between volunteers, and the results being due to a
 team effort. Elsewhere, experiments with a more competitive approach to citizen
 science, ``gamifying'' the activity, have been performed.
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Visual inspection of 3-D biological scans: Eyewire.}  This project,
 based at MIT, seeks to supplement machine learning identification of neurons in
@@ -918,6 +934,8 @@ fit the data well. This process can be particularly satisfying, rather like
 solving a puzzle. How have citizen scientists been involved in model making and
 data fitting in astronomy, and other fields, to date?
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{The Milky Way Project}
 \citet{SimpsonEtal2012} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
@@ -940,6 +958,8 @@ to contribute an independent check on the data; for larger samples, as discussed
 below, an approach in which machine learning trains on citizen science data and
 gradually takes over the classification task could be considered. 
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Modelling Lens Candidates} The Space Warps
 project\footnote{\url{http://spacewarps.org}} has an informal data modeling
 element. The classification interface is restricted to enabling identification
@@ -957,6 +977,8 @@ small group of Space Warps volunteers\footnote{See
 for the forum thread that was used.} \citep{Wilcox2014}.
 
 % \todo{Phil}{\#78 Replace SL URL with labs.spacewarps.org.}
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Galaxy Zoo: Mergers} This has been perhaps the most advanced attempt
 at data modeling in  astronomical web-based citizen science
@@ -998,6 +1020,8 @@ exploring parameter space two parameters at a time to refine the models
 \end{figure}
 %%%%%%%%%%%%%%%%%%%
 
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Online Data Challenges}
 A very interesting case of citizens being involved in astronomical 
@@ -1064,6 +1088,8 @@ machines compares with crowds. Conclusion?}
 % classifications, is going to come up in future section...}
 % 
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Protein Modeling with Foldit}  
 One of the most successful examples of crowd-sourced data modeling is the
 online multi-player 3-D protein modeling game,  Foldit
@@ -1126,6 +1152,8 @@ some enquiries that citizens have led in astronomy to date, and how have they
 been enabled and supported?
 
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Saturn Storm Watch.}  In this project, Cassini's observations of
 lightning emissions are connected with active amateur observations of
 convective cloud structures within the giant planet atmosphere
@@ -1139,6 +1167,8 @@ alerted to them on the Planetary Virtual  Observatory and Laboratory.
 of the hexagon vertices is being used to understand what sort of wave this is,
 and to identify its origins.
 
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{The Galaxy Zoo Forum.} The best known serendipitous discovery
 emerging from the Galaxy Zoo project is ``Hanny's Voorwerp'' (Lintott et al.), a
@@ -1174,6 +1204,8 @@ an ``engine of motivation'' in inspiring its participants to become more
 involved. 
 
 
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Galaxy Zoo: Quench.} 
 Participants in citizen science projects like Galaxy Zoo and Saturn Storm Watch 
 are highly motivated but geographically widely distributed; the impact of the
@@ -1186,6 +1218,8 @@ await its results with interest.
 
 \todo{Chris}{\#55 Write up Galaxy Zoo Quench...}
 
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Lightcurve analysis on Planet Hunters Talk.}  The data modelling
 examples of the \Sref{sec:model} all involved modeling infrastructure provided
@@ -1611,7 +1645,7 @@ in mind. Indeed, the more citizen-accessible the interfaces to the upcoming
 public wide-field survey databases can be made, the better chance we will give
 ourselves of enabling and supporting citizen-led enquiry.  
 
-\chris{Do you want to add anything here about bottom-up citizen science?}
+% \chris{Do you want to add anything here about bottom-up citizen science?}
  
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -1637,8 +1671,8 @@ is being used. We might imagine regular broadcasts from the projects providing
 the data as playing a significant role in motivating and sustaining a crowd of
 volunteers.
 
-\chris{See what you think about the above. What would you add about the future
-of citizen science?}
+% \chris{See what you think about the above. What would you add about the future
+% of citizen science?}
 
 % ------------------------------------------------------------------------------
 
@@ -1647,58 +1681,44 @@ of citizen science?}
 
 Over the last two decades, citizen astronomy has undergone a period of rapid
 growth, primarily due to the sharp increase in the ease with which people can
-form communities and work together on the internet. Professional-led visual
-classification projects have appeared, attracting three orders of magnitude
-more citizens to the field than were previously engaged in amateur
-observational research. 
+form communities and work together on the internet.  A number of productive
+``Pro-Am collaborations'' have formed, to observe a variety of bright
+astronomical objects in ways that capitalise on the flexibility, availability
+and skill of the amateur observing community. Professional-led visual
+classification projects have appeared, attracting three orders of magnitude more
+citizens to the field than were previously engaged in amateur observational
+research. Citizens have been challenged to take part in data analysis tasks of
+increasing sophistication and difficulty, and experiments in
+professionally-guided ``bottom up'' citizen research have begun.
 
-In this review, we have seen that the best citizen science in astronomy has
-come from organised communities given freedom to explore, who can operate in 
-niches not occupied either by professional observers or automated 
-classification software. The citizen astronomers are passionate about the
-subject, and  motivated by being of service to science. We therefore argue
+In this review, we have consistently seen that the best citizen science in
+astronomy has come from organised communities asked to play to their strengths,
+and operate in  niches not occupied either by professional observers or
+automated classification software. The citizen astronomers are passionate about
+the subject, and  motivated by being of service to science. We must recognize
 that a critical feature of ``citizen science'' is the enabling of amateurs to
 make authentic contributions to the research topic in question: this in turn
-drives us to seek out those  tasks that cannot be done by machines or
-professionals. We have then seen something of the ability of citizen science
-to improve the performance of both machine learning and professional observing
-projects: it makes sense to think in terms of ``human-machine partnerships''
-or ``Pro-Am  collaborations.''
+drives us to seek out those  tasks that cannot be done by other means. We have
+also seen something of the ability of citizen science to improve the performance
+of  machine learning as well as professional observing projects: it makes sense
+to think in terms of ``human-machine partnerships.''
 
-Both the observational and classification communities are very diverse in both
-motivation and ability to contribute;  this diversity means that good citizen
-science projects are ones that provide both a low barrier to entry, while also
-providing (or supporting the development of) tools that enable their emergent
-experts to maximize their contributions to science.  Indeed, the most
-dedicated volunteers have proved capable of developing and using fairly
-advanced astronomical techniques, suggesting we are likely to continue to see
-the numbers of citizens co-authoring papers in high impact research journals
+The observational and classification communities are similar in their diversity
+regarding both motivation and ability to contribute;  this diversity means that
+good citizen science projects are ones that provide both a low barrier to entry,
+but that also providing (or supporting the development of) tools that enable
+their emergent experts to maximize their contributions to science.  Indeed, the
+most dedicated volunteers have proved capable of developing and using fairly
+advanced astronomical techniques, suggesting that we are likely to continue to
+see the numbers of citizens co-authoring papers in high impact research journals
 increase.
 
-
-% Citizen scientists currently do this for fun and education, and professionals
-% should be wary of demanding more standardised, calibrated and uniform
-% techniques for temporal and spatial monitoring, as enthusiasm may wane if this
-% begins to sound like ``work'' rather than a hobby. The social nature of
-% citizen science seems to be an important aspect: good communication among the
-% crowd, and between the professionals and citizens involved, seem to be
-% hallmarks of successful citizen science projects. There is a 
-% need to understand black
-% box systems, especially if the box is full of people. But: people must be
-% treated as ends in themselves. 
-
-% We have dwelt on Galaxy Zoo at length because it allows us to clearly see the
-% key advantages of crowd-sourcing as a solution to scientific data analysis. It
-% is capable of \emph{scaling} to the size of modern data sets to produce
-% results of scientific value. It enables \emph{serendipity}, giving individual
-% attention to each image and allowing the identification of (and advocacy for)
-% systems which are literally one in a million such as Hanny's Voorwerp. The
-% large datasets it produces, and in particular the ability to quantify
-% uncertainty, improve \emph{machine learning} by providing large, rich training
-% sets. Last but not least, crowd-sourcing projects have enormous
-% \emph{educational} potential, teaching participating volunteers about science
-% and about the process of science even when that is not the explicit goal of
-% the project. 
+Each of the case studies presented in this review has been an experiment in
+citizen science: amateur and professional astronomers alike have had good ideas
+for ways to make use of the public's skills and abilities, tried them out, and 
+made progress in astronomy -- and also  revealed something about the how citizen
+science can work. Human potential is vast: citizen astronomy seems an experiment
+well worth continuing.
 
 
 % ------------------------------------------------------------------------------
@@ -1708,6 +1728,9 @@ increase.
 We are most grateful to the following people for their suggestions, 
 comments, and clarifications: Grischa Hahn, ... 
 
+We thank David~W.~Hogg, Arfon Smith, Laura Whyte, ... for many useful
+discussions about the practice of citizen science in astronomy.
+
 PJM and LNF were supported by Royal Society research fellowships at the
 University of Oxford. The work of PJM was also supported in part  by the U.S.
 Department of Energy under contract number DE-AC02-76SF00515.
@@ -1716,7 +1739,6 @@ CJL acknowledges...
 
 
 % ------------------------------------------------------------------------------
-% Here is a test sentence, with a test citation \citep{Lin++08}.
 
 \section{LITERATURE CITED}
 
