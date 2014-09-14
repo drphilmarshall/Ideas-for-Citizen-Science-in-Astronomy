@@ -603,7 +603,10 @@ developed by, among others, de Vaucoleurs.  While the morphology of a galaxy is
 closely related to its other properties, such as colour, star formation history,
 dynamics, concentration and so on, it is not entirely defined by then: there is
 more information in resolved images of galaxies than is captured in these
-observables.  In an effort to prepare for large surveys, such as the Sloan
+observables.  One approach was to develop simple proxies (e.g CAS \citep{Conselice}), but these
+are at best approximations for true morphology. 
+
+In an effort to prepare for large surveys, such as the Sloan
 Digital Sky Survey (SDSS),
 \citeauthor{Lahav1995}~(\citeyear{Lahav1995},\citeyear{Lahav1996}), and later,
 \citet{Ball} developed neural networks trained on small samples of expert
@@ -616,15 +619,15 @@ up-coming surveys left no place for visual classification.
 The performance of these automatic classifiers depended on the input parameters,
 including colour, magnitude and size. These variables correlate well with
 morphology, but are not themselves morphological, and when included they
-dominate the classification. In particularly for galaxies which do not fit the
+dominate the classification. In particular, for galaxies which do not fit the
 general trends, such as spirals with dominant bulges, or star-forming
 ellipticals, automated classifiers, whether using these simple measures or
 more complex proxies for morphology such as texture, fail to match the
-performance of expert classifiers. As a result, \citet{Scha2007},
+performance of expert classifiers\citet{Lin++2008}. As a result, \citet{Scha2007},
 \citet{Nair}, and others have spent substantial amounts of time visually
 classifying tens of thousands of galaxies. 
 
-Inspired by Stardust@home, a group led by one of the authors (Lintott) created
+Inspired by Stardust@home, a small group led by one of the authors (Lintott) created
 Galaxy Zoo in 2007 to provide basic classifications of SDSS
 galaxies\footnote{The original Galaxy Zoo is preserved at
 \url{http://zoo1.galaxyzoo.org} with the current incarnation at
