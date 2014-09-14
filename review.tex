@@ -488,13 +488,13 @@ associated with astronomy.
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{The Orbit of Comet Holmes from the Photographs Uploaded to Flickr.}
-\citet{Lang++2011} used more than 2000 images scraped from the photo sharing
+\citet{Lang++2012} used more than 2000 images scraped from the photo sharing
 website Flickr as inputs to a reconstruction of the orbit of Comet Holmes. This
 comet was bright enough to be visible with the naked eye during its 2007
 apparition, and a large number of photographs were taken of it and uploaded to
-the Flickr site. \citeauthor{Lang++2011} were able to astrometrically calibrate
+the Flickr site. \citeauthor{Lang++2012} were able to astrometrically calibrate
 many of the images using their automatic image registration software,
-\texttt{astrometry.net}, which detects the stars in each image and matches them
+\texttt{astrometry.net} \citep{Lang++2010}, which detects the stars in each image and matches them
 to those in professionally-assembled catalogs. This had been enabled as a Flickr
 ``bot,'' crawling over all images submitted to the \texttt{astrometry.net}
 group\footnote{\url{https://www.flickr.com/groups/astrometry}} and sending the
@@ -802,7 +802,7 @@ simple, democratic treatment of the classifications has been judged sufficient.
 However, the need for rapid processing of images in time domain astronomy
 projects has prompted the investigation of more efficient analyses of the
 classification data.  Using the Supernova Zoo project's archive as a test,
-\citet{SimpsonEtalIBCC} developed a Bayesian method, IBCC, for assessing
+\citet{Simpson++2012IBCC} developed a Bayesian method, IBCC, for assessing
 classifier performance; in this view, each classification provides information
 both about the subject of the classification and about the classifier
 themselves. Classifier performance given subject properties can thus be
@@ -1186,9 +1186,10 @@ is, and to identify its origins.
 \CaseStudy{The Galaxy Zoo Forum.} 
 
 The best known serendipitous discovery emerging from the Galaxy Zoo project is
-``Hanny's Voorwerp'' \citep{Lintott++Voorwerp}, a galaxy-scale light echo which
+``Hanny's Voorwerp'' \citep{Lintott++2009}, a galaxy-scale light echo which
 reveals a recent ($\sim 100,000$ years ago)  shutdown of AGN activity in IC
-2497, a neighboring spiral galaxy. The discovery of the Voorwerp was first
+2497, a neighboring spiral galaxy \citep{Keel++2012}. 
+The discovery of the Voorwerp was first
 recorded in the Galaxy Zoo forum a few weeks after the project started, and
 inspired a more systematic search for similar phenomena in other galaxies. This
 project, made possible by the deep engagement in the forum community of Galaxy
@@ -1196,8 +1197,6 @@ Zoo science team member Bill Keel, succeeded in finding more than forty
 instances of clouds which appear to have been ionized by AGN activity, in
 systems a third of which show signs of significant drops in activity on a
 timescale of tens of thousands of years.  
-
-% \todo{Chris}{\#63 Add more citations for voorwerp science}
 
 The ability of the Zoo volunteers to carry out their own research, moving far
 beyond the mere ``clockwork'' required by the main interface, is best
@@ -1393,7 +1392,7 @@ engagement. What has been the experience in citizen astronomy so far?
 An early experiment with Galaxy Zoo showed that the addition of a score
 de-incentivised poor classifiers, but also resulted in the best classifiers
 leaving, presumably having been satisfied once a top score was achieved. A
-recent study by \citep{Eveleigh++OldWeather} of the Zooniverse's Old Weather
+recent study by \citep{Eveleigh++2013} of the Zooniverse's Old Weather
 project, which included basic rankings for classifiers, highlighted these
 dangers, identifying volunteers who were alienated by the addition of this
 game-like score.They felt discouraged when top scores could not be matched, and
@@ -1850,6 +1849,12 @@ de~Pater I, Fletcher LN, Perez-Hoyos S, Hammel HB, Orton GS, et~al. 2010.
 {Eiben} CB, {Siegel} JB, {Bale} JB, {Cooper} S, {Khatib} F, et~al. 2012.
 \newblock \textit{{Nature Biotechnology}} 30:190
 
+\bibitem[{{Eveleigh} {et~al.}(2013){Eveleigh}, {Jennett}, {Lynn}, \&
+  {Cox}}]{Eveleigh++2013}
+{Eveleigh}, A., {Jennett}, C., {Lynn}, S., \& {Cox}, A.~L. 2013, {Proceedings
+  of the First International Conference on Gameful Design, Research, and
+  Applications}, 79
+
 \bibitem[{{Fischer} et~al.(2011){Fischer}, {Kurth}, {Gurnett}, {Zarka},
   {Dyudina} et~al.}]{11fischer}
 {Fischer} G, {Kurth} WS, {Gurnett} DA, {Zarka} P, {Dyudina} UA, et~al. 2011.
@@ -1941,6 +1946,10 @@ Hammel HB, Wong MH, Clarke JT, de~Pater I, Fletcher LN, et~al. 2010.
 {Ivezic} Z, {Tyson} JA, {Acosta} E, {Allsman} R, {Anderson} SF, et~al. 2008.
 \newblock \textit{ArXiv e-prints}
 
+\bibitem[{{Keel} {et~al.}(2012){Keel}, {Lintott}, {Schawinski}, {Bennert},
+  {Thomas}, {Manning}, {Chojnowski}, {van Arkel}, \& {Lynn}}]{Keel++2012}
+{Keel}, W.~C., {Lintott}, C.~J., {Schawinski}, K., {et~al.} 2012, \aj, 144, 66
+
 \bibitem[{{Kendrew} et~al.(2012){Kendrew}, {Simpson}, {Bressert}, {Povich},
   {Sherman} et~al.}]{KendrewEtal2012}
 {Kendrew} S, {Simpson} R, {Bressert} E, {Povich} MS, {Sherman} R, et~al. 2012.
@@ -1997,10 +2006,24 @@ Hammel HB, Wong MH, Clarke JT, de~Pater I, Fletcher LN, et~al. 2010.
 {Lahav} O, {Naim} A, {Sodr{\'e}} Jr. L, {Storrie-Lombardi} MC. 1996.
 \newblock \textit{\mnras} 283:207
 
+\bibitem[{{Lang} \& {Hogg}(2012)}]{Lang++2012}
+{Lang}, D., \& {Hogg}, D.~W. 2012, \aj, 144, 46
+
+\bibitem[{{Lang} {et~al.}(2010){Lang}, {Hogg}, {Mierle}, {Blanton}, \&
+  {Roweis}}]{Lang++2010}
+{Lang}, D., {Hogg}, D.~W., {Mierle}, K., {Blanton}, M., \& {Roweis}, S. 2010,
+  \aj, 139, 1782
+
 \bibitem[{{Law} et~al.(2009){Law}, {Kulkarni}, {Dekany}, {Ofek}, {Quimby}
   et~al.}]{LawPTF}
 {Law} NM, {Kulkarni} SR, {Dekany} RG, {Ofek} EO, {Quimby} RM, et~al. 2009.
 \newblock \textit{\pasp} 121:1395--1408
+
+\bibitem[{{Lintott} {et~al.}(2009){Lintott}, {Schawinski}, {Keel}, {van Arkel},
+  {Bennert}, {Edmondson}, {Thomas}, {Smith}, {Herbert}, {Jarvis}, {Virani},
+  {Andreescu}, {Bamford}, {Land}, {Murray}, {Nichol}, {Raddick}, {Slosar},
+  {Szalay}, \& {Vandenberg}}]{Lintott++2009}
+{Lintott}, C.~J., {Schawinski}, K., {Keel}, W., {et~al.} 2009, \mnras, 399, 129
 
 \bibitem[{{Massey} et~al.(2007){Massey}, {Heymans}, {Berg{\'e}}, {Bernstein},
   {Bridle} et~al.}]{MasseyEtal2007}
