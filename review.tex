@@ -678,6 +678,11 @@ have been the result not of interaction with the main classification interface,
 but represent rather serendipitous discoveries made by participants. 
 We return to these in \Sref{sec:explore} below.
 
+% \todo{Phil}{\#52 Discuss Banerji et al 2010, and any other work aimed at
+% reproducing GZ classifications by machines, here? Kaggle Galaxy Zoo and 
+% Machine learning from human classifications in general, is going to come up 
+% in future section...}
+
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
@@ -700,75 +705,79 @@ Zoo has by the astronomical community.
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Tracking Features in Giant Planet Atmospheres: WinJUPOS}
-% However, in \Sref{sec:obs:active} we described the observing strategies used 
+Not all astronomical crowd-sourced visual classification is led by 
+professional scientists.
 JUPOS\footnote{\url{http://jupos.privat.t-online.de}} is an amateur astronomy
 project involving a global network of citizen observers to monitor the
-appearance of planetary atmospheres.  Recent software developments have
-provided a much more quantitative perspective on these citizen observations.
-The WinJUPOS software\footnote{\url{http://jupos.privat.t-online.de}} was developed
-by a team of citizen scientists led by G. Hahn; it allows multiple images of a
-giant planet to be stacked with a correction for the rapid rotation of Jupiter
-or Saturn  (once every 10 hours), then re-projected onto a latitude-longitude
+appearance of planetary atmospheres.  Recent software developments have provided
+a much more quantitative perspective on these citizen observations. The WinJUPOS
+software\footnote{\url{http://jupos.privat.t-online.de}} was developed by a team
+of citizen scientists led by G. Hahn; it allows multiple images of a giant
+planet to be stacked with a correction for the rapid rotation of Jupiter or
+Saturn  (once every 10 hours), then re-projected onto a latitude-longitude
 coordinate system, so that the precise positional details of atmospheric
 features can be determined via ``point-and-click,'' relying on the citizen's
-ability to identify features on the planetary disc.  
+ability to identify features on the planetary disc visually.  
 
-By doing this over many nights surrounding Jupiter's opposition, the team
-builds up enormous drift charts for these features (comprising tens of
-thousands of positional measurements), ranging from the tiniest convective
-structure being moved by the jet streams, to the largest vortices
+By doing this over many nights surrounding Jupiter's opposition, the community
+builds up enormous drift charts, comprising tens of thousands of positional
+measurements, for these features, ranging from the tiniest convective structure
+being moved by the jet streams, to the largest vortices
 \citep[e.g.][]{WinJUPOSRedSpot}.  The charts reveal the dynamic interactions
-within the jovian weather layer, and the long-term stability of their zonal
-jets (see e.g., the regular bulletins provided by the Jupiter section of the
-British Astronomical Association). The positions can be extrapolated forward
-in time, enabling targeted observations by professional observatories or even
-visiting spacecraft (the Juno mission, scheduled to arrive at Jupiter in 2016,
-is reliant on the citizen observer community to provide this sort of
-contextual mapping for the close-in observations from the orbiting
-spacecraft).  This long-term record of Jupiter's visible appearance by citizen
-scientists has proven invaluable for jovian atmospheric scientists.
+within the jovian weather layer, and the long-term stability of their zonal jets
+(see e.g., the regular bulletins provided by the Jupiter section of the British
+Astronomical Association). The positions can be extrapolated forward in time,
+enabling targeted observations by professional observatories or even visiting
+spacecraft. The Juno mission, scheduled to arrive at Jupiter in 2016, is reliant
+on the citizen observer community to provide this sort of contextual mapping for
+the close-in observations from the orbiter.  This long-term record of Jupiter's
+visible appearance by citizen scientists has proven to be an  invaluable
+resource for jovian atmospheric scientists.
 
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}  \label{SNZoo} 
-\citet{threeVs} describe the three ways -- volume, velocity and variety -- in
-which the analysis of ``Big Data'' can be challenging. Time-domain astronomy
-projects, that require the immediate inspection of challenging volumes of live,
-high velocity, complex data, can benefit from citizen science, as shown in these
-two recent projects.  While transients such as supernovae or asteroids can often
-be found through the use of automatic routines, visual inspection is still used
-by many teams as part of the process of selecting candidates for follow-up. 
+\CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}  
+\label{SNZoo} \citet{threeVs} describe three defining aspects of ``Big Data''
+that make its analysis challenging: volume, velocity and variety. Time-domain
+astronomy projects, that require the immediate inspection of challenging volumes
+of live, high velocity, complex data, can benefit from citizen science, as shown
+by two recent projects, Supernova Zoo and Planet Hunters.  
+While transients such as supernovae or asteroids can often be found through the
+use of automatic routines, visual inspection is still used by many professional
+science teams as part of their process of selecting candidates for follow-up. 
 
-\todo{Chris}{\#70 Provide citation for ``3 V's'' of big data}
+% \todo{Chris}{\#70 Provide citation for ``3 V's'' of big data}
 
 The most successful attempt to use crowd-sourcing to attack these problems to
-date has been the offshoot of Galaxy Zoo described in \citet{SmithSN} ``Supernova
-Zoo.'' Data from the Palomar Transient Factory \citep{LawPTF} was automatically
-processed and images of candidate supernovae uploaded on a nightly basis; this
-triggered an email to volunteers who, upon responding were shown the new image,
-a reference image and the subtraction between the two. By analyzing the answers
-to a series of questions, candidates were sorted into three categories, roughly
-corresponding to ``probable supernova,'' ``likely astrophysical but
-non-supernova transient'' and ``artifact.'' The results were displayed on a
-webpage and used to select targets for follow-up. Despite the site attracting
-many fewer classifiers than the main Galaxy Zoo, it was highly effective in
-sorting through data, with consensus typically reached on all images within 15
-minutes of the initial email being sent. The large dataset generated by this
-project was used by \citet{Brink} to develop a supervised learning approach to
-automatic classification for PTF transients. The performance of this routine,
-which for a false-positive rate of 1\% is more than 90\% complete, depends on
-the kind of large training set that can be provided by citizen science and
-suggests a future path for large surveys in which citizen science provides
-initial, training data followed by machines taking on much of the work.
-Encouragingly, the routine, which makes use of a set of 42 features extracted
-from survey images, has performance which is insensitive to a small fraction
-of mislabeled training data, suggesting that the requirements for accuracy of
+date has been the offshoot of Galaxy Zoo described in \citet{SmithSN}.  Data
+from the Palomar Transient Factory \citep{LawPTF} was automatically processed
+and images of candidate supernovae uploaded on a nightly basis; this triggered
+an email to volunteers who, upon responding, were shown the new image, a
+reference image and the difference between the two. By analyzing the answers
+given by the volunteers to a series of questions, candidates were sorted into 
+three categories, roughly corresponding to ``probable supernova,'' ``likely
+astrophysical but non-supernova transient'' and ``artifact.'' The results were
+displayed on a webpage and used by the science team to select targets for
+follow-up. Despite the Supernova Zoo site attracting many fewer classifiers 
+than Galaxy Zoo, it was highly effective in sorting through data,  with
+consensus typically reached on all images within 15 minutes of the initial email
+being sent. 
+
+The large dataset generated by this project was used by \citet{Brink} to develop
+a supervised learning approach to automatic classification for PTF transients.
+The performance of this routine, which for a false-positive rate of 1\% is more
+than 90\% complete, depends on the kind of large training set that can be
+generated by crowds of inspectors; this suggests a future path for large surveys
+in which citizen science provides initial, training data and is followed by
+machines taking on the remaining bulk of the work. Encouragingly,
+\citeauthor{Brink}'s method, which makes use of a set of 42 features extracted
+from survey images, has performance which is insensitive to a small fraction of
+mislabeled training data, suggesting that the requirements for accuracy of
 citizen science projects which aim to calibrate later machine learning may be
 less stringent than otherwise thought. 
 
-
-A different approach to time-domain astronomy through citizen science is
+A different approach to crowd-sourced classification in time-domain astronomy is
 exemplified by the Planet Hunters project, which asks volunteers to examine
 light curves drawn from the dataset provided by the \emph{Kepler} mission in
 order to identify interesting events in retrospect. While the task of
@@ -776,19 +785,18 @@ identifying transits from extrasolar planets is, at first glance, one which
 seems more suited for automated than for human analysis, the success of Planet
 Hunters in identifying more than fifty planet candidates missed by the automatic
 routines suggests that there remains a role for inspection by eye in cases where
-the relevant science requires completeness of classifications. While several of
-the planets found by Planet Hunters, including the project's first confirmed
-planet (PH1b, Schwamb et al.), are unusual  -- PH1b, a circumbinary, is the
-first planet known in a four-star system --  others, including the more than
-forty candidates identified in the habitable zone of their parent star by Ji et
-al., might have been expected to be recovered by more conventional searches.
-Planet Hunters, therefore, is acting as an independent test of the Kepler
-pipeline's efficiency (Schwamb et al.) and has inspired improvements in
-subsequent analysis (Bathalia et al.). More recently, advanced users have
-participated in the identification of unusual stellar properties - see
-XXXXXXXX. 
+the relevant science requires samples of high completeness. Several of the
+planets found by Planet Hunters are unusual: PH1b, the project's first confirmed
+planet \citep{Schwamb++PH1b} and   a circumbinary, is the first planet known in
+a four-star system. Others, including the more than forty candidates identified
+in the habitable zone of their parent star by \citep{Ji++PH}, might have been
+expected to be recovered by more conventional searches. Planet Hunters,
+therefore, is acting as an independent test of the Kepler pipeline's efficiency
+(Schwamb et al.) and has inspired improvements in subsequent analysis (Bathalia
+et al.). More recently, advanced users have participated in the identification
+of unusual stellar properties - see XXXXXXXX. 
 
-\todo{Chris}{provide real references in Planet Hunters section \#83}
+% \todo{Chris}{provide bibtex references in Planet Hunters section \#83}
 
 % - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
@@ -799,35 +807,39 @@ In most visual classification projects, working on archived image data with
 little time pressure, the random assignment of task to classifier, followed by
 simple, democratic treatment of the classifications has been judged sufficient.
 However, the need for rapid processing of images in time domain astronomy
-projects has prompted the investigation of more efficient analysis of the
-classification data.  Using the supernova project's archive as a test,
+projects has prompted the investigation of more efficient analyses of the
+classification data.  Using the Supernova Zoo project's archive as a test,
 \citet{SimpsonEtalIBCC} developed a Bayesian method, IBCC, for assessing
 classifier performance; in this view, each classification provides information
 both about the subject of the classification and about the classifier
 themselves. Classifier performance given subject properties can thus be
-predicted and an optimum set of task assignments calculated. For systems
-involving tens of thousands of classifiers and perhaps a similar volume of
-subjects to be classified, an exact solution is computationally extremely
-expensive, but a MCMC approach can be used to find efficient solutions. Work by
-Simpson et al., as well as Horvitz et al and Waterhouse on Galaxy Zoo data,
-suggests that accuracy can be maintained with as few as 30\% of
+predicted and an optimum set of task assignments calculated. 
+% For systems involving tens of thousands of classifiers and perhaps a similar
+% volume of subjects to be classified, an exact solution is computationally
+% extremely expensive, but an MCMC approach can be used to find efficient
+% solutions. 
+Moreover, work by Simpson et al., as well as Horvitz et al and Waterhouse on
+Galaxy Zoo data, suggests that accuracy can be maintained with as few as 30\% of
 classifications. 
-
 This sort of optimization will be increasingly important for online citizen
-science, and especially in projects that use a live stream of data, rather than
+science, especially in projects that use a live stream of data, rather than
 an archive, since the classification analysis will need to be done in real time.
-Analysis strategies which require re-optimisation of the entire subject and
-agent model using all past classifications will likely be prohibitively
-expensive, and so the focus will need to be on ``progressive'' strategies that
-approximate the full inference.
+% Analysis strategies which require re-optimisation of the entire subject and
+% agent model using all past classifications will likely be prohibitively
+% expensive, and so the focus will need to be on ``progressive'' strategies that
+% approximate the full inference.
+
+% \todo{Chris}{provide bibtex references in IBCC section \#83}
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Rare event detection: Space Warps} 
 Steps towards real-time classification analysis have been taken in the Space
-Warps project. Space Warps is a rare object search: volunteers are shown deep
+Warps project.\footnote{\url{http://spacewarps.org}} 
+Space Warps is a rare object search: volunteers are shown deep
 sky survey images and asked to mark features that look as though they are
-gravitationally lensed galaxies (Marshall et al, in prep). Extensive training is
+gravitationally lensed galaxies or quasars (Marshall et al, More et al in prep).
+Extensive training is
 provided via an ongoing tutorial that includes simulated lenses and known
 non-lenses, and immediate pop-up feedback as to whether these training images
 were correctly classified. Because real lenses are rare (appearing once every
@@ -836,14 +848,14 @@ multitude of uninteresting images so that new ones can be inspected -- and this
 drives the need for efficiency. Marshall et al (in preparation) derived a
 simplified version of the IBCC classification analysis that updates a
 probablistic model of both the subjects and the agents that represent the
-classifiers in a statistically online manner (Marshall et al, in prep). This
+classifiers in a statistically online manner. This
 analysis was run daily during each of the Space Warps projects, and subjects
 retired from the stream as they crossed a low probability threshold. This
 algorithm is being implemented into the web application itself for future
 datasets. 
 
 The increased  efficiency of visual classification projects that will come with
-real-time analysis will enables feedback on the projects' progress to be given
+real-time analysis will enable feedback on the projects' progress to be given
 much more promptly -- an important part of the collaboration between
 professionals and amateurs in crowd-sourcing projects.
 
@@ -857,66 +869,66 @@ Although, as described in the previous section, astronomical analysis led the
 development of citizen science as a data analysis tool, it has quickly been
 adopted by other fields. In some cases, this adoption has been explicit. The
 tools developed for Stardust@home were developed into a general purpose
-library for citizen science, BOSSA, which has recently been ported to python
-as PyBOSSA, and the Zooniverse platform which supports many of the examples
-described above includes projects from fields as diverse as ecology and
-papyrology. This diversity of projects allows general lessons about project
+library for citizen science, BOSSA.
+% (which has recently been ported to python as PyBOSSA), 
+Both this and the Zooniverse platform (which hosts many of the examples
+described above) support projects from fields as diverse as ecology and
+papyrology. This diversity allows general lessons about project
 design to be drawn; indeed, this is an active area of research for academic
 fields as diverse as computer science, economics and social science. 
 
-\todo{Chris}{\#73 Add citation to Crowston paper on PH and Seafloor Explorer}
+% \todo{Chris}{\#73 Add citation to Crowston paper on PH and Seafloor Explorer}
 
 Projects from other fields can also suggest strategies which could be adopted
-by future astronomical projects. In particular, future projects involving
+by future citizen astronomy projects. In particular, future projects involving
 analysis of survey data which has been collected for a multitude of purposes
 may require a more sophisticated model for data analysis than the simple
 decision tree presented by projects such as Galaxy Zoo. 
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Snapshot Serengeti}  This Zooniverse project enables the analysis of
-images from more than two hundred motion-sensitive ``camera traps,'' offers a
-particularly sophisticated response. Driven in part by the need for an interface
+\CaseStudy{Snapshot Serengeti}  
+This Zooniverse project invites the visual classification of animals in
+photographs from more than two hundred motion-sensitive ``camera traps''
+installed in the Serengeti National Park, and enables a particularly
+sophisticated volunteer response. Driven in part by the need for an interface
 which allows volunteers to state the obvious (for example, identifying
 elephants, lion or zebra) and also to provide more obscure classification (for
-example, distinguishing between types of gazelle), a variety of classification
-paths are presented. In addition to just clicking buttons identifying species,
-volunteers can opt for a decision tree-like approach, or choose from a variety
-of similar species (``Looks like an antelope...'') or search the descriptions
-provided (``Show me all animals whose descriptions involve 'ears' ''). This
-hybrid model has proved successful not only in encouraging classification, but
-also in encouraging learning; over a Snapshot Serengeti classifier's ``career''
-they are increasingly likely to chose more direct routes.
+example, distinguishing between different species of gazelle),  a variety of
+classification paths are presented. In addition to just clicking buttons
+identifying species, volunteers can opt for a decision tree-like approach, or
+choose from a variety of similar species (``Looks like an antelope...'') or
+search the descriptions provided in order to make an informed  classification
+(``Show me all animals whose descriptions involve 'ears' ''). This hybrid model
+has proved successful not only in encouraging classification, but also in
+encouraging learning; over a Snapshot Serengeti classifier's ``career'' they are
+increasingly likely to chose more direct routes.
 
-\todo{Chris}{\#43 Move SS to GZ section endnote? Include Snapshot Serengeti citations}
+% \todo{Chris}{\#43 Include Snapshot Serengeti citations}
 
-\phil{Is the SS experience relevant to open ended exploration of survey images?
-I've wondered for a while whether diagnosis of astronomical image reduction
-problems could be done by crowd-sourcing: DES do a lot of visual inspection just
-within their team, LSST could serve a larger volume to more people, potentially.
-The viewer ubrets with their shareable URLs seem vital for this; might SS-style
-interfaces also be important?}
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
+\CaseStudy{Visual inspection of 3-D biological scans: Eyewire.}  
 Another aspect of project strategy, and design, relates to the engagement of the
 volunteers. The online citizen astronomy projects developed so far have tended
 to emphasise co-operation between volunteers, and the results being due to a
 team effort. Elsewhere, experiments with a more competitive approach to citizen
 science, ``gamifying'' the activity, have been performed.
 
-% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+The Eyewire project, based at MIT, seeks to supplement machine learning
+identification of neurons in three-dimensional scans. Notably, this project
+incorporated some ``gamified'' elements into its design. Participants in the
+project, who are asked to identify connected regions throughout a
+three-dimensional scan, earn points based on participation and also have a
+separate, publicly visible, accuracy score.  In addition to overall leader
+boards, the project also runs short challenges including a regular Friday
+``happy hour'' in which participants compete on specific problems. Eyewire is
+also notable for its other strong community elements, with a chat room open and
+available to all participants in the project (supplemented, incidentally, by a
+``bot'' built by a participant which answers frequently asked questions from new
+users). 
 
-\CaseStudy{Visual inspection of 3-D biological scans: Eyewire.}  This project,
-based at MIT, seeks to supplement machine learning identification of neurons in
-three-dimensional scans. Notably, this project incorporated some ``gamified''
-elements into its design. Participants in the project, who are asked to identify
-connected regions throughout a three-dimensional scan, earn points based on
-participation and also have a separate, publicly visible, accuracy score.  In
-addition to overall leader boards, the project also runs short challenges
-including a regular Friday ``happy hour'' in which participants compete on
-specific problems. Eyewire is also notable for its other strong community
-elements, with a chat room open and available to all participants in the project
-(supplemented, incidentally, by a ``bot'' built by a participant which answers
-frequently asked questions from new users). 
+% \todo{Chris}{\#90 Include Eyewire citations, URL}
 
 
 % ------------------------------------------------------------------------------
@@ -924,14 +936,16 @@ frequently asked questions from new users).
 \section{DATA MODELLING}
 \label{sec:model}
 
-New understanding of the world comes from the interpretation (fitting) of data
-with a physical model. Such ``data modelling'' often involves technical
+New understanding of the world comes from the interpretation -- fitting -- of
+data with a physical model. Such ``data modelling'' often involves technical
 difficulties that computers may find hard to overcome, associated with complex
 and/or computationally expensive likelihood functions. Humans, by applying their
-developed intuition, can often contribute a great deal to the exploration of a
-model's parameter space by closing in quickly on the model configurations that
-fit the data well. This process can be particularly satisfying, rather like
-solving a puzzle. How have citizen scientists been involved in model making and
+developed intuition, can contribute a great deal to the exploration of a model's
+parameter space by closing in quickly on those configurations that fit the data
+well. This process can be particularly satisfying, rather like solving a puzzle.
+Meanwhile, many ``machine learning'' techniques effective in one field can often
+be adapted to astronomical problems: there are plenty of citizens with the
+skills to do this. How have citizen scientists been involved in model making and
 data fitting in astronomy, and other fields, to date?
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
@@ -940,64 +954,67 @@ data fitting in astronomy, and other fields, to date?
 \citet{SimpsonEtal2012} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
-carried out by the Spitzer space telescope, which are hypothesised to have been
-caused by a recently-formed high mass star at the centre of the bubble. The
-(bubble) model in this case is simple and recognisable, making both the
-interface constructions and its operation relatively straightforward. The large
+carried out by the Spitzer space telescope. These bubbles are hypothesized  to
+have been caused by recently-formed high mass stars at the centre each. The
+(bubble) model in this case is simple and recognizable, making both the
+interface construction and its operation relatively straightforward. The large
 sample of  bubble models have been used to investigate the possibility of
 further star formation being triggered at the bubble surfaces
 \citep{KendrewEtal2012}. A subsequent effort \citep{Beaumont} used data provided
 by the project to train a machine learning algorithm, \emph{Brut}, in bubble
-finding. \emph{Brut} is able to identify a small number of sources which are
-excluded from the \citeauthor{SimpsonEtal2012} catalogue, and which are
-difficult for humans, specifically bubbles near bright sources which have low
-contrast relative to their surroundings. In addition, \emph{Brut} proved
-effective at identifying suspect bubbles included in the previous surveys. Given
-the relatively small size of the MWP sample, the main use of machine learning is
-to contribute an independent check on the data; for larger samples, as discussed
-below, an approach in which machine learning trains on citizen science data and
-gradually takes over the classification task could be considered. 
+finding. \emph{Brut} is able to identify a small number of sources  which were
+not identified in the \citeauthor{SimpsonEtal2012} catalog. These bubbles were
+difficult for humans to identify,  owing to their lying close to bright sources,
+and so having low contrast relative to their surroundings.
+
+In addition, \emph{Brut} has proved effective at identifying suspect bubbles
+included in the previous (pre-citizen) surveys. Given the relatively small size
+of the MWP sample, the main use of machine learning here has been to provide an
+independent check on the citizen classification data; for larger samples, as
+discussed below, an approach in which machine learning is trained on citizen
+science data, and gradually takes over the classification task could be
+considered. 
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Modelling Lens Candidates} The Space Warps
-project\footnote{\url{http://spacewarps.org}} has an informal data modeling
-element. The classification interface is restricted to enabling identification
-of candidate gravitationally-lensed features, but all the images are available
-via the project's discussion forum. A small team of volunteers (including
-several citizens who helped design the project) has engaged in modeling the 
-identified lens candidates using web-based software developed and supported by
-the project science
-team.\footnote{\url{http://mite.physik.uzh.ch}} Results from a
-small test programme show that the model parameters derived by the  ensemble
-of citizens are as accurate as those derived by experts \citep{KuengEtal2014}.
-A pilot collaborative modeling analysis was carried out and written up by a
-small group of Space Warps volunteers\footnote{See
-\url{http://talk.spacewarps.org/\#/boards/BSW0000006/discussions/DSW00008fr}
-for the forum thread that was used.} \citep{Wilcox2014}.
+\CaseStudy{Modelling Lens Candidates} 
+The Space Warps project (\Sref{sec:class:analysis}) has an informal data
+modeling element. The classification interface is restricted to enabling
+identification of candidate gravitationally-lensed features, but all the images
+are available via the project's discussion forum. A small team of volunteers
+(including several citizens who helped design the project) has engaged in
+modeling some of the identified lens candidates using web-based software
+developed and supported by the project science
+team.\footnote{\url{http://mite.physik.uzh.ch}} Results from a small test
+program show that the model parameters derived by the  ensemble of citizens are
+as accurate as those derived by experts \citep{KuengEtal2014}. A pilot
+collaborative modeling analysis was carried out and written up by a small group
+of Space Warps volunteers\footnote{See
+\url{http://talk.spacewarps.org/\#/boards/BSW0000006/discussions/DSW00008fr} for
+the forum thread that was used.} \citep{Wilcox2014}.
 
 % \todo{Phil}{\#78 Replace SL URL with labs.spacewarps.org.}
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Galaxy Zoo: Mergers} This has been perhaps the most advanced attempt
-at data modeling in  astronomical web-based citizen science
-\citep{HolincheckEtal2010,WallinEtal2010}. 
-\todo{Chris}{\#49 Check through the merger zoo case study, ensure refs are up to date.} 
-Here, simple
-N-body simulations of galaxy mergers were performed in a java applet, and the
-results selected according to visual similarity to images of galaxy mergers
-(previously identified in the Galaxy Zoo project). A key proposal in this
-project is that the inspectors of the simulation outputs would be able to find
-matches to the data more readily than a computer could, for two reasons. First
-is that humans are good at {\it vague} pattern matching: they do not get
+\CaseStudy{Galaxy Zoo: Mergers} 
+This has been perhaps the most advanced attempt at data modeling in 
+astronomical web-based citizen science \citep{HolincheckEtal2010,WallinEtal2010}.
+% \todo{Chris}{\#49 Check through the merger zoo case study, ensure refs are up to date.}
+Here, simple N-body simulations of galaxy mergers were performed in a java
+applet, and the results selected according to visual similarity to images of
+galaxy mergers (previously identified in the Galaxy Zoo project). A key
+hypothesis here is that the inspectors of the simulation outputs would be able
+to find matches to the data more readily than a computer could, for two reasons.
+First is that humans are good at {\it vague} pattern matching: they do not get
 distracted by detailed pixel value comparisons but instead have an intuitive
 understanding of when one object is ``like'' another. The second is that
-initialising a galaxy merger simulation requires a large number of parameters to
+initializing a galaxy merger simulation requires a large number of parameters to
 be set -- and its this high dimensionality  that makes the space of possible
 models hard to explore for a machine. Humans should be able to navigate the
 space using their intuition, which is partly physical and partly learned from
-experience gained from playing with the system. Initial tests on Arp 86  showed
+experience gained from playing with the system. Initial tests on the marging
+system Arp 86 showed
 the crowd converging on a single location in parameter space, and that the
 simulated mergers at this location do indeed strongly resemble the Arp 86
 system. The authors have since collected thousands of citizen-generated models
@@ -1023,25 +1040,61 @@ exploring parameter space two parameters at a time to refine the models
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
+\CaseStudy{Protein Modeling with Foldit}  
+One of the most successful examples of crowd-sourced, ``manual'' data modeling is the
+online multi-player 3-D protein modeling game,  Foldit
+\citep{Cooper++2010}\footnote{\url{http://fold.it}} In this pioneering
+project, players compete in teams to find the best -- lowest free energy --
+molecular structures for particular protein ``puzzles.'' 
+These puzzles are naturally visualizable in three dimensions, but 
+they nevertheless involve thousands of degrees of freedom, in a parameter
+space that is notoriously hard to explore.
+Under the hood is the
+professional Rosetta structure prediction methodology; the player's scores are
+simply the negative of the Rosetta-computed energy. Foldit provides an
+accessible interface to the Rosetta toolkit, which provides multiple ways to
+interact with the protein structure as the global minimum energy solution is
+sought. The Rosetta model parameter free energy hyper-surface is completely analogous
+to the complex likelihood surface of any non-linear model, the kind of model
+that is to be found in planetary system dynamics, gravitational lenses,
+merging galaxies, and many other astrophysical data analysis situations. 
+
+
+Results from Foldit have been very encouraging, with the players discovering
+several new protein configurations, leading to improved enzyme performance 
+\citep{Eiben++2012} and new understanding of retroviral drug design
+\citep{Khatib++2011a}. The team have suggested several features of Foldit that
+appear to them to have underpinned its success. Recipes for manipulating the
+protein structures (that codify strategies) can be shared within teams, and
+later made available by the Foldit team to the whole community -- these
+algorithms evolve rapidly as different players modify them, and can rival (if
+not out-perform) strategies developed by professional scientists 
+\citep{Khatib++2011b}. The game provides multiple sources of motivation
+(competition between players, collaboration within a team, short term scores,
+long term status) which appeal to a variety of players. 
+
+
+% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
+
 \CaseStudy{Online Data Challenges}
-A very interesting case of citizens being involved in astronomical 
-data modelling is that of the analysis challenges organised by members of
-the professional astrophysics community. The measurement of weak gravitational
-lensing by large scale structure (``cosmic shear'') relies on the measurement
-of the shapes of distant, faint galaxies with extreme accuracy. The STEP
+We now turn to data modeling by citizens implementing machine learning
+techniques in astronomy, via analysis challenges organised by members of the
+professional astrophysics community. The measurement of weak gravitational
+lensing by large scale structure (``cosmic shear'') relies on the measurement of
+the shapes of distant, faint galaxies with extreme accuracy. The STEP
 \citep{HeymansEtal2006,MasseyEtal2007} and GREAT
 \citep{BridleEtal2010,KitchingEtal2012,KitchingEtal2013a} blind galaxy shape
-estimation challenges have had an enormous impact on the field, revealing
-biases present in existing techniques, and providing a way for researchers
-outside the world of professional cosmology to participate. In particular, the
-GREAT08 challenge saw very successful entries (including the winner) from two
-(out of a total of 11) teams of researchers from outside of astronomy (albeit
-still professional researchers). A companion, somewhat streamlined galaxy
-shape measurement challenge, ``Mapping Dark Matter,'' which was hosted at the
-Kaggle website\footnote{\url{http://www.kaggle.com/c/mdm}} 
-\citep{KitchingEtal2013b}. The wider reach of this platform led to over 70
-teams making over 700 entries to the competition; many of the teams did not
-contain professional astronomers, although most were still from academia.
+estimation challenges have had an enormous impact on the field, revealing biases
+present in existing techniques, and providing a way for researchers outside the
+world of professional cosmology to participate. In particular, the GREAT08
+challenge saw very successful entries from two (out of a total of 11) teams of
+researchers from outside of astronomy (albeit still professional researchers),
+including the winner. A companion, somewhat streamlined galaxy shape measurement
+challenge, ``Mapping Dark Matter,'' which was hosted at the Kaggle
+website\footnote{\url{http://www.kaggle.com/c/mdm}} \citep{KitchingEtal2013b}.
+The wider reach of this platform led to over 70 teams making over 700 entries to
+the competition; many of the teams did not contain professional astronomers,
+although most were still from academia.
 
 In a comparison with the GREAT challenges, the \citeauthor{KitchingEtal2013b}
 found a factor of several improvement in shear accuracy over comparable previous
@@ -1059,7 +1112,7 @@ involved inferring the positions of dark matter halos based on their weak
 lensing effects
 \citep{Harvey++2014}\footnote{\url{http://www.kaggle.com/c/DarkWorlds}}  This
 challenge attracted the attention of 357 teams, perhaps due to its larger
-prizes, and led to an improvement in position accuravy of 30\%.  It also
+prizes, and led to an improvement in halo position accuracy of 30\%.  It also
 sparked some debate in its forums as to the design of the challenge: the
 models used to generate the data, the size of the test datasets (and
 consequent stability of the leaderboard),  the choice of leaderboard metric
@@ -1073,79 +1126,40 @@ galaxy morphologies, given the same color
 images.\footnote{\url{http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge}}
 326 teams entered this challenge ... (K.\ Willett, priv.\ comm.).
 
+% \todo{Phil}{\#52 Update Kaggle section with Galaxy Zoo challenge. Ask Kyle for
+% spiel: what do we know about who entered? Astronomers or not? Note on winning
+% method: convolutional neural networks. Then, a note on how performance of
+% machines compares with crowds. Conclusion?}
 
-\todo{Phil}{\#52 Update Kaggle section with Galaxy Zoo challenge. Ask Kyle for
-spiel: what do we know about who entered? Astronomers or not? Note on winning
-method: convolutional neural networks. Then, a note on how performance of
-machines compares with crowds. Conclusion?}
-
-% Write this so that we set up the Future section to discus human-machine
-% partnerships scalability, with citizens providing calibration sets
-% for machines to learn from. 
-
-% \todo{Phil}{\#52 Refer to Banerji et al 2010, and any other work aimed at
-% reproducing GZ classifications by machines, here? Machines learning from human
-% classifications, is going to come up in future section...}
-% 
-
-% -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
-
-\CaseStudy{Protein Modeling with Foldit}  
-One of the most successful examples of crowd-sourced data modeling is the
-online multi-player 3-D protein modeling game,  Foldit
-\citep{Cooper++2010}\footnote{\url{http://fold.it}} In this pioneering
-project, players compete in teams to find the best -- lowest free energy --
-molecular structures for particular protein ``puzzles.'' 
-These puzzles are naturally visualizable in three dimensions, but 
-they nevertheless involve thousands of degrees of freedom, in a parameter
-space that is notoriously hard to explore.
-Under the hood is the
-professional Rosetta structure prediction methodology; the player's scores are
-simply the negative of the Rosetta-computed energy. Foldit provides an
-accessible interface to the Rosetta toolkit, which provides multiple ways to
-interact with the protein structure as the global minimum energy solution is
-sought. 
-
-Results from Foldit have been very encouraging, with the players discovering
-several new protein configurations, leading to improved enzyme performance 
-\citep{Eiben++2012} and new understanding of retroviral drug design
-\citep{Khatib++2011a}. The team have suggested several features of Foldit that
-appear to them to have underpinned its success. Recipes for manipulating the
-protein structures (that codify strategies) can be shared within teams, and
-later made available by the Foldit team to the whole community -- these
-algorithms evolve rapidly as different players modify them, and can rival (if
-not out-perform) strategies developed by professional scientists 
-\citep{Khatib++2011b}. The game provides multiple sources of motivation
-(competition between players, collaboration within a team, short term scores,
-long term status) which appeal to a variety of players. 
-
-The Rosetta model parameter free energy hyper-surface is completely analogous
-to the complex likelihood surface of any non-linear model, the kind of model
-that is to be found in planetary system dynamics, gravitational lenses,
-merging galaxies, and many other astrophysical data analysis situations. 
+Like Foldit's ``recipes,'' the Kaggle challenges are crowd-sourcing the
+development of new algorithms. As data science plays an increasingly important
+role in industry and commerce, we can expect the number of citizens interested
+in applying their skills to science problems in their spare time to grow. The
+challenge is to present those problems in meaningful ways, to enable high value
+contributions to be made.
 
 
-% ------------------------------------------------------------------------------
+%% ------------------------------------------------------------------------------
 
 \section{CITIZEN-LED ENQUIRY}
 \label{sec:explore}
 
-The previous sections have focused on specific, and isolated, activities in
-which citizens have participated. In most cases, the community's involvement has
-been a {\it contribution} to a scientific investigation, while not being
-involved in the design of that investigation. The most important part of any
-scientific investigation is the question at its heart: what is it we are trying
-to find out about the universe? In this section we look at some cases where the
-process of enquiry, the science, has been instigated or led by citizens.  
+The previous sections have focused on specific, and somewhat  isolated
+activities in which citizens have participated. In most cases, the community's
+involvement has been a {\it contribution} to a scientific investigation defined
+by professionals. The most important part of any scientific investigation is the
+question at its heart: what is it we are trying to find out about the universe?
+In this section we look at some cases where the process of enquiry, the science
+itself, has been instigated or led by citizens.  
 
 In principle, this is an area of great potential. The constraints of funding
 proposals and management of research groups can often mean that professional
-scientists focus very narrowly on particular topics of research, using a
-particular technique for which they become known.  Steering away from this
-course implies taking risks with time management, and allocation of resources to
-an ultimately fruitless research area can be detrimental to careers.  Citizen
-scientists are largely free of these managerial and budgetary constraints, and
-are able to devote their attentions to whatever topics interest them: we might
+scientists focus very narrowly on particular topics of research, specializing in
+particular techniques or datasets.  Steering away from this course implies
+taking risks with time management, and allocation of resources to an ultimately
+fruitless research area can be detrimental to careers.  Citizen scientists are
+largely free of these managerial and budgetary constraints, and are able to
+devote their attentions to whatever topics interest them. Moreover, we might
 expect outsiders to ask some unusual questions, and make connections and
 suggestions that highly focused professionals may not have thought of. What are
 some enquiries that citizens have led in astronomy to date, and how have they
@@ -1154,54 +1168,62 @@ been enabled and supported?
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Saturn Storm Watch.}  In this project, Cassini's observations of
-lightning emissions are connected with active amateur observations of
-convective cloud structures within the giant planet atmosphere
-\citep{Fischer++2011},  and the tracking of the vertices of Saturn's bizarre
-north polar hexagon \citep{godfrey88}, a 6-sided planet encircling wave that
-has persisted for at least 30 years but that has only recently been observed,
-by amateur astronomers.  In the first case, citizen scientists wished to
-identify the source of the radio emission detected by Cassini, after being
-alerted to them on the Planetary Virtual  Observatory and Laboratory.
-\footnote{\url{http://www.pvol.ehu.es}} In the latter case, the long-term evolution
-of the hexagon vertices is being used to understand what sort of wave this is,
-and to identify its origins.
+\CaseStudy{Saturn Storm Watch.}  
+In this project, Cassini's observations of lightning emissions were connected to
+active amateur observations of the convective cloud structures within the giant
+planet atmosphere \citep{Fischer++2011},  and the vertices of Saturn's bizarre
+north polar hexagon \citep{godfrey88} (a 6-sided planet-encircling wave that has
+persisted for at least 30 years but that has only recently been observed, by
+amateur astronomers).  In the first case, citizen scientists wished to identify
+the source of the radio emission detected by Cassini, after being alerted to
+them on the Planetary Virtual  Observatory and Laboratory.
+\footnote{\url{http://www.pvol.ehu.es}} In the latter case, the long-term
+evolution of the hexagon vertices was used to understand what sort of wave this
+is, and to identify its origins.
 
+% \todo{Leigh}{can you please add a few notes on where the research was published,
+% what involvement the professionals had, and whether there was anything
+% different/surprising about these investigations as a result of being
+% citizen-led?}
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{The Galaxy Zoo Forum.} The best known serendipitous discovery
-emerging from the Galaxy Zoo project is ``Hanny's Voorwerp'' (Lintott et al.), a
-galaxy-scale light echo which reveals a recent ($\sim 100000$ years) shutdown of
-AGN activity in IC 2497, the neighboring spiral galaxy. The discovery of the
-Voorwerp was first recorded in the Galaxy Zoo forum a few weeks after the
-project started, and inspired a more systematic search for similar phenomena in
-other galaxies. This project, made possible by the deep engagement of Galaxy Zoo
-science team member Bill Keel in the forum community, succeeding in finding more
-than forty instances of clouds which appear to have been ionized by AGN
-activity, in systems a third of which show signs of significant drops in
-activity on a timescale of tens of thousands of years. 
-\todo{Chris}{\#63 Add more citations for voorwerp science?}
+\CaseStudy{The Galaxy Zoo Forum.} 
+
+The best known serendipitous discovery emerging from the Galaxy Zoo project is
+``Hanny's Voorwerp'' \citep{Lintott++Voorwerp}, a galaxy-scale light echo which
+reveals a recent ($\sim 100,000$ years ago)  shutdown of AGN activity in IC
+2497, a neighboring spiral galaxy. The discovery of the Voorwerp was first
+recorded in the Galaxy Zoo forum a few weeks after the project started, and
+inspired a more systematic search for similar phenomena in other galaxies. This
+project, made possible by the deep engagement in the forum community of Galaxy
+Zoo science team member Bill Keel, succeeded in finding more than forty
+instances of clouds which appear to have been ionized by AGN activity, in
+systems a third of which show signs of significant drops in activity on a
+timescale of tens of thousands of years.  
+
+% \todo{Chris}{\#63 Add more citations for voorwerp science}
 
 The ability of the Zoo volunteers to carry out their own research, moving far
 beyond the mere ``clockwork'' required by the main interface, is best
 illustrated by the discovery of the Galaxy Zoo Peas. These small, round and, in
-SDSS imaging, green systems are dwarf systems with specific star formation rates
+SDSS imaging, green systems are dwarf galaxies with specific star formation rates
 (SFR per unit mass) which are unprecedented in the local Universe, matched only
 by high-redshift Lyman-break galaxies. Volunteers not only identified these
-systems, but organized a systematic search and further review of them, including
-using tools designed by SDSS for professional astronomers to acquire and study
-spectral data. 
+systems, but organized a systematic search and further review of them. This
+effort included the use of tools designed by SDSS for professional astronomers
+to acquire and study spectroscopic data. 
 
-The discovery of the Peas marked the first time the Galaxy Zoo team realized the
-potential of the community of citizen scientists the project had acquired, but
-it is important to note that the simpler, initial interaction provided by the
-main interface was necessary in order to develop that community in the first
-place. The participants in the citizen scientists' investigation of the Peas did
-not arrive on the site wanting to dig into spectra or confident of their ability
-to do so; these were the results of their participation. The project  acted as
-an ``engine of motivation'' in inspiring its participants to become more
-involved. 
+% \todo{Chris}{\#94 References for green peas?}
+
+While the discovery of the Peas demonstrates the exploration ability of the
+Galaxy Zoo citizen community, it is important to note that the simpler, initial
+interaction provided by the main classification interface was necessary in order
+to develop that community in the first place. The participants in the citizen
+scientists' investigation of the Peas did not arrive on the site wanting to dig
+into spectra or confident of their ability to do so; these were the results of
+their participation. The project acted as an ``engine of motivation'' in
+inspiring its participants to become more involved. 
 
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
@@ -1210,26 +1232,30 @@ involved.
 Participants in citizen science projects like Galaxy Zoo and Saturn Storm Watch 
 are highly motivated but geographically widely distributed; the impact of the
 internet in enabling them to find each other and collaborate is remarkable. The
-most recent Zooniverse astronomy project, Galaxy Zoo: Quench, is actively
-encouraging citizen-led enquiry, by providing flexible tools for investigating
-not individual objects but samples of galaxies classified in the main Galaxy Zoo
-project. It is an experiment in citizen-driven scientific investigation, and we
-await its results with interest.
+most recent Zooniverse astronomy project, Galaxy Zoo: Quench, actively
+encouraged citizen-led enquiry, by providing flexible tools for investigating
+{\it samples} of galaxies that were previously classified in the  main Galaxy
+Zoo project. It is an experiment in citizen-driven scientific investigation, and
+we await its results with interest.
 
-\todo{Chris}{\#55 Write up Galaxy Zoo Quench...}
+% \todo{Chris}{\#55 Write up Galaxy Zoo Quench! Including references...}
 
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Lightcurve analysis on Planet Hunters Talk.}  The data modelling
-examples of the \Sref{sec:model} all involved modeling infrastructure provided
-by either the project's developers or their science teams. Planet Hunters is a
-case where citizens have carried out their own modeling analysis, using their
-own tools. A small group [?] of volunteers downloaded full Kepler lightcurve
-datasets for the best [?] community-selected candidates, and fitted transit
-lightcurves to them using [?]. 
+\CaseStudy{Lightcurve analysis on Planet Hunters Talk.}  
 
-\todo{Chris}{\#51 Add text to PH talk case study: What did the super-users actually do in the way of advanced lightcurve modeling? Did it make it to the paper? References. This seems to me like something of a triumph, we must give it a good airing!}
+The data modelling examples of \Sref{sec:model} all involved modeling
+infrastructure provided by either the project's developers or their science
+teams. Planet Hunters provides a case where citizens have carried out their own
+modeling analysis, using their own tools. A small group of volunteers downloaded
+full Kepler lightcurve datasets for the best community-selected candidates, and
+fitted transit lightcurves to them using commercially available software. 
+
+% \todo{Chris}{\#51 Add text to PH talk case study:  What did the super-users
+% actually do in the way of advanced lightcurve modeling? Did it make it to the
+% paper? We need references. This seems to me like something of a triumph, we must
+% give it a good airing!}
 
 
 % \CaseStudy{Blackawton Bees}
