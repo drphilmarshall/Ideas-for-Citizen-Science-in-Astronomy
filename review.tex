@@ -733,16 +733,15 @@ resource for jovian atmospheric scientists.
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{Time domain astronomy: Supernova Zoo and Planet Hunters}  
-\label{SNZoo} \citet{threeVs} describe three defining aspects of ``Big Data''
-that make its analysis challenging: volume, velocity and variety. Time-domain
-astronomy projects, that require the immediate inspection of challenging volumes
-of live, high velocity, complex data, can benefit from citizen science, as shown
-by two recent projects, Supernova Zoo and Planet Hunters.  
-While transients such as supernovae or asteroids can often be found through the
-use of automatic routines, visual inspection is still used by many professional
-science teams as part of their process of selecting candidates for follow-up. 
-
-% \todo{Chris}{\#70 Provide citation for ``3 V's'' of big data}
+\label{SNZoo} 
+The three defining characteristics of ``Big Data'' have come to be accepted as
+volume, velocity and variety.  Time-domain astronomy projects, that indeed
+require the immediate inspection of challenging volumes of live, high velocity,
+complex data, can benefit from citizen science, as shown by two recent projects,
+Supernova Zoo and Planet Hunters.   While transients such as supernovae or
+asteroids can often be found through the use of automatic routines, visual
+inspection is still used by many professional science teams as part of their
+process of selecting candidates for follow-up. 
 
 The most successful attempt to use crowd-sourcing to attack these problems to
 date has been the offshoot of Galaxy Zoo described in \citet{SmithSN}.  Data
@@ -944,7 +943,7 @@ data fitting in astronomy, and other fields, to date?
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
 \CaseStudy{The Milky Way Project}
-\citet{SimpsonEtal2012} provided volunteers with a fairly flexible set of
+\citet{Simpson++2012MWP} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
 carried out by the Spitzer space telescope. These bubbles are hypothesized  to
@@ -956,7 +955,7 @@ further star formation being triggered at the bubble surfaces
 \citep{KendrewEtal2012}. A subsequent effort \citep{Beaumont} used data provided
 by the project to train a machine learning algorithm, \emph{Brut}, in bubble
 finding. \emph{Brut} is able to identify a small number of sources  which were
-not identified in the \citeauthor{SimpsonEtal2012} catalog. These bubbles were
+not identified in the \citeauthor{Simpson++2012MWP} catalog. These bubbles were
 difficult for humans to identify,  owing to their lying close to bright sources,
 and so having low contrast relative to their surroundings.
 
@@ -980,9 +979,11 @@ modeling some of the identified lens candidates using web-based software
 developed and supported by the project science
 team.\footnote{\url{http://mite.physik.uzh.ch}} Results from a small test
 program show that the model parameters derived by the  ensemble of citizens are
-as accurate as those derived by experts \citep{KuengEtal2014}. A pilot
-collaborative modeling analysis was carried out and written up by a small group
-of Space Warps volunteers\footnote{See
+as accurate as those derived by experts 
+(Kueng et al, in prep).
+% \citep{KuengEtal2014}. 
+A pilot collaborative modeling analysis was carried out and written up by a
+small group of Space Warps volunteers\footnote{See
 \url{http://talk.spacewarps.org/\#/boards/BSW0000006/discussions/DSW00008fr} for
 the forum thread that was used.} \citep{Wilcox2014}.
 
@@ -1022,7 +1023,7 @@ preparation).
 row: star formation ``bubble'' identification and interpretation in Spitzer
 images in the Milky Way Project, with the annotation interface shown on the
 left, and some example (selected, averaged) bubbles on the right. Images from
-\citet{SimpsonEtal2012}. Bottom row: matching N-body simulated merging
+\citet{Simpson++2012MWP}. Bottom row: matching N-body simulated merging
 galaxies to SDSS images in the Galaxy Zoo Mergers project (left), and
 exploring parameter space two parameters at a time to refine the models
 (right). Screenshots from \citet{HolincheckEtal2010}.}
@@ -1200,15 +1201,14 @@ timescale of tens of thousands of years.
 
 The ability of the Zoo volunteers to carry out their own research, moving far
 beyond the mere ``clockwork'' required by the main interface, is best
-illustrated by the discovery of the Galaxy Zoo Peas. These small, round and, in
-SDSS imaging, green systems are dwarf galaxies with specific star formation rates
-(SFR per unit mass) which are unprecedented in the local Universe, matched only
-by high-redshift Lyman-break galaxies. Volunteers not only identified these
-systems, but organized a systematic search and further review of them. This
-effort included the use of tools designed by SDSS for professional astronomers
-to acquire and study spectroscopic data. 
-
-% \todo{Chris}{\#94 References for green peas?}
+illustrated by the discovery of the Galaxy Zoo Green Peas
+\citep{Cardamone++2009}. These small, round and, in SDSS imaging, green systems
+are dwarf galaxies with specific star formation rates (SFR per unit mass) which
+are unprecedented in the local Universe, matched only by high-redshift
+Lyman-break galaxies. Volunteers not only identified these systems, but
+organized a systematic search and further review of them. This effort included
+the use of tools designed by SDSS for professional astronomers to acquire and
+study spectroscopic data. 
 
 While the discovery of the Peas demonstrates the exploration ability of the
 Galaxy Zoo citizen community, it is important to note that the simpler, initial
@@ -1825,6 +1825,13 @@ CJL acknowledges...
 {Capella\_05}. 2014.
 \newblock \textit{Zooniverse Letters}
 
+\bibitem[{{Cardamone} {et~al.}(2009){Cardamone}, {Schawinski}, {Sarzi},
+  {Bamford}, {Bennert}, {Urry}, {Lintott}, {Keel}, {Parejko}, {Nichol},
+  {Thomas}, {Andreescu}, {Murray}, {Raddick}, {Slosar}, {Szalay}, \&
+  {Vandenberg}}]{Cardamone++2009}
+{Cardamone}, C., {Schawinski}, K., {Sarzi}, M., {et~al.} 2009, \mnras, 399,
+  1191
+
 \bibitem[{{Christie}(2006)}]{Christie2006}
 {Christie}, G. 2006, Society for Astronomical Sciences Annual Symposium, 25, 97
 
@@ -2143,8 +2150,13 @@ S{\'a}nchez-Lavega A, Wesley A, Orton G, Hueso R, Perez-Hoyos S, et~al. 2010.
   et~al. 2006.
 \newblock \textit{Icarus} 180:98--112
 
+\bibitem[{{Simpson} {et~al.}(2012{\natexlab{a}}){Simpson}, {Roberts},
+  {Psorakis}, \& {Smith}}]{Simpson++2012IBCC}
+{Simpson}, E., {Roberts}, S., {Psorakis}, I., \& {Smith}, A.
+  2012{\natexlab{a}}, ArXiv e-prints, arXiv:1206.1831
+  
 \bibitem[{{Simpson} et~al.(2012){Simpson}, {Povich}, {Kendrew}, {Lintott},
-  {Bressert} et~al.}]{SimpsonEtal2012}
+  {Bressert} et~al.}]{Simpson++2012MWP}
 {Simpson} RJ, {Povich} MS, {Kendrew} S, {Lintott} CJ, {Bressert} E, et~al.
   2012.
 \newblock \textit{\mnras} 424:2442--2460
