@@ -1183,10 +1183,23 @@ and so on. These issues are also of generic importance for scientists looking
 to crowd-source algorithm development. It is interesting to note that the
 Kaggle forums are a useful resource for the Kaggle development team: the
 citizens who are active there do influence the design of the site
-infrastructure and challenge rules (D.~Harvey, priv.~comm.). The most recent
-Kaggle astronomy challenge was to reproduce the Galaxy Zoo crowd-sourced
-galaxy morphologies, given the same color
-images.\footnote{\url{http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge}}
+infrastructure and challenge rules (D.~Harvey, priv.~comm.). 
+
+The most recent
+Kaggle astronomy challenge was to reproduce the Galaxy~Zoo~2 crowd-sourced
+galaxy morphologies based on automated measurements of the SDSS color composite
+JPEG images.\footnote{\url{http://www.kaggle.com/c/galaxy-zoo-the-galaxy-challenge}}
+329~teams entered the challenge, including professional astronomers, academics
+specializing in non-astronomy areas, teams from university courses, 
+and members of the public. 
+The top performing algorithms were able to reproduce
+detailed morphologies, including features on scales of only a few pixels and
+those with highly non-symmetric geometries, that were originally generated
+by crowdsourced annotations (Willett et al., in prep).
+All of the leading entries also used various implementations of convolutional
+neural networks (convnets); the results suggest that convnets offer one of
+the best candidates for automated machine learning trained on gold standard
+data in larger, future surveys (see \Sref{sec:future_csvis}).
 
 % 326 teams entered this challenge ... (K.\ Willett, priv.\ comm.).
 
@@ -1631,6 +1644,7 @@ professionals.
 % professional astronomers! A less ambitious astronomical equivalent -- the 
 
 \subsection{The Future of Crowd-sourced Visual Classification}
+\label{sec:future_csvis}
 
 The point at which human review of data is no longer necessary has been forecast
 for decades, but as we have seen above, the number of problems for which manual
