@@ -21,7 +21,7 @@
 \usepackage[usenames]{color}
 \usepackage{graphicx}
 
-% Arxvi seems to want just one tex file...
+% Arxiv seems to want just one tex file...
 % \input{macros.tex}
 
 % JOURNALS
@@ -56,6 +56,7 @@
 % MACROS
 \def\CaseStudy#1{\noindent{\it\bf #1 \,\,\,\,}}
 \def\url#1{\texttt{#1}}
+\def\Talk{{\it Talk}}
 
 % COMMENTING
 % \definecolor{purple}{RGB}{150,0,200}
@@ -644,7 +645,7 @@ While significant preliminary work had been carried out by NASA's
 of crowd-sourcing for astronomical purposes was 
 Stardust@home\footnote{\url{http://stardustathome.ssl.berkeley.edu/}}. The team
 asked volunteers to scan through images of samples returned from Comet Wild-2 by
-the \emph{Stardust} mission, attracted a large audience to the apparently
+the \textit{Stardust} mission, attracted a large audience to the apparently
 unprepossessing task of looking for dust grains in an effort to identify samples
 of material from outside our Solar System. The site was built on BOSSA, an early
 attempt to build a generalized platform for such crowd-sourcing projects, and
@@ -670,7 +671,7 @@ was built on the continued importance of morphological classification of
 galaxies, first introduced in a systematic fashion by Hubble, and later
 developed by, among others, de Vaucoleurs.  While the morphology of a galaxy is
 closely related to its other properties, such as colour, star formation history,
-dynamics, concentration and so on, it is not entirely defined by then: there is
+dynamics, concentration and so on, it is not entirely defined by them: there is
 more information in resolved images of galaxies than is captured in these
 observables.  One approach was to develop simple proxies (e.g CAS \citep{Conselice}), but these
 are at best approximations for true morphology. 
@@ -714,7 +715,7 @@ substantial contribution -- is illustrated in \Fref{fig:gz2} which shows results
 Galaxy Zoo 2. This later version of the project asked for more detailed
 classifications via a decision tree containing questions such as `How prominent
 is the bulge?', and later iterations of the project have applied a similar
-approach to galaxies drawn from \emph{Hubble Space Telescope} surveys including
+approach to galaxies drawn from \textit{Hubble Space Telescope} surveys including
 \textsc{GEMS, GOODS, COSMOS} and \textsc{CANDELS}. 
 
 
@@ -854,7 +855,7 @@ less stringent than otherwise thought.
 
 A different approach to crowd-sourced classification in time-domain astronomy is
 exemplified by the Planet Hunters project, which asks volunteers to examine
-light curves drawn from the dataset provided by the \emph{Kepler} mission in
+light curves drawn from the dataset provided by the \textit{Kepler} mission in
 order to identify interesting events in retrospect. While the task of
 identifying transits from extrasolar planets is, at first glance, one which
 seems more suited for automated than for human analysis, the success of Planet
@@ -911,14 +912,14 @@ Steps towards real-time classification analysis have been taken in the Space
 Warps project.\footnote{\url{http://spacewarps.org}} 
 Space Warps is a rare object search: volunteers are shown deep
 sky survey images and asked to mark features that look as though they are
-gravitationally lensed galaxies or quasars (Marshall et al, More et al in prep).
+gravitationally lensed galaxies or quasars (Marshall et al, More et al in prep.).
 Extensive training is
 provided via an ongoing tutorial that includes simulated lenses and known
 non-lenses, and immediate pop-up feedback as to whether these training images
 were correctly classified. Because real lenses are rare (appearing once every
 $10^{2-4}$ images, depending on the dataset), the primary goal is to reject the
 multitude of uninteresting images so that new ones can be inspected -- and this
-drives the need for efficiency. Marshall et al (in preparation) derived a
+drives the need for efficiency. Marshall et al (in prep.) derived a
 simplified version of the IBCC classification analysis that updates a
 probablistic model of both the subjects and the agents that represent the
 classifiers in a statistically online manner. This
@@ -1029,20 +1030,21 @@ data fitting in astronomy, and other fields, to date?
 \citet{Simpson++2012MWP} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
-carried out by the Spitzer space telescope. These bubbles are hypothesized  to
+carried out by the Spitzer space telescope (\Fref{fig:modeling}). 
+These bubbles are hypothesized  to
 have been caused by recently-formed high mass stars at the centre each. The
 (bubble) model in this case is simple and recognizable, making both the
 interface construction and its operation relatively straightforward. The large
 sample of  bubble models have been used to investigate the possibility of
 further star formation being triggered at the bubble surfaces
 \citep{KendrewEtal2012}. A subsequent effort \citep{Beaumont} used data provided
-by the project to train a machine learning algorithm, \emph{Brut}, in bubble
-finding. \emph{Brut} is able to identify a small number of sources  which were
+by the project to train a machine learning algorithm, \textit{Brut}, in bubble
+finding. \textit{Brut} is able to identify a small number of sources  which were
 not identified in the \citeauthor{Simpson++2012MWP} catalog. These bubbles were
 difficult for humans to identify,  owing to their lying close to bright sources,
 and so having low contrast relative to their surroundings.
 
-In addition, \emph{Brut} has proved effective at identifying suspect bubbles
+In addition, \textit{Brut} has proved effective at identifying suspect bubbles
 included in the previous (pre-citizen) surveys. Given the relatively small size
 of the MWP sample, the main use of machine learning here has been to provide an
 independent check on the citizen classification data; for larger samples, as
@@ -1063,7 +1065,7 @@ developed and supported by the project science
 team.\footnote{\url{http://mite.physik.uzh.ch}} Results from a small test
 program show that the model parameters derived by the  ensemble of citizens are
 as accurate as those derived by experts 
-(Kueng et al, in prep).
+(Kueng et al, in prep.).
 % \citep{KuengEtal2014}. 
 A pilot collaborative modeling analysis was carried out and written up by a
 small group of Space Warps volunteers\footnote{See
@@ -1087,16 +1089,16 @@ First is that humans are good at {\it vague} pattern matching: they do not get
 distracted by detailed pixel value comparisons but instead have an intuitive
 understanding of when one object is ``like'' another. The second is that
 initializing a galaxy merger simulation requires a large number of parameters to
-be set -- and its this high dimensionality  that makes the space of possible
+be set -- and it's this high dimensionality  that makes the space of possible
 models hard to explore for a machine. Humans should be able to navigate the
 space using their intuition, which is partly physical and partly learned from
-experience gained from playing with the system. Initial tests on the marging
+experience gained from playing with the system. Initial tests on the merging
 system Arp 86 showed
 the crowd converging on a single location in parameter space, and that the
 simulated mergers at this location do indeed strongly resemble the Arp 86
 system. The authors have since collected thousands of citizen-generated models
 for a sample of a large number SDSS merging systems (Holincheck et al, in
-preparation). 
+preparation, \Fref{fig:modeling}). 
 
 %%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -1230,7 +1232,11 @@ involvement has been a {\it contribution} to a scientific investigation defined
 by professionals. The most important part of any scientific investigation is the
 question at its heart: what is it we are trying to find out about the universe?
 In this section we look at some cases where the process of enquiry, the science
-itself, has been instigated or led by citizens.  
+itself, has been led by citizens. While citizen scientists have published as
+first authors in research journals \citep[see e.g.]{Hui2013,Liang2014},  this is
+still a fairly rare occurrence. Instead, we focus on some collaborative projects
+where the asking of science questions by citizens is supported and guided by
+professionals.
 
 In principle, this is an area of great potential. The constraints of funding
 proposals and management of research groups can often mean that professional
@@ -1241,9 +1247,7 @@ fruitless research area can be detrimental to careers.  Citizen scientists are
 largely free of these managerial and budgetary constraints, and are able to
 devote their attentions to whatever topics interest them. Moreover, we might
 expect outsiders to ask some unusual questions, and make connections and
-suggestions that highly focused professionals may not have thought of. What are
-some enquiries that citizens have led in astronomy to date, and how have they
-been enabled and supported?
+suggestions that highly focused professionals may not have thought of. 
 
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
@@ -1307,7 +1311,7 @@ inspiring its participants to become more involved.
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Lightcurve analysis on Planet Hunters {\it talk}.}  
+\CaseStudy{Lightcurve analysis on Planet Hunters \Talk.}  
 
 The data modelling examples of \Sref{sec:model} all involved modeling
 infrastructure provided by either the project's developers or their science
@@ -1318,7 +1322,7 @@ objects worthy of further analysis. For Galaxy Zoo, the forum had served this
 purpose but, as as the project matured, participation in discussions became
 restricted to a small and decreasing fraction of the community. Planet Hunters
 was the first Zooniverse project to introduce an integrated discussion tool,
-known as \emph{talk}. Classifiers were asked, after viewing each light curve,
+known as \Talk. Classifiers were asked, after viewing each light curve,
 whether they wanted to discuss what they had seen; more advanced users could
 then harvest interesting candidates from these posts. For example, the
 candidates presented in \citet{LintottPH} were initially collated by volunteers.
@@ -1346,7 +1350,7 @@ distributed citizen science projects, but that this requires volunteers to take
 on such tasks themselves. In order to increase the number, and perhaps the
 diversity, of volunteers moving beyond simple classification, experiments have
 been conducted to provide more scaffolded experiences. One of the most ambitious
-was the Galaxy Zoo: Quench project (Trouille et al. in prep) which offered
+was the Galaxy Zoo: Quench project (Trouille et al. in prep.) which offered
 volunteers the opportunity to ``experience science from beginning to end.''
 
 In this project, classification of a sample of potential post-merger galaxies
@@ -1357,7 +1361,7 @@ the Sloan Digital Sky Survey) by the volunteers, enabled by a
 Thousands of users (around 20\% of those who participated in the classification
 stage and discussion) led to the formulation of a set of astrophysical
 interesting conclusions; a small number of participants (~10) collaborated on
-writing a paper (in preparation). These later stages required intensive support
+writing a paper (in prep.). These later stages required intensive support
 from professional scientists (and in fact it was constraints on their time that
 prevented earlier submission of the paper). 
 
@@ -1454,7 +1458,7 @@ reach.
 What motivates citizen scientists? The two demographic studies referred to above
 also covered this question; having previously \citep{Rad++2010} identified 12
 categories of motivation in an earlier pilot study, \citet{Rad++2013} asked the
-170,000 Galaxy Zoon volunteers at the time to comment on how motivated they were
+170,000 Galaxy Zoo volunteers at the time to comment on how motivated they were
 by each of these categories, and which was their primary motivation. The 6\% who
 responded gave consistent answers to those given by around 900 forum users who
 responded in a separate appeal, allowing conclusions about this presumably more
@@ -1543,11 +1547,16 @@ the internet, there is a social  aspect of citizen science that unites people
 with this shared interest, which may be far removed from their ``normal'' 
 lives. However, {\it community} was not found to be a strong motivator for the
 Galaxy Zoo volunteers -- but it is nevertheless very important for the Galaxy
-Zoo forum users. More recent Zooniverse projects have sought to widen
-participation in community discussion, hypothesizing not that it will more
-strongly motivate people, but because it will help them make better
-contributions. Tests of hypotheses like this should be helpful in guiding
-citizen science project design.
+Zoo forum users.
+The binding of the most active part of this community  is reflected in the
+language they use,  referring to themselves as ``Zooites,'' for example.  It is
+interesting to note that \textit{approachable} project names are almost 
+universal in citizen astronomy, and perhaps function as ice-breakers in their
+nascent communities. Through improved forum design, more recent Zooniverse
+projects have sought to further widen participation in community discussion,
+hypothesizing not that it will more strongly motivate people, but because it
+will help them make better contributions. Tests of hypotheses like this should
+be helpful in guiding citizen science project design.
 
 
 % ------------------------------------------------------------------------------
@@ -1560,7 +1569,7 @@ citizen science project design.
 
 During this review a picture has emerged of two types of very active and engaged
 citizen astronomy community, which we might label observers and classifiers. 
-Although theses communities come together in differing ways (by self-assembly
+Although these communities come together in differing ways (by self-assembly
 through local groups linked by national and international networks, or by
 joining online projects built by professional organisations), they have reached
 a similar degree of internet-enabled connectedness, both with each other and
@@ -1760,7 +1769,7 @@ this model; finding ways beyond this to support citizen algorithm development
 seems to be likely to pay off.
 
 In terms of supporting citizen-led enquiry, an example of best practice exists
-in the way that the Sloan Digital Sky Survey's \emph{sky server} provided tools
+in the way that the Sloan Digital Sky Survey's \textit{sky server} provided tools
 for both professional (or advanced) researchers alongside simplified versions
 aimed primarily at educational use. This structure has the twin benefits of
 providing near-seamless transitions from simple to more advanced interfaces, and
@@ -1788,7 +1797,7 @@ As well as enabling access to the data, citizen science projects looking to
 engage larger crowds of volunteers will likely face some other  challenges. We
 might expect contributing to science via large international public datasets to
 appeal to citizens of many nations: while translation of project materials is simple, 
-coordinating a scientific \emph{discussion} across multiple language barriers could prove difficult. Having a critical mass of
+coordinating a scientific \textit{discussion} across multiple language barriers could prove difficult. Having a critical mass of
 professional scientists interacting in each language would seem the most
 important factor. Even within a single language group, collaboration is
 difficult to achieve with  very large numbers. The hierarchical system of
@@ -1864,8 +1873,9 @@ to be an experiment well worth continuing.
 
 \section*{Acknowledgments}
 
-We are most grateful to the following people for their suggestions, 
-comments, and clarifications: Trevor Barry, Anthony Wesley, Damian Peach, Christopher Go, Ricardo Hueso, John Rogers, Grischa Hahn\textit{LNF:  did you speak with Grischa?}, ... 
+We are most grateful to the following people for their suggestions,  comments,
+and clarifications: Grischa Hahn, Trevor Barry, Anthony Wesley, Damian Peach, 
+Christopher Go, Ricardo Hueso, John Rogers, Jean Tate, tom6740, Richard Nowell.
 
 We thank David~W.~Hogg, Arfon Smith, Laura Whyte, ... for many useful
 discussions about the practice of citizen science in astronomy.
@@ -1923,7 +1933,7 @@ CJL acknowledges...
 % \bibitem[{{Beaumont} et~al.(2014){Beaumont}, {Goodman}, {Williams}, {Kendrew}
 %   \& {Simpson}}]{Beaumont}
 % {Beaumont} C, {Goodman} A, {Williams} J, {Kendrew} S, {Simpson} R. 2014.
-% \newblock \textit{ArXiv e-prints}
+% \newblock \textit{ArXiv e-prints: 1406.2692}
 % 
 % \bibitem[{{Bridle} et~al.(2010){Bridle}, {Balan}, {Bethge}, {Gentile},
 %   {Harmeling} et~al.}]{BridleEtal2010}
@@ -1942,7 +1952,7 @@ CJL acknowledges...
 % 
 % \bibitem[{{Capella\_05}(2014)}]{Wilcox2014}
 % {Capella\_05}. 2014.
-% \newblock \textit{Zooniverse Letters}
+% \newblock \textit{Zooniverse Letters:} \url{http://letters.zooniverse.org/letters/86-collaborative_gravitational_lens_modelling_using_spaghettilens_a_spacewarps_project}
 % 
 % \bibitem[{{Cardamone} et~al.(2009){Cardamone}, {Schawinski}, {Sarzi},
 %   {Bamford}, {Bennert} et~al.}]{Cardamone++2009}
@@ -2079,10 +2089,14 @@ CJL acknowledges...
 %   A, {Morgado} A. 2010.
 % \newblock \textit{Planetary and Space Science} 58:1152--1159
 % 
+% \bibitem[{{Hui}(2013)}]{Hui2013}
+% {Hui} MT. 2013.
+% \newblock \textit{\mnras} 436:1564--1575
+%
 % \bibitem[{{Ivezic} et~al.(2008){Ivezic}, {Tyson}, {Acosta}, {Allsman},
 %   {Anderson} et~al.}]{LSSTsystem}
 % {Ivezic} Z, {Tyson} JA, {Acosta} E, {Allsman} R, {Anderson} SF, et~al. 2008.
-% \newblock \textit{ArXiv e-prints}
+% \newblock \textit{ArXiv e-prints: 0805.2366}
 % 
 % \bibitem[{{Kamar}, {Hacker} \& {Horvitz}(2012)}]{Kamar}
 % {Kamar} E, {Hacker} S, {Horvitz} E. 2012.
@@ -2136,7 +2150,7 @@ CJL acknowledges...
 %   {Massey}, {Liu} et~al.}]{KitchingEtal2013b}
 % {Kitching} TD, {Rhodes} J, {Heymans} C, {Massey} R, {Liu} Q, et~al.
 %   2012{\natexlab{b}}.
-% \newblock \textit{ArXiv e-prints}
+% \newblock \textit{ArXiv e-prints: 1204.4096}
 % 
 % \bibitem[{{Kitching} et~al.(2013){Kitching}, {Rowe}, {Gill}, {Heymans},
 %   {Massey} et~al.}]{KitchingEtal2013a}
@@ -2177,6 +2191,10 @@ CJL acknowledges...
 %   et~al.}]{LawPTF}
 % {Law} NM, {Kulkarni} SR, {Dekany} RG, {Ofek} EO, {Quimby} RM, et~al. 2009.
 % \newblock \textit{\pasp} 121:1395--1408
+% 
+% \bibitem[{{Liang}, {Liang} \& {Weisberg}(2014)}]{Liang2014}
+% {Liang} ZX, {Liang} Y, {Weisberg} JM. 2014.
+% \newblock \textit{\mnras} 439:3712--3718
 % 
 % \bibitem[{{Lintott} et~al.(2009){Lintott}, {Schawinski}, {Keel}, {van Arkel},
 %   {Bennert} et~al.}]{Lintott++2009}
@@ -2239,7 +2257,7 @@ CJL acknowledges...
 % 
 % \bibitem[{{Price} \& {Paxson}(2012)}]{P+P2012}
 % {Price} CA, {Paxson} KB. 2012.
-% \newblock \textit{ArXiv e-prints}
+% \newblock \textit{ArXiv e-prints: 1204.3582}
 % 
 % \bibitem[{{Raddick} et~al.(2013){Raddick}, {Bracey}, {Gay}, {Lintott},
 %   {Cardamone} et~al.}]{Rad++2013}
@@ -2307,7 +2325,7 @@ CJL acknowledges...
 % 
 % \bibitem[{{Sekanina} \& {Kracht}(2014)}]{14sekanina}
 % {Sekanina} Z, {Kracht} R. 2014.
-% \newblock \textit{ArXiv e-prints}
+% \newblock \textit{ArXiv e-prints: 1404.5968}
 % 
 % \bibitem[{{Simon-Miller} et~al.(2006){Simon-Miller}, {Conrath}, {Gierasch},
 %   {Orton}, {Achterberg} et~al.}]{06simon-miller}
@@ -2318,7 +2336,7 @@ CJL acknowledges...
 % \bibitem[{{Simpson} et~al.(2012){Simpson}, {Roberts}, {Psorakis} \&
 %   {Smith}}]{Simpson++2012IBCC}
 % {Simpson} E, {Roberts} S, {Psorakis} I, {Smith} A. 2012.
-% \newblock \textit{ArXiv e-prints}
+% \newblock \textit{ArXiv e-prints: 1206.1831}
 %   
 % \bibitem[{{Simpson} et~al.(2012){Simpson}, {Povich}, {Kendrew}, {Lintott},
 %   {Bressert} et~al.}]{Simpson++2012MWP}
