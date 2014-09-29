@@ -57,6 +57,7 @@
 \def\CaseStudy#1{\noindent{\it\bf #1 \,\,\,\,}}
 \def\url#1{\texttt{#1}}
 \def\Talk{{\it Talk}}
+\def\Kepler{{\it Kepler}}
 
 % COMMENTING
 % \definecolor{purple}{RGB}{150,0,200}
@@ -106,7 +107,7 @@ Leigh N. Fletcher
 
 We review the relatively new, internet-enabled, and rapidly-evolving field of
 citizen science, focusing on research projects in stellar, extragalactic and 
-solar system astronomy that have benefited from the participation of members of
+planetary astronomy that have benefited from the participation of members of
 the public, often in large numbers. We find these volunteers making
 contributions to astronomy in a variety of ways: making and analyzing new
 observations, visually classifying features in images and light curves,
@@ -478,7 +479,15 @@ systems: first, by frequent observations of known transits to refine ephemeris;
 second, by searching for transit time variations that can reveal additional
 planets in a system; and third, by searching for previously unidentified
 transits in known planetary systems \citep[e.g., the discovery of the transit of
-HD 80606b from a 30 cm telescope near London,][]{09fossey}. In a planetary
+HD 80606b from a 30 cm telescope near London,][]{09fossey}. 
+A further interesting example of citizen contribution to exoplanet observations
+is the characterisation of the transit candidate KOI-961 \citep{Muirhead2012}, 
+during which amateur astronomer Kevin Apps pointed out to 
+the professional observing 
+team the close similarity of the stellar spectrum to that of Barnard's star,
+enabling them to carry out an unusually sensitive differential analysis. 
+
+In a planetary
 microlensing event, significant brightening of the background star is required
 to make a planet orbiting the microlens visible at all; if additional caustic
 crossings are caused, the resulting exoplanetary microlensing feature is of just
@@ -869,8 +878,10 @@ citizen science projects which aim to calibrate later machine learning may be
 less stringent than otherwise thought. 
 
 A different approach to crowd-sourced classification in time-domain astronomy is
-exemplified by the Planet Hunters project, which asks volunteers to examine
-light curves drawn from the dataset provided by the \textit{Kepler} mission in
+exemplified by the Planet Hunters
+project,\footnote{\url{http://planethunters.org}} 
+which asks volunteers to examine
+light curves drawn from the dataset provided by the \Kepler mission in
 order to identify interesting events in retrospect. While the task of
 identifying transits from extrasolar planets is, at first glance, one which
 seems more suited for automated than for human analysis, the success of Planet
@@ -879,10 +890,11 @@ routines suggests that there remains a role for inspection by eye in cases where
 the relevant science requires samples of high completeness. Several of the
 planets found by Planet Hunters are unusual: PH1b, the project's first confirmed
 planet \citep{Schwamb++2013} and a circumbinary, is the first planet known in a
-four-star system. Others, including the more than forty candidates identified in
-the habitable zone of their parent star by \citep{Wang++2013}, might have been
+four-star system. 
+Others, including the more than forty candidates identified 
+by \citep{Wang++2013,Schmitt2014}, might have been
 expected to be recovered by more conventional searches. Planet Hunters,
-therefore, is acting as an independent test of the Kepler pipeline's efficiency
+therefore, is acting as an independent test of the \Kepler pipeline's efficiency
 \citep{Schwamb++2012} and has inspired improvements in subsequent analysis
 \citep{Batalha++2013}. 
 
@@ -1045,7 +1057,7 @@ data fitting in astronomy, and other fields, to date?
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{The Milky Way Project (MWP).}
+\CaseStudy{The Milky Way Project (MWP\footnote{http://milkywayproject.org}).}
 \citet{Simpson++2012MWP} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
@@ -1326,14 +1338,17 @@ then harvest interesting candidates from these posts. For example, the
 candidates presented in \citet{LintottPH} were initially collated by volunteers.
 
 Their involvement was not limited to collecting Planet Hunters candidates.
-Making use of the Kepler archive, these advanced users were able to investigate
+Making use of the \Kepler archive, these advanced users were able to investigate
 the full set of data for candidate stars, producing periodograms and making
 fits  to transits to derive planet candidate properties. Some of this analysis,
-for example checking the Kepler field for  background sources, can be carried
+for example checking the \Kepler field for  background sources, can be carried
 out online with tools originally intended for professional astronomers, but much
 was done off line using Excel or other software.\footnote{The expense of IDL
 licenses was a major barrier to further modelling; much  software used by the
-Kepler team is written in this proprietary language.} Nor was this sort of work
+\Kepler team is written in this proprietary language.} 
+PH1b (\Sref{sec:class:astro}) was one of the systems discovered in this way, as indeed 
+were the candidates in the \citet{Wang2013} and \citet{Schmitt2014} papers.
+Nor was this sort of work
 restricted to planet candidates; interesting variable stars, including several
 new RR Lyrae systems, and cataclysmic variables \citep[e.g.\ ][]{KatoOsaki} 
 have been discovered and analysed by Planet Hunters volunteers. 
@@ -1348,7 +1363,8 @@ distributed citizen science projects, but that this requires volunteers to take
 on such tasks themselves. In order to increase the number, and perhaps the
 diversity, of volunteers moving beyond simple classification, experiments have
 been conducted to provide more scaffolded experiences. One of the most ambitious
-was the Galaxy Zoo: Quench project (Trouille et al. in prep.) which offered
+was the Galaxy Zoo: Quench project\footnote{\url{http://quench.galaxyzoo.org}}
+(Trouille et al. in prep.) which offered
 volunteers the opportunity to ``experience science from beginning to end.''
 
 In this project, classification of a sample of potential post-merger galaxies
@@ -1363,6 +1379,7 @@ writing a paper (in prep.). These later stages required intensive support
 from professional scientists.
 % (and in fact it was constraints on their time that
 % prevented earlier submission of the paper). 
+
 % \todo{Chris}{Clarify the Quench story}
 
 Quench demonstrated that a hierarchical approach, with simple tasks leading to
@@ -1623,7 +1640,7 @@ availability of citizen observers will remain a factor.
 However, the advances in hardware becoming available to citizen observers
 suggest other roles they could play. Larger optics, more sensitive cameras, and
 spectral coverage extending to longer wavelengths in the infrared could permit
-citizen investigations of Uranus and Neptune, the Trans-Neptunian and Kuiper
+citizen investigations of Uranus and Neptune, the Kuiper
 Belt objects, and a wider variety of bright variable stars.  Transits of
 extrasolar planets in front of their parent stars would be permitted from modest
 observatories provided they had stable conditions.  New platforms might also
@@ -1732,7 +1749,9 @@ then such a system would tend to systematically drive away its best classifiers.
 A study of Snapshot Serengeti even revealed that seeing a more impressive image
 early in a classifier's career (as measured by the number of volunteers who
 added it to their list of favourites) tended to decrease the number of
-classifications received from that volunteer in the long run. Considering
+classifications received from that volunteer in the long run. 
+% \todo{Chris}{Fact-check, and add reference here!}
+Considering
 individual classifications in isolation is clearly not sufficient; the entirety
 of a volunteer's career must be considered when assigning tasks. We should be
 wary of over-specialisation even when efficiency is paramount. Complexities like
@@ -1804,8 +1823,10 @@ difficult to achieve with  very large numbers. The hierarchical system of
 citizen discussion  moderators bridging the gap between science teams and the
 crowd has worked well in the Zooniverse projects, although it requires
 significant commitment and effort from the volunteer moderators. Access to
-professional scientists can be somewhat improved by regular webcasts (as
-provided, for example, by the Galaxy Zoo science team); this provides at least
+professional scientists can be somewhat improved by regular blog posts and 
+webcasts (as
+provided, for example, by the various Zooniverse project science teams); 
+this provides at least
 partially the scientific dialogue that is most valuable to the citizen
 collaborators. Certainly these can supply much-needed feedback as to the utility
 of the citizens' efforts, as the professionals report on how the
@@ -2234,6 +2255,11 @@ CJL acknowledges...
 % {Mousis} O, {Hueso} R, {Beaulieu} JP, {Bouley} S, {Carry} B, et~al. 2014.
 % \newblock \textit{Experimental Astronomy}
 % 
+% \bibitem[{{Muirhead} et~al.(2012){Muirhead}, {Johnson}, {Apps}, {Carter},
+%   {Morton} et~al.}]{Muirhead2012}
+% {Muirhead} PS, {Johnson} JA, {Apps} K, {Carter} JA, {Morton} TD, et~al. 2012.
+% \newblock \textit{\apj} 747:144
+% 
 % \bibitem[{{Nair} \& {Abraham}(2010)}]{Nair}
 % {Nair} PB, {Abraham} RG. 2010.
 % \newblock \textit{\apjs} 186:427--456
@@ -2308,6 +2334,11 @@ CJL acknowledges...
 %   {Kaviraj} et~al.}]{Scha2007}
 % {Schawinski} K, {Thomas} D, {Sarzi} M, {Maraston} C, {Kaviraj} S, et~al. 2007.
 % \newblock \textit{\mnras} 382:1415--1431
+% 
+% \bibitem[{{Schmitt} et~al.(2014){Schmitt}, {Wang}, {Fischer}, {Jek}, {Moriarty}
+%   et~al.}]{Schmitt2014}
+% {Schmitt} JR, {Wang} J, {Fischer} DA, {Jek} KJ, {Moriarty} JC, et~al. 2014.
+% \newblock \textit{\aj} 148:28
 % 
 % \bibitem[{{Schwamb} et~al.(2012){Schwamb}, {Lintott}, {Fischer}, {Giguere},
 %   {Lynn} et~al.}]{Schwamb++2012}
