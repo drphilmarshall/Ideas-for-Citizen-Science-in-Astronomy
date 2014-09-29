@@ -56,6 +56,7 @@
 % MACROS
 \def\CaseStudy#1{\noindent{\it\bf #1 \,\,\,\,}}
 \def\url#1{\texttt{#1}}
+\def\Talk{{\it Talk}}
 
 % COMMENTING
 % \definecolor{purple}{RGB}{150,0,200}
@@ -630,7 +631,7 @@ While significant preliminary work had been carried out by NASA's
 of crowd-sourcing for astronomical purposes was 
 Stardust@home\footnote{\url{http://stardustathome.ssl.berkeley.edu/}}. The team
 asked volunteers to scan through images of samples returned from Comet Wild-2 by
-the \emph{Stardust} mission, attracted a large audience to the apparently
+the \textit{Stardust} mission, attracted a large audience to the apparently
 unprepossessing task of looking for dust grains in an effort to identify samples
 of material from outside our Solar System. The site was built on BOSSA, an early
 attempt to build a generalized platform for such crowd-sourcing projects, and
@@ -656,7 +657,7 @@ was built on the continued importance of morphological classification of
 galaxies, first introduced in a systematic fashion by Hubble, and later
 developed by, among others, de Vaucoleurs.  While the morphology of a galaxy is
 closely related to its other properties, such as colour, star formation history,
-dynamics, concentration and so on, it is not entirely defined by then: there is
+dynamics, concentration and so on, it is not entirely defined by them: there is
 more information in resolved images of galaxies than is captured in these
 observables.  One approach was to develop simple proxies (e.g CAS \citep{Conselice}), but these
 are at best approximations for true morphology. 
@@ -700,7 +701,7 @@ substantial contribution -- is illustrated in \Fref{fig:gz2} which shows results
 Galaxy Zoo 2. This later version of the project asked for more detailed
 classifications via a decision tree containing questions such as `How prominent
 is the bulge?', and later iterations of the project have applied a similar
-approach to galaxies drawn from \emph{Hubble Space Telescope} surveys including
+approach to galaxies drawn from \textit{Hubble Space Telescope} surveys including
 \textsc{GEMS, GOODS, COSMOS} and \textsc{CANDELS}. 
 
 
@@ -841,7 +842,7 @@ less stringent than otherwise thought.
 
 A different approach to crowd-sourced classification in time-domain astronomy is
 exemplified by the Planet Hunters project, which asks volunteers to examine
-light curves drawn from the dataset provided by the \emph{Kepler} mission in
+light curves drawn from the dataset provided by the \textit{Kepler} mission in
 order to identify interesting events in retrospect. While the task of
 identifying transits from extrasolar planets is, at first glance, one which
 seems more suited for automated than for human analysis, the success of Planet
@@ -1016,20 +1017,21 @@ data fitting in astronomy, and other fields, to date?
 \citet{Simpson++2012MWP} provided volunteers with a fairly flexible set of
 annulus-drawing tools, for annotating circularly-symmetric ``bubble'' features
 in colour-composite (24.0, 8.0 and  4.5$\mu$m) infrared images from surveys
-carried out by the Spitzer space telescope. These bubbles are hypothesized  to
+carried out by the Spitzer space telescope (\Fref{fig:modeling}). 
+These bubbles are hypothesized  to
 have been caused by recently-formed high mass stars at the centre each. The
 (bubble) model in this case is simple and recognizable, making both the
 interface construction and its operation relatively straightforward. The large
 sample of  bubble models have been used to investigate the possibility of
 further star formation being triggered at the bubble surfaces
 \citep{KendrewEtal2012}. A subsequent effort \citep{Beaumont} used data provided
-by the project to train a machine learning algorithm, \emph{Brut}, in bubble
-finding. \emph{Brut} is able to identify a small number of sources  which were
+by the project to train a machine learning algorithm, \textit{Brut}, in bubble
+finding. \textit{Brut} is able to identify a small number of sources  which were
 not identified in the \citeauthor{Simpson++2012MWP} catalog. These bubbles were
 difficult for humans to identify,  owing to their lying close to bright sources,
 and so having low contrast relative to their surroundings.
 
-In addition, \emph{Brut} has proved effective at identifying suspect bubbles
+In addition, \textit{Brut} has proved effective at identifying suspect bubbles
 included in the previous (pre-citizen) surveys. Given the relatively small size
 of the MWP sample, the main use of machine learning here has been to provide an
 independent check on the citizen classification data; for larger samples, as
@@ -1074,16 +1076,16 @@ First is that humans are good at {\it vague} pattern matching: they do not get
 distracted by detailed pixel value comparisons but instead have an intuitive
 understanding of when one object is ``like'' another. The second is that
 initializing a galaxy merger simulation requires a large number of parameters to
-be set -- and its this high dimensionality  that makes the space of possible
+be set -- and it's this high dimensionality  that makes the space of possible
 models hard to explore for a machine. Humans should be able to navigate the
 space using their intuition, which is partly physical and partly learned from
-experience gained from playing with the system. Initial tests on the marging
+experience gained from playing with the system. Initial tests on the merging
 system Arp 86 showed
 the crowd converging on a single location in parameter space, and that the
 simulated mergers at this location do indeed strongly resemble the Arp 86
 system. The authors have since collected thousands of citizen-generated models
 for a sample of a large number SDSS merging systems (Holincheck et al, in
-preparation). 
+preparation, \Fref{fig:modeling}). 
 
 %%%%%%%%%%%%%%%%%%%
 \begin{figure}[!ht]
@@ -1292,7 +1294,7 @@ inspiring its participants to become more involved.
 
 % -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - 
 
-\CaseStudy{Lightcurve analysis on Planet Hunters {\it talk}.}  
+\CaseStudy{Lightcurve analysis on Planet Hunters \Talk.}  
 
 The data modelling examples of \Sref{sec:model} all involved modeling
 infrastructure provided by either the project's developers or their science
@@ -1303,7 +1305,7 @@ objects worthy of further analysis. For Galaxy Zoo, the forum had served this
 purpose but, as as the project matured, participation in discussions became
 restricted to a small and decreasing fraction of the community. Planet Hunters
 was the first Zooniverse project to introduce an integrated discussion tool,
-known as \emph{talk}. Classifiers were asked, after viewing each light curve,
+known as \Talk. Classifiers were asked, after viewing each light curve,
 whether they wanted to discuss what they had seen; more advanced users could
 then harvest interesting candidates from these posts. For example, the
 candidates presented in \citet{LintottPH} were initially collated by volunteers.
@@ -1439,7 +1441,7 @@ reach.
 What motivates citizen scientists? The two demographic studies referred to above
 also covered this question; having previously \citep{Rad++2010} identified 12
 categories of motivation in an earlier pilot study, \citet{Rad++2013} asked the
-170,000 Galaxy Zoon volunteers at the time to comment on how motivated they were
+170,000 Galaxy Zoo volunteers at the time to comment on how motivated they were
 by each of these categories, and which was their primary motivation. The 6\% who
 responded gave consistent answers to those given by around 900 forum users who
 responded in a separate appeal, allowing conclusions about this presumably more
@@ -1545,7 +1547,7 @@ citizen science project design.
 
 During this review a picture has emerged of two types of very active and engaged
 citizen astronomy community, which we might label observers and classifiers. 
-Although theses communities come together in differing ways (by self-assembly
+Although these communities come together in differing ways (by self-assembly
 through local groups linked by national and international networks, or by
 joining online projects built by professional organisations), they have reached
 a similar degree of internet-enabled connectedness, both with each other and
@@ -1745,7 +1747,7 @@ this model; finding ways beyond this to support citizen algorithm development
 seems to be likely to pay off.
 
 In terms of supporting citizen-led enquiry, an example of best practice exists
-in the way that the Sloan Digital Sky Survey's \emph{sky server} provided tools
+in the way that the Sloan Digital Sky Survey's \textit{sky server} provided tools
 for both professional (or advanced) researchers alongside simplified versions
 aimed primarily at educational use. This structure has the twin benefits of
 providing near-seamless transitions from simple to more advanced interfaces, and
@@ -1773,7 +1775,7 @@ As well as enabling access to the data, citizen science projects looking to
 engage larger crowds of volunteers will likely face some other  challenges. We
 might expect contributing to science via large international public datasets to
 appeal to citizens of many nations: while translation of project materials is simple, 
-coordinating a scientific \emph{discussion} across multiple language barriers could prove difficult. Having a critical mass of
+coordinating a scientific \textit{discussion} across multiple language barriers could prove difficult. Having a critical mass of
 professional scientists interacting in each language would seem the most
 important factor. Even within a single language group, collaboration is
 difficult to achieve with  very large numbers. The hierarchical system of
@@ -1850,7 +1852,7 @@ to be an experiment well worth continuing.
 \section*{Acknowledgments}
 
 We are most grateful to the following people for their suggestions, 
-comments, and clarifications: Grischa Hahn, ... 
+comments, and clarifications: Grischa Hahn, Jean Tate, ... 
 
 We thank David~W.~Hogg, Arfon Smith, Laura Whyte, ... for many useful
 discussions about the practice of citizen science in astronomy.
