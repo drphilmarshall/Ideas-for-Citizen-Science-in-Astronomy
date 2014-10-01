@@ -1192,22 +1192,21 @@ We now turn to data modeling by citizens implementing machine learning
 techniques in astronomy, via analysis challenges organised by members of the
 professional astrophysics community. The measurement of weak gravitational
 lensing by large scale structure (``cosmic shear'') relies on the measurement of
-the shapes of distant, faint galaxies with extreme accuracy. The STEP
-\citep{HeymansEtal2006,MasseyEtal2007} and GREAT
-\citep{BridleEtal2010,KitchingEtal2012,KitchingEtal2013a} blind galaxy shape
+the shapes of distant, faint galaxies with extreme accuracy. 
+Blind galaxy shape
 estimation challenges have had an enormous impact on the field, revealing biases
 present in existing techniques, and providing a way for researchers outside the
 world of professional cosmology to participate. In particular, the GREAT08
-challenge saw very successful entries from two (out of a total of 11) teams of
+challenge \citep{BridleEtal2010} saw very successful entries from two (out of a total of 11) teams of
 researchers from outside of astronomy (albeit still professional researchers),
 including the winner. A companion, somewhat streamlined galaxy shape measurement
 challenge, ``Mapping Dark Matter,'' was hosted at the Kaggle
-website\footnote{\url{http://www.kaggle.com/c/mdm}} \citep{KitchingEtal2013b}.
+website\footnote{\url{http://www.kaggle.com/c/mdm}} \citep{KitchingEtal2012}.
 The wider reach of this platform led to over 70 teams making over 700 entries to
 the competition; many of the teams did not contain professional astronomers,
 although most were still from academia.
 
-In a comparison with the GREAT challenges, the \citeauthor{KitchingEtal2013b}
+In a comparison with the GREAT challenges, the \citeauthor{KitchingEtal2012}
 found a factor of several improvement in shear accuracy over comparable previous
 challenges, and suggested two interesting explanations for this success. First,
 the challenge was designed to be as accessible as possible, with an extensive
@@ -1249,15 +1248,15 @@ larger, future surveys (see \Sref{sec:future_csvis}).
 
 Like Foldit's ``recipes,'' the Kaggle challenges are crowd-sourcing the
 development of new algorithms. As data science plays an increasingly important
-role in industry and commerce, we might expect the number of citizens interested
-in applying their skills to science problems in their spare time to grow. The
-challenge is to present those problems in meaningful ways, to enable high value
-contributions to be made. While members of this community may not identify as
-``citizen astronomers,'' there is clearly an opportunity for citizen data
-scientists to play an important support role.
+role in industry and commerce, we might expect the number of citizens
+interested in applying their skills to science problems in their spare time to
+grow. The challenge is to present those problems in meaningful ways, to enable
+high value contributions to be made. While members of this community may not
+identify as ``citizen astronomers,'' there is clearly an opportunity for
+citizen data scientists to play an important support role.
 
 
-%% ------------------------------------------------------------------------------
+% ------------------------------------------------------------------------------
 
 \section{CITIZEN-LED ENQUIRY}
 \label{sec:explore}
@@ -1392,23 +1391,24 @@ contributed to a discussion from which a set of astrophysically
 interesting conclusions were formulated by a small number of participants (~10),
 with support from the project science team.
 
-Galaxy Zoo: Quench demonstrated that a hierarchical approach, with simple tasks
-leading to more advanced analysis, can be successful in encouraging large
-numbers of volunteers to move beyond simple classification; the number
-working with the data was much higher as a percentage of
-participants than in Planet Hunters, a project with success in volunteer user engagement. 
-However, engagement with the literature
-(either by reading or writing) required close collaboration with the
-professionals involved. One interesting feature of the Quench project was its
-teething problems: issues with the data were discovered by the citizens, and
-needed to be fixed. (Similar problems have been encountered in Kaggle
-challenges.) While this caused the project to slow down and lose engagement
-somewhat, it does illustrates a key feature of citizen-led enquiry, namely that the
-same book-keeping, cleaning and calibration problems will arise in these
-projects just as they do in professional ones, and the limiting factor may well be the 
-amount of professional effort available. The challenge is to enable the
-crowd to solve them quickly and keep investigating.
+Galaxy Zoo: Quench demonstrated that a hierarchical approach, with simple
+tasks leading to more advanced analysis, can be successful in encouraging
+large numbers of volunteers to move beyond simple classification; the number
+working with the data was much higher as a percentage of participants than in
+Planet Hunters, a project with success in volunteer user engagement.  However,
+engagement with the literature (either by reading or writing) required close
+collaboration with the professionals involved. One interesting feature of the
+Quench project was its teething problems: issues with the data were discovered
+by the citizens, and needed to be fixed. (Similar problems have been
+encountered in Kaggle challenges.) While this caused the project to slow down
+and lose engagement somewhat, it does illustrate a key feature of citizen-led
+enquiry, namely that the same book-keeping, cleaning and calibration problems
+will arise in these projects just as they do in professional ones, and the
+limiting factor may well be the  amount of professional effort available. The
+challenge is to enable the crowd to solve them quickly and keep investigating.
 
+
+% ------------------------------------------------------------------------------
 
 \section{UNDERSTANDING THE CITIZENS}
 \label{sec:crowd}
@@ -2154,12 +2154,6 @@ support from a Google Global Impact Award, and from the EPSRC and AHRC.
 %   {Pires} AM. 2014.
 % \newblock \textit{Astronomy and Computing} 5:35--44
 % 
-% \bibitem[{{Heymans} et~al.(2006){Heymans}, {Van Waerbeke}, {Bacon}, {Berge},
-%   {Bernstein} et~al.}]{HeymansEtal2006}
-% {Heymans} C, {Van Waerbeke} L, {Bacon} D, {Berge} J, {Bernstein} G, et~al.
-%   2006.
-% \newblock \textit{\mnras} 368:1323--1339
-% 
 % \bibitem[{{Holincheck} et~al.(2010){Holincheck}, {Wallin}, {Borne}, {Lintott},
 %   {Smith} et~al.}]{HolincheckEtal2010}
 % {Holincheck} A, {Wallin} J, {Borne} K, {Lintott} C, {Smith} A, et~al. 2010.
@@ -2255,22 +2249,11 @@ support from a Google Global Impact Award, and from the EPSRC and AHRC.
 % {Kim}, J.~S. et~al. 2014.
 % \newblock \textit{\nat} 509:331--336
 % 
-% \bibitem[{{Kitching} et~al.(2012{\natexlab{a}}){Kitching}, {Balan}, {Bridle},
-%   {Cantale}, {Courbin} et~al.}]{KitchingEtal2012}
-% {Kitching} TD, {Balan} ST, {Bridle} S, {Cantale} N, {Courbin} F, et~al.
-%   2012{\natexlab{a}}.
-% \newblock \textit{\mnras} 423:3163--3208
-% 
 % \bibitem[{{Kitching} et~al.(2012{\natexlab{b}}){Kitching}, {Rhodes}, {Heymans},
-%   {Massey}, {Liu} et~al.}]{KitchingEtal2013b}
+%   {Massey}, {Liu} et~al.}]{KitchingEtal2012}
 % {Kitching} TD, {Rhodes} J, {Heymans} C, {Massey} R, {Liu} Q, et~al.
 %   2012{\natexlab{b}}.
 % \newblock \textit{ArXiv e-prints: 1204.4096}
-% 
-% \bibitem[{{Kitching} et~al.(2013){Kitching}, {Rowe}, {Gill}, {Heymans},
-%   {Massey} et~al.}]{KitchingEtal2013a}
-% {Kitching} TD, {Rowe} B, {Gill} M, {Heymans} C, {Massey} R, et~al. 2013.
-% \newblock \textit{\apjs} 205:12
 % 
 % \bibitem[{{Kloppenborg} et~al.(2010){Kloppenborg}, {Stencel}, {Monnier},
 %   {Schaefer}, {Zhao} et~al.}]{Kloppenborg++2010}
@@ -2345,11 +2328,6 @@ support from a Google Global Impact Award, and from the EPSRC and AHRC.
 %   2014.
 % \newblock \textit{Eighth International AAAI Conference on Weblogs and Social Media}
 %
-% \bibitem[{{Massey} et~al.(2007){Massey}, {Heymans}, {Berg{\'e}}, {Bernstein},
-%   {Bridle} et~al.}]{MasseyEtal2007}
-% {Massey} R, {Heymans} C, {Berg{\'e}} J, {Bernstein} G, {Bridle} S, et~al. 2007.
-% \newblock \textit{\mnras} 376:13--38
-% 
 % \bibitem[{{Masters} et~al.(2010){Masters}, {Mosleh}, {Romer}, {Nichol},
 %   {Bamford} et~al.}]{Masters++2010}
 % {Masters} KL, {Mosleh} M, {Romer} AK, {Nichol} RC, {Bamford} SP, et~al. 2010.
