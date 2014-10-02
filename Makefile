@@ -15,3 +15,6 @@ review.pdf: review.tex
 # review.pdf: review.dvi
 # 	dvipdf review.dvi
 
+figures.pdf: figures.tex
+	pdflatex figures.tex
+	pdflatex figures.tex
