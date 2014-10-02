@@ -8,8 +8,8 @@ pdf: review.pdf
 review.pdf: review.tex
 	pdflatex review.tex
 	pdflatex review.tex
-	bibtex review
-	pdflatex review.tex
+# 	bibtex review
+# 	pdflatex review.tex
 	pdflatex review.tex
 
 # review.pdf: review.dvi
