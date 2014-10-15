@@ -1,0 +1,24 @@
+#
+# This file controls the details on the published HTML page.
+#
+# All the values here are optional, but it will obviously look a lot
+# better if you fill them in.
+#
+# Remove the # from the front of each line, and then edit appropriately.
+#
+
+title: Ideas for Citizen Science in Astronomy
+abstract: We review the expanding, internet-enabled, and rapidly-evolving field of citizen astronomy, focusing on research projects in stellar, extragalactic and planetary science that have benefited from the participation of members of the public.
+#iframe_src: book.pdf
+
+# You can specify multiple authors, just follow the pattern below.
+# These fields can contain HTML tags.  You probably want to put <br />
+# in the address somewhere, indicating a line break.
+
+authors:
+- name: Philip J. Marshall
+  address: Kavli Institute for Particle Astrophysics and Cosmology, P.O. Box 20450,<br />MS 29, Stanford, CA 94309, USA.
+- name: Chris J. Lintott
+  address: Department of Physics, Denys Wilkinson Building, University of Oxford,<br />Keble Road, Oxford, OX1 3RH, UK.
+- name: Leigh N. Fletcher
+  address: Atmospheric, Oceanic and Planetary Physics, Clarendon Laboratory, University of Oxford,<br />Parks Road, Oxford OX1 3PU, UK.
