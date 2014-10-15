@@ -17,6 +17,6 @@ We may be able to make small changes during the refereeing process; otherwise, f
 
 #### GitHub Publishing
 
-You can also view the review in its own personal online webpage, built by [gh-publisher](https://github.com/ewanmellor/gh-publisher) by [Ewan Mellor](https://github.com/ewanmellor). The PDF visible here (and at the download link above) is automatically built at [Travis CI](https://travis-ci.org/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy).
+You can also [view the review in its own personal online webpage](http://drphilmarshall.github.io/Ideas-for-Citizen-Science-in-Astronomy), built by [gh-publisher](https://github.com/ewanmellor/gh-publisher) by [Ewan Mellor](https://github.com/ewanmellor). The PDF visible here (and at the download link above) is automatically built at [Travis CI](https://travis-ci.org/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy).
 
 [![Build Status](https://travis-ci.org/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy.svg?branch=master)](https://travis-ci.org/drphilmarshall/Ideas-for-Citizen-Science-in-Astronomy)
