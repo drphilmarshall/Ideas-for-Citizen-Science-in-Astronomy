@@ -1,0 +1,261 @@
+Author Comments
+===============
+
+* Keywords: observations -- amateur astronomy -- visual inspection --
+planetary science -- stellar variability -- galaxy morphology --
+optical transients -- crowd-sourcing
+
+* 2.1 - Keep (ISON) after C/2012 S1 to fit with rest of the comet
+names.
+
+* 2.1 - Can we update the mention of Siding Spring with Mars (provided
+worldwide...)
+
+* 2.3 - Something gone wrong with the edit - suggest '...between 2010
+and 2012; their light curves have been used to determine...'
+
+* 2.5 - not 'the ability to find charts' but 'produces finding charts'
+
+* 2.9 - Lose colon ahead of 'For example, ecological'
+
+* 2.9 - Amend to "Barentsen (private communication) was able"
+
+* 3.1 - Suggested text :
+
+Classification of data sets is not a new problem in astrophysics, and a
+variety of projects have attempted to allow volunteers to make
+significant contribution to the task. In this section, we review the
+most prominent of such projects.
+
+* 3.1.1. - BOSSA : Berkeley Open System for Skill Aggregation
+
+* 3.1.2 - Not happy with 'was conducted by Willett et al'. Suggest 'is
+included in Willett et al'
+
+* 3.1.2 - Indentation seems to have gone wrong, here and elsewhere.
+Suggest all text in sub-subsections be indented to match the rest of the article.
+
+* 3.1.2 - Rix et al (2004) reference is:
+
+@ARTICLE{2004ApJS..152..163R,
+   author = {{Rix}, H.-W. and {Barden}, M. and {Beckwith}, S.~V.~W. and {Bell}, E.~F. and
+	{Borch}, A. and {Caldwell}, J.~A.~R. and {H{\"a}ussler}, B. and
+	{Jahnke}, K. and {Jogee}, S. and {McIntosh}, D.~H. and {Meisenheimer}, K. and
+	{Peng}, C.~Y. and {Sanchez}, S.~F. and {Somerville}, R.~S. and
+	{Wisotzki}, L. and {Wolf}, C.},
+    title = "{GEMS: Galaxy Evolution from Morphologies and SEDs}",
+  journal = {\apjs},
+   eprint = {astro-ph/0401427},
+ keywords = {Galaxies: Bulges, Galaxies: Evolution, Galaxies: Fundamental Parameters, Galaxies: High-Redshift, Galaxies: Structure},
+     year = 2004,
+    month = jun,
+   volume = 152,
+    pages = {163-173},
+      doi = {10.1086/420885},
+   adsurl = {http://adsabs.harvard.edu/abs/2004ApJS..152..163R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+* 3.1.3 Change the title to "Surfaces of Solar System Bodies: Moon Zoo and Moon
+Mappers"
+
+* 3.2 It's Simpson et al a. throughout this section
+
+* 3.2 IBCC : independent Bayesian classifier combination
+
+* It's OK to remove the header "Rare Event Detection..."
+
+* Updated references for Marshall et al and More et al:
+
+@ARTICLE{2015arXiv150406148M,
+   author = {{Marshall}, P. and {Verma}, A. and {More}, A. and {Davis}, C. and
+	{More}, S. and {Kapadia}, A. and {Parrish}, M. and {Snyder}, C. and
+	{Wilcox}, J. and {Baeten}, E. and {Macmillan}, C. and {Cornen}, C. and
+	{Baumer}, M. and {Simpson}, E. and {Lintott}, C. and {Miller}, D. and
+	{Paget}, E. and {Simpson}, R. and {Smith}, A. and {Kueng}, R. and
+	{Saha}, P. and {Collett}, T. and {Tecza}, M.},
+    title = "{Space Warps: I. Crowd-sourcing the Discovery of Gravitational Lenses}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1504.06148},
+ primaryClass = "astro-ph.IM",
+ keywords = {Astrophysics - Instrumentation and Methods for Astrophysics, Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Astrophysics of Galaxies},
+     year = 2015,
+    month = apr,
+   adsurl = {http://adsabs.harvard.edu/abs/2015arXiv150406148M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{2015arXiv150405587M,
+   author = {{More}, A. and {Verma}, A. and {Marshall}, P. and {More}, S. and
+	{Baeten}, E. and {Wilcox}, J. and {Macmillan}, C. and {Cornen}, C. and
+	{Kapadia}, A. and {Parrish}, M. and {Snyder}, C. and {Davis}, C. and
+	{Gavazzi}, R. and {Lintott}, C. and {Simpson}, R. and {Miller}, D. and
+	{Smith}, A.~M. and {Paget}, E. and {Saha}, P. and {Kueng}, R. and
+	{Collett}, T. and {Tecza}, M. and {Baumer}, M.},
+    title = "{Space Warps II. New Gravitational Lens Candidates from the CFHTLS Discovered through Citizen Science}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1504.05587},
+ keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Astrophysics of Galaxies},
+     year = 2015,
+    month = apr,
+   adsurl = {http://adsabs.harvard.edu/abs/2015arXiv150405587M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+* 4.1 This section is Simpson et al.b
+
+* 4.2 Updated reference for Kueng et al is:
+
+@ARTICLE{2015MNRAS.447.2170K,
+   author = {{K{\"u}ng}, R. and {Saha}, P. and {More}, A. and {Baeten}, E. and
+	{Coles}, J. and {Cornen}, C. and {Macmillan}, C. and {Marshall}, P. and
+	{More}, S. and {Odermatt}, J. and {Verma}, A. and {Wilcox}, J.~K.
+	},
+    title = "{Gravitational lens modelling in a citizen science context}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1502.00008},
+ primaryClass = "astro-ph.IM",
+ keywords = {gravitational lensing: strong, methods: numerical},
+     year = 2015,
+    month = mar,
+   volume = 447,
+    pages = {2170-2180},
+      doi = {10.1093/mnras/stu2554},
+   adsurl = {http://adsabs.harvard.edu/abs/2015MNRAS.447.2170K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+* Holincheck et al : change to Shamir, Holincheck & Wallin,
+Astronomy & Computing Volume 2, August 2013, Pages 67–73
+
+@ARTICLE{2013A&C.....2...67S,
+   author = {{Shamir}, L. and {Holincheck}, A. and {Wallin}, J.},
+    title = "{Automatic quantitative morphological analysis of interacting galaxies}",
+  journal = {Astronomy and Computing},
+archivePrefix = "arXiv",
+   eprint = {1309.4014},
+ primaryClass = "astro-ph.IM",
+ keywords = {Galaxies: structure, Galaxies: evolution, Methods: analytical, Techniques: image processing},
+     year = 2013,
+    month = aug,
+   volume = 2,
+    pages = {67-73},
+      doi = {10.1016/j.ascom.2013.09.002},
+   adsurl = {http://adsabs.harvard.edu/abs/2013A%26C.....2...67S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+* 4.4 "the Foldit team has suggested" is correct.
+
+* 4.5 Replace Willett et al (in prep) citation with Dieleman, Willett
+& Dambre, 2015MNRAS.450.1441D:
+
+@ARTICLE{2015MNRAS.450.1441D,
+   author = {{Dieleman}, S. and {Willett}, K.~W. and {Dambre}, J.},
+    title = "{Rotation-invariant convolutional neural networks for galaxy morphology prediction}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1503.07077},
+ primaryClass = "astro-ph.IM",
+ keywords = {methods: data analysis, techniques: image processing, catalogues, galaxies: general},
+     year = 2015,
+    month = jun,
+   volume = 450,
+    pages = {1441-1459},
+      doi = {10.1093/mnras/stv632},
+   adsurl = {http://adsabs.harvard.edu/abs/2015MNRAS.450.1441D},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+* 5.2 IDL = "Interactive Data Language"
+
+* 7.1 LSST = "Large Synoptic Survey Telescope"
+
+* 7.2 Radio Galaxy Zoo paper nearly published...no references yet
+
+* 7.2 (S. Lynn, private communication) is correct
+
+* 8.2 Include (LOFAR) as well as expanded version.
+
+* Disclosure statement given is fine.
+
+* Acknowledgements: change to "David Hogg, Aprajita Vera, Anupreeta More,
+Surhud More, Stuart Lynn"
+
+* Acronyms in acknowledgements : Engineering and Physical Sciences Research
+Council, Arts and Humanities Research Council.
+
+* Update Beaumont reference:
+
+@ARTICLE{Beaumont,
+   author = {{Beaumont}, C.~N. and {Goodman}, A.~A. and {Kendrew}, S. and
+	{Williams}, J.~P. and {Simpson}, R.},
+    title = "{The Milky Way Project: Leveraging Citizen Science and Machine Learning to Detect Interstellar Bubbles}",
+  journal = {\apjs},
+archivePrefix = "arXiv",
+   eprint = {1406.2692},
+ keywords = {H II regions, ISM: bubbles, methods: data analysis, stars: formation},
+     year = 2014,
+    month = sep,
+   volume = 214,
+      eid = {3},
+    pages = {3},
+      doi = {10.1088/0067-0049/214/1/3},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJS..214....3B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+* Update Crowston reference to be Mugar et al:
+
+@INPROCEEDINGS{Crowston,
+      author = {{Mugar}, G. and {Østerlund}, C. and {Hassman}, K. and
+                {Crowston}, K. and {Jackson}, C.}
+       title = {Planet hunters and seafloor explorers: legitimate peripheral participation through practice proxies in online citizen science.},
+   booktitle = {CSCW},
+   publisher = {ACM},
+    location = {New York}
+      editor = {{Fussell}, S. and {Lutters}, W. and {Morris}, M.
+                and {Reddy}, M.}
+        year = {2014},
+       pages = {109-119},
+          ee = {http://doi.acm.org/10.1145/2531602.2531721}
+}
+
+* Fortson reference is correct as changed.
+
+* Luczak-Roesch reference page range is 315-324. Location and publisher are
+correct. Editors are "E. Adar, P. Resnick, M. De Choudhury, B. Hogan, A. Oh"
+
+* Update Price & Paxson 2012 to Price 2012:
+
+@ARTICLE{Price2012,
+   author = {{Price}, A.},
+    title = "{The AAVSO 2011 Demographic and Background Survey}",
+  journal = {Journal of the American Association of Variable Star Observers (JAAVSO)},
+     year = 2012,
+    month = apr,
+   volume = 40,
+    pages = {1010},
+   adsurl = {http://adsabs.harvard.edu/abs/2012JAVSO..40.1010P},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+* Sekanina & Kracht is not yet published.
+
+* Correct reference for Simpson, Roberts et al is:
+
+@INCOLLECTION{IBCC,
+title={{Dynamic Bayesian Combination of Multiple Imperfect Classifiers}},
+author={Simpson, Edwin and Roberts, Stephen and Psorakis, Ioannis and Smith, Arfon},
+booktitle={Intelligent Systems Reference Library series: Decision Making and Imperfection},
+pages={1--35},
+year={2013},
+publisher={Springer}
+}
+
+* Wallin et al 2010 reference is correct as found.

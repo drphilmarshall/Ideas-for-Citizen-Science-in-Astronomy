@@ -1,0 +1,51 @@
+My comments :
+
+1. 2.1 - Keep (ISON) after C/2012 S1 to fit with rest of the comet 
+names.
+
+2. 2.1 - Can we update the mention of Siding Spring with Mars (provided 
+worldwide...)
+
+3. 2.3 - Something gone wrong with the edit - suggest '...between 2010 
+and 2012; their light curves have been used to determine...'
+
+4. 2.5 - not 'the ability to find charts' but 'produces finding charts'
+
+5. 2.9 - Lose colon ahead of 'For example, ecological'
+
+6. 2.9 - Was just Geert
+
+7. 3.1 - Suggested text :
+
+Classification of data sets is not a new problem in astrophysics, and a 
+variety of projects have attempted to allow volunteers to make 
+significant contribution to the task. In this section, we review the 
+most prominent of such projects.
+
+8. 3.1.1. - BOSSA : Berkeley Open System for Skill Aggregation
+
+9. 3.1.2 - Not happy with 'was conducted by Willett et al'. Suggest 'is 
+included in'
+
+10. 3.1.3 Should the title mention Moon Mappers not Moon Watch?
+
+11. 3.2 It's Simpson et al a. throughout this section
+
+12. 3.2 IBCC : independent Bayesian classifier combination
+
+13. Update SpaceWarps references! (Also in page 6.2)
+
+14. 4.1 This section is Simpson et al.b
+
+15. Holincheck et al : Probably should be Shamir, Holincheck & Wallin, 
+Astronomy & Computing Volume 2, August 2013, Pages 67–73
+
+16. Change citation to Kaggle competition: Should be Diedelman, Willett 
+& Dambre, 2015MNRAS.450.1441D
+
+17. Radio Galaxy Zoo paper nearly published...no references yet
+
+18. 8.2 Include (LOFAR) as well as expanded version.
+
+19. Acknowledgements : Engineering and Physical Sciences Research 
+Council, Arts and Humanities Research Council.
